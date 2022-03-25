@@ -5876,15 +5876,15 @@ Version:1.0
 	20. Start Footer CSS
 ===============================*/
 
-.footer {
+.footer1 {
     background: #222;
 }
 
-.footer .about {
+.footer1 .about {
     padding-right: 50px;
 }
 
-.footer .single-footer h4 {
+.footer1 .single-footer h4 {
     font-size: 17px;
     font-weight: 600;
     color: #fff;
@@ -5892,96 +5892,96 @@ Version:1.0
     margin-bottom: 30px;
 }
 
-.footer .about .logo {
+.footer1 .about .logo {
     margin-bottom: 20px;
 }
 
 
-/* .footer .about .logo img {} */
+/* .footer1 .about .logo img {} */
 
-.footer .about .text {
+.footer1 .about .text {
     color: #fff;
     font-weight: 400;
 }
 
-.footer .about .call {
+.footer1 .about .call {
     color: #fff;
     margin-top: 15px;
     font-weight: 400;
 }
 
-.footer .about .call span {
+.footer1 .about .call span {
     display: block;
 }
 
-.footer .about .call a {
+.footer1 .about .call a {
     color: #f7941d;
     font-size: 20px;
     font-weight: 600;
 }
 
 
-/* .footer .links ul {} */
+/* .footer1 .links ul {} */
 
-.footer .links ul li {
+.footer1 .links ul li {
     display: block;
     margin-bottom: 8px;
 }
 
-.footer .links ul li:last-child {
+.footer1 .links ul li:last-child {
     margin-bottom: 0;
 }
 
-.footer .links ul li a {
+.footer1 .links ul li a {
     color: #fff;
     font-weight: 400;
 }
 
-.footer .links ul li a:hover {
+.footer1 .links ul li a:hover {
     color: #F7941D;
     padding-left: 10px;
 }
 
 
-/* .footer .social {} */
+/* .footer1 .social {} */
 
 
-/* .footer .social .contact {} */
+/* .footer1 .social .contact {} */
 
 
-/* .footer .social .contact ul {} */
+/* .footer1 .social .contact ul {} */
 
-.footer .social .contact ul li {
+.footer1 .social .contact ul li {
     color: #fff;
     display: block;
     margin-bottom: 4px;
     font-weight: 400;
 }
 
-.footer .contact ul li:last-child {
+.footer1 .contact ul li:last-child {
     margin-bottom: 0;
 }
 
-.footer .social ul {
+.footer1 .social ul {
     margin-top: 20px;
 }
 
-.footer .social ul li {
+.footer1 .social ul li {
     display: inline-block;
     margin-right: 25px;
 }
 
-.footer .social ul li:last-child {
+.footer1 .social ul li:last-child {
     margin-right: 0;
 }
 
-.footer .social ul li a {
+.footer1 .social ul li a {
     color: #fff;
     display: block;
     font-size: 16px;
 }
 
-.footer .social ul li a:hover {
+.footer1 .social ul li a:hover {
     color: #F7941D;
 }
 
@@ -5989,25 +5989,25 @@ Version:1.0
 /* Copyright */
 
 
-/* .footer .copyright {} */
+/* .footer1 .copyright {} */
 
-.footer .copyright .inner {
+.footer1 .copyright .inner {
     border-top: 1px solid #eeeeee3d;
     padding: 20px 0;
 }
 
 
-/* .footer .copyright .left {} */
+/* .footer1 .copyright .left {} */
 
-.footer .copyright .right {
+.footer1 .copyright .right {
     float: right;
 }
 
-.footer .copyright p {
+.footer1 .copyright p {
     color: #fff;
 }
 
-.footer .copyright p a {
+.footer1 .copyright p a {
     color: #fff;
     text-decoration: underline;
 }
