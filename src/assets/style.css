@@ -296,18 +296,22 @@ Version:1.0
     transition: all 0.4s ease;
 }
 
-.header .navbar {
+.header .navbar1 {
     padding: 0;
+}
+
+.navbar-collapse-main {
+    height: 0px;
 }
 
 
 /* Main Menu */
 
-.navbar-expand-lg .navbar-collapse {
+.navbar-expand-lg .navbar-collapse-main {
     display: block !important;
 }
 
-.header.v3 .navbar-expand-lg .navbar-collapse {
+.header.v3 .navbar-expand-lg .navbar-collapse-main {
     display: block !important;
     background: #333;
 }
@@ -1450,7 +1454,7 @@ Version:1.0
     box-shadow: none;
 }
 
-.header.sticky.v3 .navbar-expand-lg .navbar-collapse {
+.header.sticky.v3 .navbar-expand-lg .navbar-collapse-main {
     animation: fadeInDown 1s both 0.2s;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
