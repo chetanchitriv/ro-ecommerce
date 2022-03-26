@@ -7,6 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './my-account/login/login.component';
 import { SignupComponent } from './my-account/signup/signup.component';
 import { MainComponent } from './dashboard/main/main.component';
+import { NavBarComponent } from './dashboard/nav-bar/nav-bar.component';
+import { ProductsComponent } from './dashboard/products/products.component';
+import { DashComponent } from './dashboard/dash/dash.component';
+import { TopNavComponent } from './dashboard/top-nav/top-nav.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { MainComponent } from './dashboard/main/main.component';
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    MainComponent
+    MainComponent,
+    NavBarComponent,
+    ProductsComponent,
+    DashComponent,
+    TopNavComponent,
+   
   ],
   imports: [
     BrowserModule,
