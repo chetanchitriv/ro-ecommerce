@@ -12,6 +12,7 @@ import { ProductsComponent } from './dashboard/products/products.component';
 import { DashComponent } from './dashboard/dash/dash.component';
 import { TopNavComponent } from './dashboard/top-nav/top-nav.component';
 import { CustomerComponent } from './dashboard/customer/customer.component';
+import { CouponsComponent } from './dashboard/coupons/coupons.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { CustomerComponent } from './dashboard/customer/customer.component';
     DashComponent,
     TopNavComponent,
     CustomerComponent,
+    CouponsComponent,
    
   ],
   imports: [

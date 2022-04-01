@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CouponsComponent } from './dashboard/coupons/coupons.component';
 import { CustomerComponent } from './dashboard/customer/customer.component';
 import { DashComponent } from './dashboard/dash/dash.component';
 import { MainComponent } from './dashboard/main/main.component';
@@ -28,7 +29,8 @@ children:[
   { path:"",component:DashComponent },
   { path:"dash",component:DashComponent },
   { path:"products",component:ProductsComponent },
-  { path: "customer",component:CustomerComponent}
+  { path: "customer",component:CustomerComponent},
+  { path: "coupons",component:CouponsComponent}
 ]
 }
 
