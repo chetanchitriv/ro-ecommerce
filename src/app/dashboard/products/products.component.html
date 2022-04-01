@@ -3,16 +3,18 @@
         <div class="container-fluid">
 
 
-
-
-
-
-
             <div class="card gradient-aqua-marine d-block rounded box-shadow-2" data-bg-color="aqua-marine">
                 <div class="card-header">
                     <div class="card-title-wrap bar-warning">
-                        <h4 class="card-title" style=" color:#fff; ">Products List</h4>
+                        <div>
+                            <h4 class="card-title" style=" color:#fff; ">Products List</h4>
+                        </div>
+                        <div class="d-flex">
+                            <!-- <button (click)="showTable()" type="button" class="btn btn-success mx-3">Show Table</button> -->
+                            <button (click)="showTable()" *ngIf="addProduct" type="btn " class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; "> Show Table</button>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
@@ -63,7 +65,7 @@
                                                 <!-- <button type="btn " class="form-control height-50 bg-danger d-block rounded box-shadow-2 " style="color: #fff; " data-bs-toggle="modal " data-bs-target="#exampleModal "><i class="fa fa-plus " >&nbsp; Add Products</i></button> -->
 
 
-                                                <button type="button " class="form-control height-50 bg-danger d-block rounded box-shadow-2 " data-toggle="modal " data-backdrop="false " data-target="#primary " style="color: #fff; ">
+                                                <button (click)="showForm()" type="button" class="form-control height-50 bg-danger d-block rounded box-shadow-2 " data-toggle="modal " data-backdrop="false " data-target="#primary " style="color: #fff; ">
                                                     <i class="fa fa-plus " >&nbsp; Add Products</i>
                                                     </button>
                                             </fieldset>
@@ -76,6 +78,7 @@
                     </div>
                 </div>
             </section>
+
 
             <section id="extended ">
                 <div class="row ">
@@ -118,317 +121,310 @@
 
             <!--Extended Table Ends-->
             <!--Shopping cart starts-->
-            <section id="shopping-cart ">
-                <div class="row ">
-                    <div class="col-sm-12 ">
-                        <div class="card ">
-                            <!-- <div class="card-header ">
+            <div *ngIf="showUserTable && !addProduct">
+                <section id="shopping-cart ">
+                    <div class="row ">
+                        <div class="col-sm-12 ">
+                            <div class="card ">
+                                <!-- <div class="card-header ">
                                 <div class="card-title-wrap bar-warning ">
                                     <h4 class="card-title ">Invoice Summary</h4>
                                 </div>
                             </div> -->
-                            <div class="card-body ">
-                                <div class="card-block ">
-                                    <div class="table-responsive ">
-                                        <table id="recent-orders " class="table table-hover table-xl mb-0 ">
-                                            <thead>
-                                                <tr>
-                                                    <th class="border-top-0 ">Status</th>
-                                                    <th class="border-top-0 ">Product Name</th>
-                                                    <th class="border-top-0 ">Categories</th>
-                                                    <th class="border-top-0 ">Price</th>
-                                                    <th class="border-top-0 ">Stock</th>
-                                                    <th class="border-top-0 ">Published</th>
-                                                    <th class="border-top-0 ">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o success font-medium-1 mr-1 "></i> Paid</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
-                                                    </td>
+                                <div class="card-body ">
+                                    <div class="card-block ">
+                                        <div class="table-responsive ">
+                                            <table id="recent-orders " class="table table-hover table-xl mb-0 ">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="border-top-0 ">Status</th>
+                                                        <th class="border-top-0 ">Product Name</th>
+                                                        <th class="border-top-0 ">Categories</th>
+                                                        <th class="border-top-0 ">Price</th>
+                                                        <th class="border-top-0 ">Stock</th>
+                                                        <th class="border-top-0 ">Published</th>
+                                                        <th class="border-top-0 ">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-truncate "><i class="fa fa-dot-circle-o success font-medium-1 mr-1 "></i> Paid</td>
+                                                        <td class="text-truncate ">
+                                                            Food
+                                                        </td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
+                                                        </td>
 
-                                                    <td class="text-truncate ">$ 1200.00</td>
+                                                        <td class="text-truncate ">$ 1200.00</td>
 
-                                                    <td class="text-truncate "> 100</td>
+                                                        <td class="text-truncate "> 100</td>
 
-                                                    <td>
+                                                        <td>
 
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
+                                                            <div class="progress mb-2 ">
+                                                                <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
+                                                            </div>
+                                                        </td>
 
-                                                    <td>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
+                                                        <td>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-eye "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-trash "></i>
+                                                            </a>
 
-                                                    </td>
+                                                        </td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o danger font-medium-1 mr-1 "></i> Declined</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
-                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-truncate "><i class="fa fa-dot-circle-o danger font-medium-1 mr-1 "></i> Declined</td>
+                                                        <td class="text-truncate ">
+                                                            Food
+                                                        </td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
+                                                        </td>
 
-                                                    <td class="text-truncate ">$ 1200.00</td>
+                                                        <td class="text-truncate ">$ 1200.00</td>
 
-                                                    <td class="text-truncate "> 100</td>
+                                                        <td class="text-truncate "> 100</td>
 
-                                                    <td>
+                                                        <td>
 
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
+                                                            <div class="progress mb-2 ">
+                                                                <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
+                                                            </div>
+                                                        </td>
 
-                                                    <td>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
+                                                        <td>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-eye "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-trash "></i>
+                                                            </a>
 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o warning font-medium-1 mr-1 "></i> Pending</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
-                                                    </td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-truncate "><i class="fa fa-dot-circle-o warning font-medium-1 mr-1 "></i> Pending</td>
+                                                        <td class="text-truncate ">
+                                                            Food
+                                                        </td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
+                                                        </td>
 
-                                                    <td class="text-truncate ">$ 1200.00</td>
+                                                        <td class="text-truncate ">$ 1200.00</td>
 
-                                                    <td class="text-truncate "> 100</td>
+                                                        <td class="text-truncate "> 100</td>
 
-                                                    <td>
+                                                        <td>
 
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
+                                                            <div class="progress mb-2 ">
+                                                                <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
+                                                            </div>
+                                                        </td>
 
-                                                    <td>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
+                                                        <td>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-eye "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-trash "></i>
+                                                            </a>
 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o success font-medium-1 mr-1 "></i> Paid</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
-                                                    </td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-truncate "><i class="fa fa-dot-circle-o success font-medium-1 mr-1 "></i> Paid</td>
+                                                        <td class="text-truncate ">
+                                                            Food
+                                                        </td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
+                                                        </td>
 
-                                                    <td class="text-truncate ">$ 1200.00</td>
+                                                        <td class="text-truncate ">$ 1200.00</td>
 
-                                                    <td class="text-truncate "> 100</td>
+                                                        <td class="text-truncate "> 100</td>
 
-                                                    <td>
+                                                        <td>
 
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
+                                                            <div class="progress mb-2 ">
+                                                                <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
+                                                            </div>
+                                                        </td>
 
-                                                    <td>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
+                                                        <td>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-eye "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-trash "></i>
+                                                            </a>
 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o success font-medium-1 mr-1 "></i> Paid</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
-                                                    </td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-truncate "><i class="fa fa-dot-circle-o success font-medium-1 mr-1 "></i> Paid</td>
+                                                        <td class="text-truncate ">
+                                                            Food
+                                                        </td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
+                                                        </td>
 
-                                                    <td class="text-truncate ">$ 1200.00</td>
+                                                        <td class="text-truncate ">$ 1200.00</td>
 
-                                                    <td class="text-truncate "> 100</td>
+                                                        <td class="text-truncate "> 100</td>
 
-                                                    <td>
+                                                        <td>
 
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
+                                                            <div class="progress mb-2 ">
+                                                                <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
+                                                            </div>
+                                                        </td>
 
-                                                    <td>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a>
-                                                        <a class="btn btn-outline-success ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
+                                                        <td>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-eye "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit "></i>
+                                                            </a>
+                                                            <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-trash "></i>
+                                                            </a>
 
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
             <!--Shopping cart ends-->
-        </div>
-    </div>
-</div>
 
 
 
 
 
-<!-- form///////////////////////////// -->
-<div class="main-content ">
-    <div class="content-wrapper ">
-        <div class="container-fluid ">
-            <!-- Basic form layout section start -->
-            <section id="basic-form-layouts ">
 
-                <div class="card gradient-aqua-marine d-block rounded box-shadow-2 " data-bg-color="aqua-marine ">
-                    <div class="card-header ">
-                        <div class="card-title-wrap bar-warning ">
-                            <h4 class="card-title text-center" style="color:#fff; ">Add Products</h4>
-                        </div>
-                    </div>
-                </div>
+            <!-- form///////////////////////////// -->
+            <div *ngIf="addProduct && !showUserTable" class="main-content1">
+                <div class="content-wrapper ">
+                    <div class="container-fluid ">
+                        <!-- Basic form layout section start -->
+                        <section id="basic-form-layouts ">
 
-                <div class="row ">
-                    <div class="col-md-6 ">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <div class="card-title-wrap bar-success ">
-                                    <h4 class="card-title " id="basic-layout-form ">Add your product</h4>
+                            <div class="card gradient-aqua-marine d-block rounded box-shadow-2 " data-bg-color="aqua-marine ">
+                                <div class="card-header">
+                                    <div class="card-title-wrap bar-warning ">
+                                        <h4 class="card-title text-center" style="color:#fff; ">Add Products</h4>
+                                    </div>
                                 </div>
-                                <p class="mb-0 ">Add your product and necessary information from here</p>
                             </div>
-                            <div class="card-body ">
-                                <div class="px-3 ">
-                                    <form class="form ">
-                                        <div class="form-body ">
-                                            <h4 class="form-section ">
-                                                <i class="icon-user "></i> Product Details</h4>
-                                            <div class="row form-group ">
 
-                                                <label class="col-md-5c ml-3">Product Image: </label>
+                            <div class="row ">
+                                <div class="col-md-6 ">
+                                    <div class="card ">
+                                        <div class="card-header ">
+                                            <div class="card-title-wrap bar-success ">
+                                                <h4 class="card-title " id="basic-layout-form ">Add your product</h4>
+                                            </div>
+                                            <p class="mb-0 ">Add your product and necessary information from here</p>
+                                        </div>
+                                        <div class="card-body ">
+                                            <div class="px-3 ">
+                                                <form class="form ">
+                                                    <div class="form-body ">
+                                                        <h4 class="form-section ">
+                                                            <i class="icon-user "></i> Product Details</h4>
+                                                        <div class="row form-group ">
 
-                                                <label id="projectinput8" class="file center-block col-md-6">
+                                                            <label class="col-md-5c ml-3">Product Image: </label>
+
+                                                            <label id="projectinput8" class="file center-block col-md-6">
                                                             <input type="file" id="file">
                                                             <span class="file-custom"></span>
                                                              </label>
 
 
+                                                        </div>
+
+
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Product SKU</label>
+                                                            <input type="text " id="projectinput1 " class="form-control " name="fname ">
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Product Title/Name</label>
+                                                            <input type="text " id="projectinput1 " class="form-control " name="fname ">
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Product Slug</label>
+                                                            <input type="text " id="projectinput1 " class="form-control " name="fname ">
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Product Description</label>
+                                                            <input type="text " id="projectinput1 " class="form-control " name="fname ">
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-md-3 label-control" for="projectinput9">Project Brief: </label>
+                                                            <div class="col-md-9">
+                                                                <textarea id="projectinput9" rows="5" class="form-control" name="comment"></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </form>
                                             </div>
-
-
-                                            <div class="form-group ">
-                                                <label for="projectinput1 ">Product SKU</label>
-                                                <input type="text " id="projectinput1 " class="form-control " name="fname ">
-                                            </div>
-                                            <div class="form-group ">
-                                                <label for="projectinput1 ">Product Title/Name</label>
-                                                <input type="text " id="projectinput1 " class="form-control " name="fname ">
-                                            </div>
-                                            <div class="form-group ">
-                                                <label for="projectinput1 ">Product Slug</label>
-                                                <input type="text " id="projectinput1 " class="form-control " name="fname ">
-                                            </div>
-                                            <div class="form-group ">
-                                                <label for="projectinput1 ">Product Description</label>
-                                                <input type="text " id="projectinput1 " class="form-control " name="fname ">
-                                            </div>
-                                            <div class="form-group row">
-                                                <label class="col-md-3 label-control" for="projectinput9">Project Brief: </label>
-                                                <div class="col-md-9">
-                                                    <textarea id="projectinput9" rows="5" class="form-control" name="comment"></textarea>
-                                                </div>
-                                            </div>
-
-
-
-
-
-
-
-
                                         </div>
-
-
-                                    </form>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-6 ">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <div class="card-title-wrap bar-warning ">
-                                    <!-- <h4 class="card-title " id="basic-layout-colored-form-control ">Company Registration</h4> -->
-                                </div>
-                                <!-- <p class="mb-0 ">Company registration Form. Form action buttons are on the bottom right position.</p> -->
-                            </div>
-                            <div class="card-body ">
-                                <div class="px-3 ">
+                                <div class="col-md-6 ">
+                                    <div class="card ">
+                                        <div class="card-header ">
+                                            <div class="card-title-wrap bar-warning ">
+                                                <!-- <h4 class="card-title " id="basic-layout-colored-form-control ">Company Registration</h4> -->
+                                            </div>
+                                            <!-- <p class="mb-0 ">Company registration Form. Form action buttons are on the bottom right position.</p> -->
+                                        </div>
+                                        <div class="card-body ">
+                                            <div class="px-3 ">
 
-                                    <form class="form ">
-                                        <div class="form-body ">
-                                            <h4 class="">
-                                                <!-- <i class="icon-direction "></i> Owner Detail -->
-                                            </h4>
-                                            <div class="col-md-10">
-                                                <fieldset class="form-group">
-                                                    <label for="basicSelect">Parent Category</label>
-                                                    <select class="form-control" id="basicSelect">
+                                                <form class="form ">
+                                                    <div class="form-body ">
+                                                        <h4 class="">
+                                                            <!-- <i class="icon-direction "></i> Owner Detail -->
+                                                        </h4>
+                                                        <div class="col-md-10">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicSelect">Parent Category</label>
+                                                                <select class="form-control" id="basicSelect">
                                                           <option>Select Option</option>
                                                           <option>Option 1</option>
                                                           <option>Option 2</option>
@@ -436,12 +432,12 @@
                                                           <option>Option 4</option>
                                                           <option>Option 5</option>
                                                         </select>
-                                                </fieldset>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <fieldset class="form-group">
-                                                    <label for="basicSelect">Child Category</label>
-                                                    <select class="form-control" id="basicSelect">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicSelect">Child Category</label>
+                                                                <select class="form-control" id="basicSelect">
                                                           <option>Select Option</option>
                                                           <option>Option 1</option>
                                                           <option>Option 2</option>
@@ -449,531 +445,53 @@
                                                           <option>Option 4</option>
                                                           <option>Option 5</option>
                                                         </select>
-                                                </fieldset>
-                                            </div>
-
-
-
-                                            <div class="form-group ">
-                                                <label for="userinput5 ">Unit (kg/pc/lb/ml/g...etc)</label>
-                                                <input class="form-control border-primary " type="text " id="userinput5 ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="userinput6 ">Product Quantity</label>
-                                                <input class="form-control border-primary " type="number " id="userinput6 ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label>Sale Price</label>
-                                                <input class="form-control border-primary " id="userinput7 " type="number">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="userinput8 ">Company Address</label>
-                                                <textarea id="userinput8 " rows="5 " class="form-control border-primary " name="address "></textarea>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="form-actions right ">
-                                            <button type="button " class="btn btn-danger mr-1 ">
-                              <i class="icon-trash "></i> Cancel
-                          </button>
-                                            <button type="button " class="btn btn-success ">
-                              <i class="icon-note "></i> Save
-                          </button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row match-height ">
-                    <div class="col-md-6 ">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <div class="card-title-wrap bar-primary ">
-                                    <h4 class="card-title " id="basic-layout-tooltip ">Issue Tracking</h4>
-                                </div>
-                                <p class="mb-0 ">This form shows tooltips on hover to provide useful information while user is filling the form. Use data attributes like toggle
-                                    <code>data-toggle</code>, trigger
-                                    <code>data-trigger</code>, placement
-                                    <code>data-placement</code>, title
-                                    <code>data-title</code> to show tooltips on form controls.</p>
-                            </div>
-                            <div class="card-body ">
-                                <div class="px-3 ">
-
-                                    <form class="form ">
-                                        <div class="form-body ">
-
-                                            <div class="form-group ">
-                                                <label for="issueinput1 ">Issue Title</label>
-                                                <input type="text " id="issueinput1 " class="form-control " name="issuetitle " data-toggle="tooltip " data-trigger="hover " data-placement="top " data-title="Issue Title ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="issueinput2 ">Opened By</label>
-                                                <input type="text " id="issueinput2 " class="form-control " name="openedby " data-toggle="tooltip " data-trigger="hover " data-placement="top " data-title="Opened By ">
-                                            </div>
-
-                                            <div class="row ">
-                                                <div class="col-md-6 ">
-                                                    <div class="form-group ">
-                                                        <label for="issueinput3 ">Date Opened</label>
-                                                        <input type="date " id="issueinput3 " class="form-control " name="dateopened " data-toggle="tooltip " data-trigger="hover " data-placement="top " data-title="Date Opened ">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 ">
-                                                    <div class="form-group ">
-                                                        <label for="issueinput4 ">Date Fixed</label>
-                                                        <input type="date " id="issueinput4 " class="form-control " name="datefixed " data-toggle="tooltip " data-trigger="hover " data-placement="top " data-title="Date Fixed ">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group ">
-                                                <label for="issueinput5 ">Priority</label>
-                                                <select id="issueinput5 " name="priority " class="form-control " data-toggle="tooltip " data-trigger="hover " data-placement="top " data-title="Priority ">
-                                  <option value="low ">Low</option>
-                                  <option value="medium ">Medium</option>
-                                  <option value="high ">High</option>
-                              </select>
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="issueinput6 ">Status</label>
-                                                <select id="issueinput6 " name="status " class="form-control " data-toggle="tooltip " data-trigger="hover " data-placement="top " data-title="Status ">
-                                  <option value="not started ">Not Started</option>
-                                  <option value="started ">Started</option>
-                                  <option value="fixed ">Fixed</option>
-                              </select>
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="issueinput8 ">Comments</label>
-                                                <textarea id="issueinput8 " rows="5 " class="form-control " name="comments " data-toggle="tooltip " data-trigger="hover " data-placement="top " data-title="Comments "></textarea>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="form-actions ">
-                                            <button type="button " class="btn btn-danger mr-1 ">
-                              <i class="icon-trash "></i> Cancel
-                          </button>
-                                            <button type="button " class="btn btn-success ">
-                              <i class="icon-note "></i> Save
-                          </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 ">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <div class="card-title-wrap bar-danger ">
-                                    <h4 class="card-title " id="basic-layout-icons ">Timesheet</h4>
-                                </div>
-                                <p class="mb-0 ">This form shows the use of icons with form controls. Define the position of the icon using
-                                    <code>has-icon-left</code> or
-                                    <code>has-icon-right</code> class. Use
-                                    <code>icon-*</code> class to define the icon for the form control. See Icons sections for the list of icons you can use. </p>
-                            </div>
-                            <div class="card-body ">
-                                <div class="px-3 ">
-
-                                    <form class="form ">
-                                        <div class="form-body ">
-
-                                            <div class="form-group ">
-                                                <label for="timesheetinput1 ">Employee Name</label>
-                                                <div class="position-relative has-icon-left ">
-                                                    <input type="text " id="timesheetinput1 " class="form-control " name="employeename ">
-                                                    <div class="form-control-position ">
-                                                        <i class="ft-user "></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="timesheetinput2 ">Project Name</label>
-                                                <div class="position-relative has-icon-left ">
-                                                    <input type="text " id="timesheetinput2 " class="form-control " name="projectname ">
-                                                    <div class="form-control-position ">
-                                                        <i class="fa fa-briefcase "></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="timesheetinput3 ">Date</label>
-                                                <div class="position-relative has-icon-left ">
-                                                    <input type="date " id="timesheetinput3 " class="form-control " name="date ">
-                                                    <div class="form-control-position ">
-                                                        <i class="ft-message-square "></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label>Rate Per Hour</label>
-                                                <div class="input-group ">
-                                                    <div class="input-group-prepend ">
-                                                        <span class="input-group-text ">$</span>
-                                                    </div>
-                                                    <input type="text " class="form-control " aria-label="Amount (to the nearest dollar) " name="rateperhour ">
-                                                    <div class="input-group-append ">
-                                                        <span class="input-group-text ">.00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row ">
-                                                <div class="col-md-6 ">
-                                                    <div class="form-group ">
-                                                        <label for="timesheetinput5 ">Start Time</label>
-                                                        <div class="position-relative has-icon-left ">
-                                                            <input type="time " id="timesheetinput5 " class="form-control " name="starttime ">
-                                                            <div class="form-control-position ">
-                                                                <i class="ft-clock "></i>
-                                                            </div>
+                                                            </fieldset>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 ">
-                                                    <div class="form-group ">
-                                                        <label for="timesheetinput6 ">End Time</label>
-                                                        <div class="position-relative has-icon-left ">
-                                                            <input type="time " id="timesheetinput6 " class="form-control " name="endtime ">
-                                                            <div class="form-control-position ">
-                                                                <i class="ft-clock "></i>
-                                                            </div>
+
+
+
+                                                        <div class="form-group ">
+                                                            <label for="userinput5 ">Unit (kg/pc/lb/ml/g...etc)</label>
+                                                            <input class="form-control border-primary " type="text " id="userinput5 ">
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="form-group ">
-                                                <label for="timesheetinput7 ">Notes</label>
-                                                <div class="position-relative has-icon-left ">
-                                                    <textarea id="timesheetinput7 " rows="5 " class="form-control " name="notes "></textarea>
-                                                    <div class="form-control-position ">
-                                                        <i class="ft-file "></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-actions right ">
-                                            <button type="button " class="btn btn-danger mr-1 ">
-                              <i class="icon-trash "></i> Cancel
-                          </button>
-                                            <button type="button " class="btn btn-success ">
-                              <i class="icon-note "></i> Save
-                          </button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row match-height ">
-                    <div class="col-md-6 ">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <div class="card-title-wrap bar-info ">
-                                    <h4 class="card-title " id="basic-layout-round-controls ">Complaint Form</h4>
-                                </div>
-                                <p class="mb-0 ">This is a variation to the default form control styling. In this example all the form controls has round styling. To apply round style add class
-                                    <code>round</code> to any form control.</p>
-                            </div>
-                            <div class="card-body ">
-                                <div class="px-3 ">
-
-                                    <form class="form ">
-                                        <div class="form-body ">
-
-                                            <div class="form-group ">
-                                                <label for="complaintinput1 ">Company Name</label>
-                                                <input type="text " id="complaintinput1 " class="form-control round " name="companyname ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="complaintinput2 ">Employee Name</label>
-                                                <input type="text " id="complaintinput2 " class="form-control round " name="employeename ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="complaintinput3 ">Date of Complaint</label>
-                                                <input type="date " id="complaintinput3 " class="form-control round " name="complaintdate ">
-                                            </div>
-
-
-                                            <div class="form-group ">
-                                                <label for="complaintinput4 ">Supervisor's Name</label>
-                                                <input type="text " id="complaintinput4 " class="form-control round " name="supervisorname ">
-                                            </div>
-
-
-                                            <div class="form-group ">
-                                                <label for="complaintinput5 ">Complaint Details</label>
-                                                <textarea id="complaintinput5 " rows="5 " class="form-control round " name="complaintdetails "></textarea>
-                                            </div>
-
-
-                                            <div class="form-group ">
-                                                <label for="complaintinput6 ">Signature</label>
-                                                <input type="text " id="complaintinput6 " class="form-control round " name="signature ">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-actions ">
-                                            <button type="button " class="btn btn-danger mr-1 ">
-                              <i class="icon-trash "></i> Cancel
-                          </button>
-                                            <button type="button " class="btn btn-success ">
-                              <i class="icon-note "></i> Save
-                          </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 ">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <div class="card-title-wrap bar-success ">
-                                    <h4 class="card-title " id="basic-layout-square-controls ">Donation</h4>
-                                </div>
-                                <p class="mb-0 ">This is another variation to the default form control styling. In this example all the form controls has square styling. To apply square style add class
-                                    <code>square</code> to any form control.</p>
-                            </div>
-                            <div class="card-body ">
-                                <div class="px-3 ">
-
-                                    <form class="form ">
-                                        <div class="form-body ">
-
-                                            <div class="form-group ">
-                                                <label for="donationinput1 ">Full Name</label>
-                                                <input type="text " id="donationinput1 " class="form-control square " name="fullname ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="donationinput2 ">Email</label>
-                                                <input type="email " id="donationinput2 " class="form-control square " name="email ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="donationinput3 ">Contact Number</label>
-                                                <input type="tel " id="donationinput3 " class="form-control square " name="contact ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="donationinput4 ">Dontaion Type</label>
-                                                <input type="text " id="donationinput4 " class="form-control square " name="donationtype ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label>Amount</label>
-                                                <div class="input-group ">
-                                                    <div class="input-group-prepend ">
-                                                        <span class="input-group-text ">$</span>
-                                                    </div>
-                                                    <input type="text " class="form-control square " aria-label="Amount (to the nearest dollar) " name="amount ">
-                                                    <div class="input-group-append ">
-                                                        <span class="input-group-text ">.00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="donationinput7 ">Comments</label>
-                                                <textarea id="donationinput7 " rows="5 " class="form-control square " name="comments "></textarea>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="form-actions right ">
-                                            <button type="button " class="btn btn-danger mr-1 ">
-                              <i class="icon-trash "></i> Cancel
-                          </button>
-                                            <button type="button " class="btn btn-success ">
-                              <i class="icon-note "></i> Save
-                          </button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row match-height ">
-                    <div class="col-md-12 ">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <div class="card-title-wrap bar-warning ">
-                                    <h4 class="card-title " id="basic-layout-form-center ">Event Registration</h4>
-                                </div>
-                                <p class="mb-0 ">This example shows a way to center your form in the card. Here we have used
-                                    <code>.justify-content-md-center .row</code> classe to center the form in a full width card. User can always change column classes according to his requirements. This example also uses form action buttons in the center
-                                    bottom position of the card.</p>
-                            </div>
-                            <div class="card-body ">
-                                <div class="px-3 ">
-
-                                    <form class="form ">
-                                        <div class="row justify-content-md-center ">
-                                            <div class="col-md-6 ">
-                                                <div class="form-body ">
-                                                    <div class="form-group ">
-                                                        <label for="eventInput1 ">Full Name</label>
-                                                        <input type="text " id="eventInput1 " class="form-control " name="fullname ">
-                                                    </div>
-
-                                                    <div class="form-group ">
-                                                        <label for="eventInput2 ">Title</label>
-                                                        <input type="text " id="eventInput2 " class="form-control " name="title ">
-                                                    </div>
-
-                                                    <div class="form-group ">
-                                                        <label for="eventInput3 ">Company</label>
-                                                        <input type="text " id="eventInput3 " class="form-control " name="company ">
-                                                    </div>
-
-                                                    <div class="form-group ">
-                                                        <label for="eventInput4 ">Email</label>
-                                                        <input type="email " id="eventInput4 " class="form-control " name="email ">
-                                                    </div>
-
-                                                    <div class="form-group ">
-                                                        <label for="eventInput5 ">Contact Number</label>
-                                                        <input type="tel " id="eventInput5 " class="form-control " name="contact ">
-                                                    </div>
-
-                                                    <div class="form-group ">
-                                                        <label>Existing Customer</label>
-                                                        <div class="custom-control custom-radio custom-control-inline ">
-                                                            <input type="radio " id="customRadioInline1 " name="customRadioInline1 " class="custom-control-input ">
-                                                            <label class="custom-control-label " for="customRadioInline1 ">Yes</label>
+                                                        <div class="form-group ">
+                                                            <label for="userinput6 ">Product Quantity</label>
+                                                            <input class="form-control border-primary " type="number " id="userinput6 ">
                                                         </div>
-                                                        <div class="custom-control custom-radio custom-control-inline ">
-                                                            <input type="radio " id="customRadioInline2 " checked name="customRadioInline1 " class="custom-control-input ">
-                                                            <label class="custom-control-label " for="customRadioInline2 ">No</label>
+
+                                                        <div class="form-group ">
+                                                            <label>Sale Price</label>
+                                                            <input class="form-control border-primary " id="userinput7 " type="number">
                                                         </div>
+
+                                                        <div class="form-group ">
+                                                            <label for="userinput8 ">Company Address</label>
+                                                            <textarea id="userinput8 " rows="5 " class="form-control border-primary " name="address "></textarea>
+                                                        </div>
+
                                                     </div>
 
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-actions center ">
-                                            <button type="button " class="btn btn-danger mr-1 ">
+                                                    <div class="form-actions right ">
+                                                        <button type="button " class="btn btn-danger mr-1 ">
                               <i class="icon-trash "></i> Cancel
                           </button>
-                                            <button type="button " class="btn btn-success ">
+                                                        <button type="button " class="btn btn-success ">
                               <i class="icon-note "></i> Save
                           </button>
-                                        </div>
-                                    </form>
+                                                    </div>
+                                                </form>
 
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+                        <!-- // Basic form layout section end -->
                     </div>
                 </div>
-
-
-                <div class="row justify-content-md-center ">
-                    <div class="col-md-6 ">
-                        <div class="card ">
-                            <div class="card-header ">
-                                <div class="card-title-wrap bar-primary ">
-                                    <h4 class="card-title " id="basic-layout-card-center ">Event Registration</h4>
-                                </div>
-                                <p class="mb-0 ">This example shows a ways to center your card with form. Here we have used
-                                    <code>.justify-content-md-center .row</code> classes to center the card as its not full width. User can always change column classes according to his requirements. This example also uses form action buttons in the center
-                                    bottom position of the card.</p>
-                            </div>
-                            <div class="card-body ">
-                                <div class="px-3 ">
-                                    <form class="form ">
-                                        <div class="form-body ">
-
-                                            <div class="form-group ">
-                                                <label for="eventRegInput1 ">Full Name</label>
-                                                <input type="text " id="eventRegInput1 " class="form-control " name="fullname ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="eventRegInput2 ">Title</label>
-                                                <input type="text " id="eventRegInput2 " class="form-control " name="title ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="eventRegInput3 ">Company</label>
-                                                <input type="text " id="eventRegInput3 " class="form-control " name="company ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="eventRegInput4 ">Email</label>
-                                                <input type="email " id="eventRegInput4 " class="form-control " name="email ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label for="eventRegInput5 ">Contact Number</label>
-                                                <input type="tel " id="eventRegInput5 " class="form-control " name="contact ">
-                                            </div>
-
-                                            <div class="form-group ">
-                                                <label>Existing Customer</label>
-                                                <div class="input-group ">
-                                                    <div class="custom-control custom-radio display-inline-block ">
-                                                        <input type="radio " id="customRadioInline4 " name="customRadioInline3 " class="custom-control-input ">
-                                                        <label class="custom-control-label " for="customRadioInline4 ">Yes</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio display-inline-block ">
-                                                        <input type="radio " id="customRadioInline3 " checked name="customRadioInline3 " class="custom-control-input ">
-                                                        <label class="custom-control-label " for="customRadioInline3 ">No</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-actions center ">
-                                            <button type="button " class="btn btn-danger mr-1 ">
-                              <i class="icon-trash "></i> Cancel
-                          </button>
-                                            <button type="button " class="btn btn-success ">
-                              <i class="icon-note "></i> Save
-                          </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- // Basic form layout section end -->
+            </div>
         </div>
     </div>
 </div>
