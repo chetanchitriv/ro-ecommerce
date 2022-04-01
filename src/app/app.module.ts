@@ -14,6 +14,7 @@ import { TopNavComponent } from './dashboard/top-nav/top-nav.component';
 import { CustomerComponent } from './dashboard/customer/customer.component';
 import { OrdersComponent } from './dashboard/orders/orders.component';
 import { SettingComponent } from './dashboard/setting/setting.component';
+import { CouponsComponent } from './dashboard/coupons/coupons.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { SettingComponent } from './dashboard/setting/setting.component';
     CustomerComponent,
     OrdersComponent,
     SettingComponent,
+    CouponsComponent,
    
   ],
   imports: [
