@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CustomerComponent } from './dashboard/customer/customer.component';
 import { DashComponent } from './dashboard/dash/dash.component';
 import { MainComponent } from './dashboard/main/main.component';
 import { NavBarComponent } from './dashboard/nav-bar/nav-bar.component';
@@ -27,6 +28,7 @@ children:[
   { path:"",component:DashComponent },
   { path:"dash",component:DashComponent },
   { path:"products",component:ProductsComponent },
+  { path: "customer",component:CustomerComponent}
 ]
 }
 
