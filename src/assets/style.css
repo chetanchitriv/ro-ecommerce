@@ -495,7 +495,7 @@ Version:1.0
 
 .header.shop .list-main li {
     display: inline-block;
-    color: #333;
+    color: rgb(253, 253, 253);
     font-size: 13px;
     font-weight: 500;
     border-right: 1px solid #f0f0f0;
@@ -517,7 +517,7 @@ Version:1.0
 }
 
 .header.shop .list-main li a {
-    color: #333;
+    color: rgb(255, 255, 255);
 }
 
 .header.shop .list-main li a:hover {
