@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CategoriesComponent } from './dashboard/categories/categories.component';
 import { CouponsComponent } from './dashboard/coupons/coupons.component';
 import { CustomerComponent } from './dashboard/customer/customer.component';
 import { DashComponent } from './dashboard/dash/dash.component';
@@ -34,7 +35,8 @@ children:[
   { path: "customer",component:CustomerComponent},
   { path: "orders",component:OrdersComponent},
   { path: "setting", component:SettingComponent},
-  { path: "coupons",component:CouponsComponent}
+  { path: "coupons",component:CouponsComponent},
+  { path: "categories",component:CategoriesComponent}
 ]
 }
 
