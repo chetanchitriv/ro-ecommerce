@@ -15,12 +15,9 @@ import { CustomerComponent } from './dashboard/customer/customer.component';
 import { OrdersComponent } from './dashboard/orders/orders.component';
 import { SettingComponent } from './dashboard/setting/setting.component';
 import { CouponsComponent } from './dashboard/coupons/coupons.component';
-<<<<<<< HEAD
 import { CategoriesComponent } from './dashboard/categories/categories.component';
 
-=======
 import { OurstaffComponent } from './dashboard/ourstaff/ourstaff.component';
->>>>>>> ecdf41e0147efcfb8b00bb2e107912091c0dea0f
 
 
 @NgModule({
@@ -38,12 +35,9 @@ import { OurstaffComponent } from './dashboard/ourstaff/ourstaff.component';
     OrdersComponent,
     SettingComponent,
     CouponsComponent,
-<<<<<<< HEAD
     CategoriesComponent,
    
-=======
     OurstaffComponent,
->>>>>>> ecdf41e0147efcfb8b00bb2e107912091c0dea0f
    
   ],
   imports: [

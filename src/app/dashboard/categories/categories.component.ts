@@ -6,15 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
-  showUserTable: boolean | false | undefined;
-  addProduct: boolean | true | undefined;
+ 
   
+  addCategories:boolean=false;
+  showCategoriesTable:boolean=true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  
+  showForm(){
+    this.addCategories=true;
+    this.showCategoriesTable=false;
+  }
+  showTable(){
+    this.addCategories=false;
+    this.showCategoriesTable=true;
+  }
 }
  
 

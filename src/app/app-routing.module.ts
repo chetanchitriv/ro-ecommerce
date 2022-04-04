@@ -37,11 +37,8 @@ children:[
   { path: "orders",component:OrdersComponent},
   { path: "setting", component:SettingComponent},
   { path: "coupons",component:CouponsComponent},
-<<<<<<< HEAD
-  { path: "categories",component:CategoriesComponent}
-=======
+  { path: "categories",component:CategoriesComponent},
   { path: "ourstaff",component:OurstaffComponent}
->>>>>>> ecdf41e0147efcfb8b00bb2e107912091c0dea0f
 ]
 }
 
