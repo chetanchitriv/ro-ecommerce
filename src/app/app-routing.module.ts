@@ -13,6 +13,7 @@ import { LoginComponent } from './my-account/login/login.component';
 import { SignupComponent } from './my-account/signup/signup.component';
 import { CheckoutComponent } from './web/checkout/checkout.component';
 
+
 const routes: Routes = [
   {
     path: '',
