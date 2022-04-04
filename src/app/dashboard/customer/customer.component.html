@@ -5,8 +5,13 @@
                 <div class="card-header">
                     <div class="card-title-wrap bar-warning">
                         <h4 class="card-title" style=" color:#fff; "><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Customer Information</h4>
+                    </div>
+                    <div class="d-flex add ">
+                        <!-- <button (click)="showTable()" type="button" class="btn btn-success mx-3">Show Table</button> -->
+                        <button type="btn " (click)="showForm()" class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; "> Add customer</button>
 
-
+                        <!-- <button (click)="showTable()" type="button" class="btn btn-success mx-3">Show Table</button> -->
+                        <button type="btn " (click)="showTable()" *ngIf="addCustomer" class="form-control height-50 gradient-timber d-block rounded box-shadow-2 mx-2" style="color: #fff; "> Show Table</button>
                     </div>
 
                 </div>
@@ -21,154 +26,160 @@
                 </div>
             </nav>
 
-
-            <section id="shopping-cart ">
-                <div class="0w ">
-                    <div class="col-sm-12 ">
-                        <div class="card ">
-                            <!-- <div class="card-header ">
+            <div *ngIf="showCustomerTable && !addCustomer">
+                <section id="shopping-cart ">
+                    <div class="0w ">
+                        <div class="col-sm-12 ">
+                            <div class="card ">
+                                <!-- <div class="card-header ">
                                 <div class="card-title-wrap bar-warning ">
                                     <h4 class="card-title ">Invoice Summary</h4>
                                 </div>
                             </div> -->
-                            <div class="card-body ">
-                                <div class="card-block ">
-                                    <div class="table-responsive ">
-                                        <table id="recent-orders " class="table table-hover table-xl mb-0 ">
-                                            <thead>
-                                                <tr>
-                                                    <th class="border-top-0 ">ID</th>
-                                                    <th class="border-top-0 ">Customer</th>
-                                                    <th class="border-top-0 ">Register Date</th>
-                                                    <th class="border-top-0 ">Mail</th>
-                                                    <th class="border-top-0 ">Phone</th>
-                                                    <th class="border-top-0 ">Country</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-truncate ">#lc-855</td>
-                                                    <td class="text-truncate ">
-                                                        Kapil chavhan
-                                                    </td>
-                                                    <td>
-                                                        <a>1/2/2022</a>
-                                                    </td>
+                                <div class="card-body ">
+                                    <div class="card-block ">
+                                        <div class="table-responsive ">
+                                            <table id="recent-orders " class="table table-hover table-xl mb-0 ">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="border-top-0 ">ID</th>
+                                                        <th class="border-top-0 ">Customer</th>
+                                                        <th class="border-top-0 ">Register Date</th>
+                                                        <th class="border-top-0 ">Mail</th>
+                                                        <th class="border-top-0 ">Phone</th>
+                                                        <th class="border-top-0 ">Country</th>
+                                                        <th class="border-top-0 ">Total order</th>
+                                                        <th class="border-top-0 ">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let data of CustomersData; let i=index">
+                                                        <td>{{i+1}}</td>
+                                                        <td>{{data.cname}}</td>
+                                                        <td>{{data.email}}</td>
+                                                        <td>{{data.phone}}</td>
+                                                        <td>{{data.country}}</td>
+                                                        <td>{{data.totalOrder}}</td>
+                                                        <td>{{data.RegisterDate}}</td>
+                                                        <td>
+                                                            <!-- <a class="btn btn-outline-success ">
+                                                                <i class="fa fa-eye "></i>
+                                                            </a> -->
+                                                            <a (click)="onEdit(data)" class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit "></i>
+                                                            </a>
+                                                            <a (click)="deleteCustomers(data)" type="submit" class="btn btn-outline-success mx-2">
+                                                                <i class="fa fa-trash "></i>
+                                                            </a>
 
-                                                    <td>
-                                                        <a>kapil@723</a>
-                                                    </td>
+                                                        </td>
+                                                    </tr>
 
-                                                    <td class="text-truncate ">687668100</td>
-
-
-
-                                                    <td>
-                                                        <a>Dubai</a>
-
-
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate ">#uk-8231</td>
-                                                    <td class="text-truncate ">
-                                                        Nisha Patle
-                                                    </td>
-                                                    <td>
-                                                        <a>2/2/2022</a>
-                                                    </td>
-
-                                                    <td>
-                                                        <a>nisha@365</a>
-                                                    </td>
-                                                    <td class="text-truncate "> 87585100</td>
-
-
-
-                                                    <td>
-                                                        <a>South africa</a>
-
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate ">#oi-2771</td>
-                                                    <td class="text-truncate ">
-                                                        Shital Hatwar
-                                                    </td>
-                                                    <td>
-                                                        <a>3/2/2022</a>
-                                                    </td>
-
-                                                    <td>
-                                                        <a>shital@1788</a>
-                                                    </td>
-
-                                                    <td class="text-truncate "> 588100</td>
-
-
-
-                                                    <td>
-                                                        <a>South America</a>
-
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate ">#hc-751</td>
-                                                    <td class="text-truncate ">
-                                                        Varsha Ghodeswar
-                                                    </td>
-                                                    <td>
-                                                        <a>4/2/2022</a>
-                                                    </td>
-
-                                                    <td>
-                                                        <a>varsha@13</a>
-                                                    </td>
-
-                                                    <td class="text-truncate "> 85858100</td>
-
-
-
-                                                    <td>
-                                                        <a> Africa</a>
-
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate ">#kc-121</td>
-                                                    <td class="text-truncate ">
-                                                        Shweta shende
-                                                    </td>
-                                                    <td>
-                                                        <a>5/2/2022</a>
-                                                    </td>
-
-                                                    <td>
-                                                        <a>Shweta@123</a>
-                                                    </td>
-
-                                                    <td class="text-truncate "> 8586100</td>
-
-
-
-                                                    <td>
-                                                        <a>India</a>
-
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </section>
+            </div>
+
+
+            <!-- form///////////////////////////// -->
+            <div *ngIf="addCustomer && !showCustomerTable" class="main-content1">
+                <div class="content-wrapper ">
+                    <div class="container-fluid ">
+                        <!-- Basic form layout section start -->
+                        <section id="basic-form-layouts ">
+
+                            <div class="card gradient-aqua-marine d-block rounded box-shadow-2 " data-bg-color="aqua-marine ">
+                                <div class="card-header">
+                                    <div class="card-title-wrap bar-warning ">
+                                        <h4 class="card-title text-center" style="color:#fff; ">Add Customer</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-md-8 ">
+                                    <div class="card ">
+
+                                        <div class="card-body ">
+                                            <div class="px-3 ">
+                                                <form class="form " [formGroup]="CustomerForm">
+                                                    <div class="form-body ">
+                                                        <h4 class="form-section ">
+                                                            <i class="icon-user "></i> Add Customer</h4>
+                                                        <div class="row form-group ">
+
+                                                            <label class="col-md-5c ml-3">Customer Profile </label>
+
+                                                            <label id="projectinput8" class="file center-block col-md-6">
+                                                            <input type="file" id="file">
+                                                            <span class="file-custom"></span>
+                                                             </label>
+
+
+                                                        </div>
+
+
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Customer Name</label>
+                                                            <input type="text " id="projectinput1 " class="form-control " formControlName="cname" name="cname ">
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">E-Mail</label>
+                                                            <input type="email " id="projectinput1 " class="form-control" formControlName="email" name="email ">
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Phone</label>
+                                                            <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number " maxlength="10" id="projectinput1 " class="form-control " formControlName="phone" name="number ">
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Country</label>
+                                                            <input type="text " id="projectinput1 " class="form-control " formControlName="country" name="country ">
+                                                        </div>
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Total order</label>
+                                                            <input type="totalorder " id="projectinput1 " class="form-control " formControlName="totalOrder" name="totalorder ">
+                                                        </div>
+
+                                                        <div class="form-group ">
+                                                            <label for="projectinput1 ">Customers Register date</label>
+                                                            <input type="date" formControlName="complaintDate" class="form-control" formControlName="RegisterDate">
+                                                        </div>
+
+                                                        <div class="form-actions right ">
+                                                            <button type="button " class="btn btn-danger mr-1 ">
+                                      <i class="icon-trash "></i> Cancel
+                                  </button>
+                                                            <button *ngIf="showAddbutton" type="button " (click)="postCustomersDetail()" [disabled]="CustomerForm.invalid" class="btn btn-success ">
+                                      <i class="icon-note "></i> Save
+                                  </button>
+                                                            <button *ngIf="showUpdatebutton" type="button " (click)="updateCustomerDetails()" class="btn btn-success ">
+                                    <i class="icon-note "></i> Update
+                                </button>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </section>
+                        <!-- // Basic form layout section end -->
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
 </div>
