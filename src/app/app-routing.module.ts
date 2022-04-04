@@ -4,7 +4,6 @@ import { CouponsComponent } from './dashboard/coupons/coupons.component';
 import { CustomerComponent } from './dashboard/customer/customer.component';
 import { DashComponent } from './dashboard/dash/dash.component';
 import { MainComponent } from './dashboard/main/main.component';
-import { NavBarComponent } from './dashboard/nav-bar/nav-bar.component';
 import { OrdersComponent } from './dashboard/orders/orders.component';
 import { OurstaffComponent } from './dashboard/ourstaff/ourstaff.component';
 import { ProductsComponent } from './dashboard/products/products.component';
@@ -23,7 +22,6 @@ const routes: Routes = [
 { path: "login", component: LoginComponent },
 { path: "signup", component: SignupComponent },
 { path: "checkout",component:CheckoutComponent},
-
 { path:"home",component:HomeComponent},
 // {path:"dash",component:DashComponent},
 
@@ -40,8 +38,7 @@ children:[
   { path: "coupons",component:CouponsComponent},
   { path: "ourstaff",component:OurstaffComponent},
  
-],
-
+]
 }
 
 // { path:"nav-bar",component:NavBarComponent},
