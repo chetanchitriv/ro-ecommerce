@@ -1,0 +1,13 @@
+select.form-control{
+    width: 344px;
+    margin: 0px 0px 0px -16px;
+   
+}
+.file {
+    margin: -19px -1px 10px 394px;
+    border-style: dashed;
+    height: 80px;
+    width: 550px;
+    padding: 17px 1px 62px 192px;
+    color: rgb(197, 194, 194);
+}
