@@ -20,6 +20,7 @@ import { CategoriesComponent } from './dashboard/categories/categories.component
 
 import { OurstaffComponent } from './dashboard/ourstaff/ourstaff.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CheckoutComponent } from './web/checkout/checkout.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CategoriesComponent,
    
     OurstaffComponent,
+    CheckoutComponent,
    
   ],
   imports: [
