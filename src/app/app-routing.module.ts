@@ -12,6 +12,7 @@ import { SettingComponent } from './dashboard/setting/setting.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './my-account/login/login.component';
 import { SignupComponent } from './my-account/signup/signup.component';
+import { CheckoutComponent } from './web/checkout/checkout.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
 },
 { path: "login", component: LoginComponent },
 { path: "signup", component: SignupComponent },
+{ path: "checkout",component:CheckoutComponent},
 
 { path:"home",component:HomeComponent},
 // {path:"dash",component:DashComponent},
@@ -36,8 +38,10 @@ children:[
   { path: "orders",component:OrdersComponent},
   { path: "setting", component:SettingComponent},
   { path: "coupons",component:CouponsComponent},
-  { path: "ourstaff",component:OurstaffComponent}
-]
+  { path: "ourstaff",component:OurstaffComponent},
+ 
+],
+
 }
 
 // { path:"nav-bar",component:NavBarComponent},
