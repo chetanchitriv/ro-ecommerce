@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
+  addProduct:boolean=false;
+  showUserTable:boolean=true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+showForm(){
+  this.addProduct=true;
+  this.showUserTable=false;
+}
+showTable(){
+  this.addProduct=false;
+  this.showUserTable=true;
+}
 }
