@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './my-account/login/login.component';
 import { SignupComponent } from './my-account/signup/signup.component';
 import { CheckoutComponent } from './web/checkout/checkout.component';
-import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
+import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
 
 
 const routes: Routes = [
@@ -22,10 +22,13 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
 },
-{ path: "login", component: LoginComponent },
-{ path: "signup", component: SignupComponent },
-{ path: "checkout",component:CheckoutComponent},
+
+// { path: "login", component: LoginComponent },
+// { path: "signup", component: SignupComponent },
+// { path: "checkout",component:CheckoutComponent},
+
 { path:"home",component:HomeComponent},
+
 // {path:"dash",component:DashComponent},
 
 // { path:"nav-bar",component:NavBarComponent},
@@ -41,9 +44,15 @@ children:[
   { path: "setting", component:SettingComponent},
   { path: "coupons",component:CouponsComponent},
   { path: "ourstaff",component:OurstaffComponent},
-  { path: "categories",component:CategoriesComponent},
-  { path: "myprofile", component:MyprofileComponent}
+  // { path: "categories",component:CategoriesComponent}
+]
+},
 
+{ path:"main-dashboard", component:MainDashboardComponent ,
+children:[
+  { path: "checkout", component:CheckoutComponent },
+  { path: "login", component: LoginComponent },
+  { path: "signup", component: SignupComponent }
 ]
 }
 

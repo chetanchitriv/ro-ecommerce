@@ -7,6 +7,10 @@ export const environment = {
   apiUrl:"http://localhost:3000/",
   
 };
+// command for watch json ....  json-server --watch db.json
+
+// change class in website template navbar = navbar1, navbar-collapse = navbar-collapse-main , footer = footer1
+
 
 /*
  * For easier debugging in development mode, you can import the following file
