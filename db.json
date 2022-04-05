@@ -28,11 +28,12 @@
       "id": 4
     }
   ],
-  "comments": [
+  "categories": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "categoriestype": "Laptop",
+      "publisheddate": "2022-04-06",
+      "visibilitystatus": "Published",
+      "id": 1
     }
   ],
   "profile": {

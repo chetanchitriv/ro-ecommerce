@@ -9,9 +9,9 @@
                         </div>
                         <div class="d-flex" style="margin: -29px 0px -5px 868px;">
                             <!-- <button (click)="showTable()" type="button" class="btn btn-success mx-3">Show Table</button> -->
-                            <button (click)="showTable()" *ngIf="addCategories" type="btn " class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; width: 102px; padding: 0px 0px 0px 3px;" > Show Table</button>
+                            <button (click)="showTable()" *ngIf="addCategories" type="btn " class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; width: 102px; padding: 0px 0px 0px 3px;"> Show Table</button>
                         </div>
-                       
+
                     </div>
 
                 </div>
@@ -45,13 +45,14 @@
                                                 </select>
                                             </fieldset>
                                         </div> -->
-                                        
 
 
-                                         <div class="col-4">
+
+                                        <div class="col-4">
                                             <fieldset class="form-group ">
                                                 <label for="basicSelect "></label>
-                                                <select class="form-control height-50 width: 342px;" id="basicSelect ">
+                                                <select class="form-control height-50 width: 343px;
+                                                margin: 0px 0px 0px -16px;" id="basicSelect ">
                                                   <option>category</option>
                                                   <option>Option 1</option>
                                                   <option>Option 2</option>
@@ -60,7 +61,7 @@
                                                   <option>Option 5</option>
                                                 </select>
                                             </fieldset>
-                                        </div> 
+                                        </div>
 
                                         <div class="col-4 ">
                                             <fieldset class="form-group ">
@@ -68,7 +69,7 @@
                                                 <!-- <button type="btn " class="form-control height-50 bg-danger d-block rounded box-shadow-2 " style="color: #fff; " data-bs-toggle="modal " data-bs-target="#exampleModal "><i class="fa fa-plus " >&nbsp; Add Products</i></button> -->
 
 
-                                                <button   (click)="showForm()"   type="button" class="form-control height-50 bg-purple d-block rounded box-shadow-2 " data-toggle="modal " data-backdrop="false " data-target="#primary " style="color: #fff; ">
+                                                <button (click)="showForm()" type="button" class="form-control height-50 bg-purple d-block rounded box-shadow-2 " data-toggle="modal " data-backdrop="false " data-target="#primary " style="color: #fff; ">
                                                     <i class="fa fa-plus " >&nbsp; Add Categories</i>
                                                     </button>
                                             </fieldset>
@@ -85,243 +86,103 @@
 
             <!-- //////////////////////////////////////////////// -->
 
-           <div *ngIf="showCategoriesTable && !addCategories">
-            <section id="shopping-cart">
-                <div class="row ">
-                    <div class="col-sm-12 ">
-                        <div class="card ">
-                            <!-- <div class="card-header ">
+            <div *ngIf="showCategoriesTable && !addCategories">
+                <section id="shopping-cart">
+                    <div class="row ">
+                        <div class="col-sm-12 ">
+                            <div class="card ">
+                                <!-- <div class="card-header ">
                             <div class="card-title-wrap bar-warning ">
                                 <h4 class="card-title ">Invoice Summary</h4>
                             
                         </div> -->
-                            <div class="card-body ">
-                                <div class="card-block ">
-                                    <div class="table-responsive ">
-                                        <table id="recent-orders " class="table table-hover table-xl mb-0 ">
-                                            <thead style="background-color: rgb(195, 200, 204);">
-                                                <tr>
-                                                    <th class="border-top-0">Status</th>
-                                                    <th class="border-top-0 ">Product Name</th>
-                                                    <th class="border-top-0 ">Categories</th>
-                                                    <th class="border-top-0 ">Price</th>
-                                                    <th class="border-top-0 ">Stock</th>
-                                                    <th class="border-top-0 ">Published</th>
-                                                    <th class="border-top-0 "> &nbsp; &nbsp; &nbsp; &nbsp; Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o success font-medium-1 mr-1 "></i> Paid</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-success round ">Food</button>
-                                                    </td>
+                                <div class="card-body ">
+                                    <div class="card-block ">
+                                        <div class="table-responsive ">
+                                            <table id="recent-orders " class="table table-hover table-xl mb-0 ">
+                                                <thead style="background-color: rgb(195, 200, 204);">
+                                                    <tr>
 
-                                                    <td class="text-truncate ">$ 1200.00</td>
+                                                        <th class="border-top-0">ID</th>
+                                                        <th class="border-top-0 ">CATEGORIES</th>
+                                                        <th class="border-top-0 ">DATE</th>
+                                                        <th class="border-top-0 ">STATUS</th>
+                                                        <!-- <th class="border-top-0 ">Stock</th>
+                                                    <th class="border-top-0 ">Published</th> -->
+                                                        <th class="border-top-0 "> &nbsp; &nbsp; &nbsp; &nbsp; Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let data of CategoriesData; let i=index">
+                                                        <td>{{i+1}}</td>
+                                                        <td>{{data.categoriestype}}</td>
+                                                        <td>{{data.publisheddate}}</td>
+                                                        <td>{{data.visibilitystatus}}</td>
 
-                                                    <td class="text-truncate "> 100</td>
 
-                                                    <td>
-
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
-
-                                                    <td>
-                                                        <a class="btn btn-outline-warning ">
+                                                        <td>
+                                                            <!-- <a class="btn btn-outline-warning ">
                                                             <i class="fa fa-eye"></i>
-                                                        </a> &nbsp;
-                                                        <a (click)="showForm()" class="btn btn-outline-success ">
-                                                           <i class="fa fa-edit"></i>
-                                                        </a> &nbsp;
-                                                        <a class="btn btn-outline-danger ">
-                                                             <i class="fa fa-trash"></i>
-                                                        </a>
+                                                        </a> &nbsp; -->
+                                                            <a (click)="onEdit(data)" class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit"></i>
+                                                            </a> &nbsp;
+                                                            <a (click)="deleteCategories(data)" class="btn btn-outline-danger ">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
 
-                                                    </td>
+                                                        </td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o danger font-medium-1 mr-1 "></i> Declined</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
-                                                    </td>
+                                                    </tr>
 
-                                                    <td class="text-truncate ">$ 1200.00</td>
 
-                                                    <td class="text-truncate "> 100</td>
 
-                                                    <td>
 
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
-
-                                                    <td>
-                                                        <a class="btn btn-outline-warning ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a> &nbsp;
-                                                        <a (click)="showForm()" class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a> &nbsp;
-                                                        <a class="btn btn-outline-danger ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o warning font-medium-1 mr-1 "></i> Pending</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-warning round ">Food</button>
-                                                    </td>
-
-                                                    <td class="text-truncate ">$ 1200.00</td>
-
-                                                    <td class="text-truncate "> 100</td>
-
-                                                    <td>
-
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
-
-                                                    <td>
-                                                        <a class="btn btn-outline-warning ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a>&nbsp;&nbsp;
-                                                        <a (click)="showForm()" class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a>&nbsp;&nbsp;
-                                                        <a class="btn btn-outline-danger ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o success font-medium-1 mr-1 "></i> Paid</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-success round ">Food</button>
-                                                    </td>
-
-                                                    <td class="text-truncate ">$ 1200.00</td>
-
-                                                    <td class="text-truncate "> 100</td>
-
-                                                    <td>
-
-                                                        <div  class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
-
-                                                    <td>
-                                                        <a class="btn btn-outline-warning ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a> &nbsp;
-                                                        <a (click)="showForm()" class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a>  &nbsp;
-                                                        <a class="btn btn-outline-danger ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate "><i class="fa fa-dot-circle-o danger font-medium-1 mr-1 "></i> Paid</td>
-                                                    <td class="text-truncate ">
-                                                        Food
-                                                    </td>
-                                                    <td>
-                                                        <button type="button " class="btn btn-sm btn-outline-danger round ">Food</button>
-                                                    </td>
-
-                                                    <td class="text-truncate ">$ 1200.00</td>
-
-                                                    <td class="text-truncate "> 100</td>
-
-                                                    <td>
-
-                                                        <div class="progress mb-2 ">
-                                                            <div class="progress-bar progress-bar-striped bg-primary " role="progressbar " aria-valuenow="35 " aria-valuemin="20 " aria-valuemax="100 " style="width:35% "></div>
-                                                        </div>
-                                                    </td>
-
-                                                    <td>
-                                                        <a class="btn btn-outline-warning ">
-                                                            <i class="fa fa-eye "></i>
-                                                        </a> &nbsp;
-                                                        <a  (click)="showForm()" class="btn btn-outline-success ">
-                                                            <i class="fa fa-edit "></i>
-                                                        </a> &nbsp;
-                                                        <a class="btn btn-outline-danger ">
-                                                            <i class="fa fa-trash "></i>
-                                                        </a>
-
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-           </div>
+                </section>
+            </div>
         </div>
 
 
-            <!-- ///////////////////////////////// -->
-           
-            <div *ngIf="addCategories && !showCategoriesTable" class="main-content1">
-                <div class="content-wrapper ">
-                    <div class="container-fluid ">
-                       
-                        <section id="basic-form-layouts">
+        <!-- ///////////////////////////////// -->
 
-                            <div class="card gradient-aqua-marine d-block rounded box-shadow-2" data-bg-color="aqua-marine ">
-                                <div class="card-header">
-                                    <div class="card-title-wrap bar-warning ">
-                                        <h4 class="card-title text-center" style="color:#fff; ">Add Categories</h4>
-                                    </div>
+        <div *ngIf="addCategories && !showCategoriesTable" class="main-content1">
+            <div class="content-wrapper ">
+                <div class="container-fluid ">
+
+                    <section id="basic-form-layouts">
+
+                        <div class="card gradient-aqua-marine d-block rounded box-shadow-2" data-bg-color="aqua-marine ">
+                            <div class="card-header">
+                                <div class="card-title-wrap bar-warning ">
+                                    <h4 class="card-title text-center" style="color:#fff; ">Add Categories</h4>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="row" style="margin-left:auto;margin-right:auto" >
-                                <div class="col-md-12" >
-                                    <div class="card ">
-                                        <div class="card-header ">
-                                            <div class="card-title-wrap bar-success ">
+                        <div class="row" style="margin-left:auto;margin-right:auto">
+                            <div class="col-md-11">
+                                <div class="card ">
+                                    <div class="card-header ">
+                                        <!-- <div class="card-title-wrap bar-success ">
                                                 <h4 class="card-title " id="basic-layout-form ">Add your category</h4>
-                                            </div>
-                                            <p class="mb-0 ">Add your category and necessary information from here</p>
-                                        </div>
-                                        <div class="card-body ">
-                                            <div class="px-3 ">
-                                                <form class="form ">
-                                                    <div class="form-body ">
-                                                        <h4 class="form-section ">
-                                                            <i class="icon-list "></i>  &nbsp; Category Details</h4>
-                                                        <div class="row form-group ">
+                                            </div> -->
+                                        <!-- <p class="mb-0 ">Add your category and necessary information from here</p> -->
+                                    </div>
+                                    <div class="card-body ">
+                                        <div class="px-3 ">
+                                            <form class="form" [formGroup]="CategoriesForm">
+                                                <div class="form-body ">
+                                                    <h3 class="form-section ">
+                                                        <i class="icon-list "></i> &nbsp; <b>Add Your Categories </b> </h3>
+                                                    <!-- <div class="row form-group ">
 
                                                             <label class="col-md-5c ml-3">category Image: </label>
 
@@ -331,62 +192,69 @@
                                                              </label>
 
 
-                                                        </div>
-
-
-                                                        <div class="col-md-11">
-                                                            <fieldset class="form-group">
-                                                                <label for="basicSelect"  >Product Type :</label>
-                                                                <select class="form-control" style="width: 898px;"  id="basicSelect">
-                                                          <option>Select Type</option>
-                                                          <option>Option 1</option>
-                                                          <option>Option 2</option>
-                                                          <option>Option 3</option>
-                                                          <option>Option 4</option>
-                                                          <option>Option 5</option>
-                                                        </select>
-                                                            </fieldset>
-                                                        </div>
-                                                        <div class="form-group ">
-                                                            <label for="projectinput1 ">Parent category :</label>
-                                                            <input type="text " id="projectinput1 " placeholder="category title" class="form-control " name="fname ">
-                                                        </div>
-                                                        <div class="form-group ">
-                                                            <label for="projectinput1 ">Child category  :</label>
-                                                            <input type="text " id="projectinput1" placeholder="child category" class="form-control " name="fname ">
-                                                        </div>
-                                                        <!-- <div class="form-group ">
-                                                            <label for="projectinput1 ">Product Description</label>
-                                                            <input type="text " id="projectinput1 " class="form-control " name="fname ">
                                                         </div> -->
 
-                                                                   
-                                                        <div class="form-actions right ">
-                                                            <button type="button " class="btn btn-danger mr-1 ">
-                                  <i class="icon-trash "></i> Cancel
-                              </button>
-                                                            <button type="button " class="btn btn-success ">
-                                  <i class="icon-note "></i> Add category
-                              </button>
-                                                        </div>
 
-                                                        <!-- <div class="form-group row">
+                                                    <div class="col-md-10">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicSelect"><b>Categories Type :</b></label>
+                                                            <select class="form-control" formControlName="categoriestype" name="categoriestype " style="width: 849px;" id="basicSelect">
+                                                                   
+                                                          <option value="">Select Categories</option>
+                                                          <option [ngValue]="categoriestype" *ngFor="let categoriestype of categoriestypes">{{categoriestype}}</option>
+                                                         
+                                                        </select>
+                                                        </fieldset>
+                                                    </div>
+                                                    <!-- <div class="form-group ">
+                                                            <label for="projectinput1 ">Parent category :</label>
+                                                            <input type="text " id="projectinput1 " placeholder="category title" class="form-control " name="fname ">
+                                                        </div> -->
+
+                                                    <div class="form-group ">
+                                                        <label for="projectinput1 "> Published Date :</label>
+                                                        <input type="date" formControlName="publisheddate" class="form-control">
+                                                    </div>
+
+
+                                                    <div class="form-group ">
+                                                        <label for="projectinput1 "> Select Status:</label><br>
+                                                        <mat-radio-group aria-label="Select an option" formControlName="visibilitystatus">
+                                                            <mat-radio-button *ngFor="let status of allstatus" [value]="status">{{status}}</mat-radio-button>
+
+                                                        </mat-radio-group>
+                                                    </div>
+
+
+                                                    <div class="form-actions right ">
+                                                        <button type="button " class="btn btn-danger mr-1 ">
+                                  <i class="icon-trash "></i> CANCEL
+                              </button>
+                                                        <button *ngIf="showAddbutton" (click)="postCategoriesDetails()" type="button " class="btn btn-success ">
+                                <i class="icon-note "></i> Save
+                            </button>
+                                                        <button *ngIf="showUpdatebutton" type="button " (click)="updateCategoriesDetails()" class="btn btn-success ">
+                                    <i class="icon-note "></i> Update
+                                </button>
+                                                    </div>
+
+                                                    <!-- <div class="form-group row">
                                                             <label class="col-md-3 label-control" for="projectinput9">Project Brief: </label>
                                                             <div class="col-md-9">
                                                                 <textarea id="projectinput9" rows="5" class="form-control" name="comment"></textarea>
                                                             </div>
                                                         </div> -->
 
-                                                    </div>
+                                                </div>
 
 
-                                                </form>
-                                            </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <!-- <div class="col-md-6 ">
+                            <!-- <div class="col-md-6 ">
                                     <div class="card ">
                                         <div class="card-header ">
                                             <div class="card-title-wrap bar-warning ">
@@ -467,15 +335,12 @@
                                         </div>
                                     </div>
                                 </div> -->
-                            </div>
-                        </section>
-                        <!-- // Basic form layout section end -->
-                    </div>
+                        </div>
+                    </section>
+                    <!-- // Basic form layout section end -->
                 </div>
+            </div>
             <!-- </div> -->
 
-            </div> 
-    </div> 
-
-
-
+        </div>
+    </div>
