@@ -1,7 +1,8 @@
 <!-- Header -->
 <header class="header shop">
-    <!-- Topbar -->
-    <div class="topbar">
+
+
+    <div class="topbar" data-bg-color="aqua-marine" class="card gradient-aqua-marine d-block rounded box-shadow-2" style="margin: 0px;color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
@@ -19,9 +20,9 @@
                     <div class="right-content">
                         <ul class="list-main">
                             <li><i class="ti-location-pin"></i> Store location</li>
-                            <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
-                            <li><i class="ti-user"></i> <a href="#">My account</a></li>
-                            <li><i class="ti-power-off"></i><a href="login.html#">Login</a></li>
+                            <li><i class="ti-alarm-clock"></i> <a>Daily deal</a></li>
+                            <li><i class="ti-user"></i> <a routerLink="/main">My account</a></li>
+                            <li><i class="ti-power-off"></i><a routerLink="/login">Login</a></li>
                         </ul>
                     </div>
                     <!-- End Top Right -->
@@ -29,19 +30,19 @@
             </div>
         </div>
     </div>
-    <!-- End Topbar -->
+
     <div class="middle-inner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-12">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                        <a><img src="assets/images/logo.png" alt="logo"></a>
                     </div>
                     <!--/ End Logo -->
                     <!-- Search Form -->
                     <div class="search-top">
-                        <div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+                        <div class="top-search"><a><i class="ti-search"></i></a></div>
                         <!-- Search Form -->
                         <div class="search-top">
                             <form class="search-form">
@@ -57,12 +58,7 @@
                 <div class="col-lg-8 col-md-7 col-12">
                     <div class="search-bar-top">
                         <div class="search-bar">
-                            <select>
-                                <option selected="selected">All Category</option>
-                                <option>watch</option>
-                                <option>mobile</option>
-                                <option>kid’s item</option>
-                            </select>
+
                             <form>
                                 <input name="search" placeholder="Search Products Here....." type="search">
                                 <button class="btnn"><i class="ti-search"></i></button>
@@ -74,39 +70,39 @@
                     <div class="right-bar">
                         <!-- Search Form -->
                         <div class="sinlge-bar">
-                            <a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                         </div>
                         <div class="sinlge-bar">
-                            <a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                            <a class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                         </div>
                         <div class="sinlge-bar shopping">
-                            <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+                            <a class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
                             <!-- Shopping Item -->
                             <div class="shopping-item">
                                 <div class="dropdown-cart-header">
                                     <span>2 Items</span>
-                                    <a href="#">View Cart</a>
+                                    <a>View Cart</a>
                                 </div>
                                 <ul class="shopping-list">
                                     <li>
-                                        <a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                        <a class="cart-img" href="#"><img src="images/product-1.jpg" alt="#"></a>
-                                        <h4><a href="#">Woman Ring</a></h4>
-                                        <p class="quantity">1x - <span class="amount">$99.00</span></p>
+                                        <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+                                        <a class="cart-img"><img src="assets/images/product-1.jpg" alt="#"></a>
+                                        <h4><a>Doctor Fresh Life Veda</a></h4>
+                                        <b><p class="quantity">1x - <span >15,940/-</span></p></b>
                                     </li>
                                     <li>
-                                        <a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                        <a class="cart-img" href="#"><img src="images/product-2.jpg" alt="#"></a>
-                                        <h4><a href="#">Woman Necklace</a></h4>
-                                        <p class="quantity">1x - <span class="amount">$35.00</span></p>
+                                        <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+                                        <a class="cart-img"><img src="assets/images/product-2.jpg" alt="#"></a>
+                                        <h4><a>Puret Marvela RO+Cold</a></h4>
+                                        <p class="quantity">1x - <span class="amount">14660/-</span></p>
                                     </li>
                                 </ul>
                                 <div class="bottom">
                                     <div class="total">
                                         <span>Total</span>
-                                        <span class="total-amount">$134.00</span>
+                                        <span class="total-amount">26,560/-</span>
                                     </div>
-                                    <a href="checkout.html" class="btn animate">Checkout</a>
+                                    <a routerLink="/checkout" class="btn animate">Checkout</a>
                                 </div>
                             </div>
                             <!--/ End Shopping Item -->
@@ -116,55 +112,52 @@
             </div>
         </div>
     </div>
-    <!-- Header Inner -->
-    <div class="header-inner">
+
+    <div class="header-inner" data-bg-color="aqua-marine" class="card gradient-aqua-marine d-block rounded box-shadow-2" style="margin: 0px;color: #fff;">
         <div class="container">
             <div class="cat-nav-head">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-3">
+                        <div class="all-category">
+                            <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12">
                         <div class="menu-area">
                             <!-- Main Menu -->
-                            <nav class="navbar navbar-expand-lg">
-                                <div class="navbar-collapse">
+                            <nav class="navbar1 navbar-expand-lg">
+                                <div class="navbar-collapse-main">
                                     <div class="nav-inner">
                                         <ul class="nav main-menu menu navbar-nav">
-                                            <li class="active"><a routerLink="/home">Home<i class="ti-angle-down"></i></a>
-                                                <!-- <ul class="dropdown">
-                                                    <li><a href="index.html">Home Ecommerce V1</a></li>
-                                                    <li><a href="index2.html">Home Ecommerce V2</a></li>
-                                                    <li><a href="index3.html">Home Ecommerce V3</a></li>
-                                                    <li><a href="index4.html">Home Ecommerce V4</a></li>
-                                                </ul> -->
-                                            </li>
-                                            <li><a href="#">Product</a></li>
-                                            <li><a href="#">Service</a></li>
-                                            <li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
+                                            <li><a href="#">Home<i ></i></a> </li>
+
+                                            <li><a href="#">Products<i class="ti-angle-down"></i></a>
                                                 <ul class="dropdown">
-                                                    <li><a href="shop-grid.html">Shop Grid</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="shop-single.html">shop Single</a></li>
-                                                    <li><a href="cart.html">Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="shop-grid.html">Water purifier</a></li>
+                                                    <li><a href="shop-list.html">Vaccum Cleaner</a></li>
+                                                    <li><a href="shop-single.html">Water Ionizer</a></li>
+                                                    <li><a href="cart.html">Air Purifier</a></li>
+                                                    <li><a href="checkout.html">Water Tank</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Pages<i class="ti-angle-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="about-us.html">About Us</a></li>
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="register.html">Register</a></li>
-                                                    <li><a href="mail-success.html">Mail Success</a></li>
-                                                    <li><a href="404.html">404</a></li>
+                                            <li><a href="#">Spare Parts<i class="ti-angle-down"></i></a>
+                                                <ul class="dropdown" style="width: 350%;">
+                                                    <li><a>Water Purifier Spare Parts</a></li>
+
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Blog<i class="ti-angle-down"></i></a>
+                                            <li><a>Blog<i class="ti-angle-down"></i></a>
                                                 <ul class="dropdown">
-                                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                    <li><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
-                                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                                    <li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
+                                                    <li><a>Water Purifier</a></li>
+                                                    <li><a>Water Softner</a></li>
+                                                    <li><a>Air Purifier</a></li>
+                                                    <li><a>Hindi Blog</a></li>
+                                                    <li><a>News</a></li>
+                                                    <li><a>Health</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a>Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -176,72 +169,57 @@
             </div>
         </div>
     </div>
-    <!--/ End Header Inner -->
+
+    <section class="shop login section" style="background-color: peachpuff;;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-12">
+                    <div class="login-form">
+                        <h2>Sign-up</h2>
+                        <p>Please register in order to checkout more quickly</p>
+                        <!-- Form -->
+                        <form class="form" method="post" action="#">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label style="margin: -2px 0px 16px 32px;">Enter Name<span>*</span></label>
+                                        <input type="text" name="text" placeholder="enter your name" required="required" style="background-color: rgb(255, 255, 255);">
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="margin: -2px 0px 16px 32px;">Enter Email<span>*</span></label>
+                                        <input type="email" name="email" placeholder="enter email address" required="required" style="background-color: rgb(255, 255, 255);">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label style="margin: -2px 0px 16px 32px;">Your Password<span>*</span></label>
+                                        <input type="password" name="password" placeholder="enter password" required="required" style="background-color: rgb(255, 255, 255);">
+                                        <div style="margin: 14px 0px -14px 0px;">
+                                            <a href="#" class="lost-pass">Lost your password?</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group login-btn" style="margin: 24px 9px 0px 194px; ">
+
+                                        <button routerLink="/signup" class="btn bg-dark" type="submit">Sign up</button>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </form>
+                        <!--/ End Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </header>
-<!--/ End Header -->
 
-<!-- Breadcrumbs -->
-<div class="breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="bread-inner">
-                    <ul class="bread-list">
-                        <li><a routerLink="/home">Home<i class="ti-arrow-right"></i></a></li>
-                        <li class="active"><a href="blog-single.html">Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Breadcrumbs -->
 
-<!-- Shop Login -->
-<section class="shop login section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 col-12">
-                <div class="login-form">
-                    <h2>Login</h2>
-                    <p>Please register in order to checkout more quickly</p>
-                    <!-- Form -->
-                    <form class="form" method="post" action="#">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label>Your Email<span>*</span></label>
-                                    <input type="email" name="email" placeholder="" required="required">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label>Your Password<span>*</span></label>
-                                    <input type="password" name="password" placeholder="" required="required">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group login-btn">
-                                    <button class="btn" type="submit">Login</button>
-                                    <a href="register.html" class="btn">Register</a>
-                                </div>
-                                <div class="checkbox">
-                                    <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Remember me</label>
-                                </div>
-                                <a href="#" class="lost-pass">Lost your password?</a>
-                            </div>
-                        </div>
-                    </form>
-                    <!--/ End Form -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ End Login -->
-
-<!-- Start Footer Area -->
-<footer class="footer">
+<footer class="footer1">
     <!-- Footer Top -->
     <div class="footer-top section">
         <div class="container">
@@ -249,24 +227,27 @@
                 <div class="col-lg-5 col-md-6 col-12">
                     <!-- Single Widget -->
                     <div class="single-footer about">
-                        <div class="logo">
-                            <a href="index.html"><img src="images/logo2.png" alt="#"></a>
-                        </div>
-                        <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-                        <p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
+
+                        <p class="text">RO Care India Is One Of The Trusted & Independent Water Purifier Service Provider In India. At RO Care India, We Offer A Complete Solution Such As RO Installation, RO Repair, Maintenance And AMC Service For Domestic, Commercial
+                            & Industrial Water Purifier. We Deal In All Brands Of Water Purifier At A Relatively Low Price.RO Care India is a unit of 3D Logic Pvt. Ltd.</p>
+                        <p class="call">Got Question? Call us 24/7<span><a  style="color: rgb(4, 253, 232);">
+                            <i class="fa fa-phone" style="color:rgb(4, 253, 232);">&nbsp;</i>9156930753</a></span></p>
+                        <p class="call">Got Question? E-Mail us 24/7<span><a  style="color:rgb(4, 253, 232);"><i class="fa fa-envelope"  style="color: rgb(4, 253, 232);">&nbsp;</i>avestantechnology@gmail.com</a></span></p>
                     </div>
                     <!-- End Single Widget -->
                 </div>
                 <div class="col-lg-2 col-md-6 col-12">
                     <!-- Single Widget -->
                     <div class="single-footer links">
-                        <h4>Information</h4>
+                        <h4>Categories</h4>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Help</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>RO Plant</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>Water Softner</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>Water Dispenser</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>Water ATM</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>Water Ionizer</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>Water Cooler</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>Water Purifier </a></li>
                         </ul>
                     </div>
                     <!-- End Single Widget -->
@@ -274,39 +255,43 @@
                 <div class="col-lg-2 col-md-6 col-12">
                     <!-- Single Widget -->
                     <div class="single-footer links">
-                        <h4>Customer Service</h4>
+                        <h4>Useful links</h4>
                         <ul>
-                            <li><a href="#">Payment Methods</a></li>
-                            <li><a href="#">Money-back</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Shipping</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>RO service</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>Buy Water Purifier</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>All Products</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a>All Vendor</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a> Contact</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a> Store Locator</a></li>
+                            <li class="fa fa-chevron-circle-right" style="color: azure;">&nbsp; &nbsp;<a> Careers</a></li>
                         </ul>
                     </div>
                     <!-- End Single Widget -->
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Widget -->
+
                     <div class="single-footer social">
                         <h4>Get In Tuch</h4>
-                        <!-- Single Widget -->
+
                         <div class="contact">
                             <ul>
-                                <li>NO. 342 - London Oxford Street.</li>
-                                <li>012 United Kingdom.</li>
-                                <li>info@eshop.com</li>
-                                <li>+032 3456 7890</li>
+                                <li>
+                                    <strong>Head office</strong>
+                                </li>
+                                <li>Unit No. 1017-A to 1017-I 10th Floor, Gayatri Nagar, Amravati Road, Sector-48, Nagpur, Nagpur 440023 <br> <strong>Branch Office: </strong>Avestan Tower, Unit No. 719, 7th Floor, Near, Mewla Maharajpur, Sector 31, Faridabad,
+                                    Haryana 121003 </li>
+                                <li>+9156930753</li>
                             </ul>
                         </div>
-                        <!-- End Single Widget -->
+
                         <ul>
-                            <li><a href="#"><i class="ti-facebook"></i></a></li>
-                            <li><a href="#"><i class="ti-twitter"></i></a></li>
-                            <li><a href="#"><i class="ti-flickr"></i></a></li>
-                            <li><a href="#"><i class="ti-instagram"></i></a></li>
+                            <li><a style="color: rgb(4, 253, 232);"><i class="ti-facebook"></i></a></li>
+                            <li><a style="color: rgb(4, 253, 232);"><i class="ti-twitter"></i></a></li>
+                            <li><a style="color:  rgb(4, 253, 232);"><i class="ti-flickr"></i></a></li>
+                            <li><a style="color:  rgb(4, 253, 232);"><i class="ti-instagram"></i></a></li>
                         </ul>
                     </div>
-                    <!-- End Single Widget -->
+
                 </div>
             </div>
         </div>
@@ -316,19 +301,44 @@
         <div class="container">
             <div class="inner">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="left">
-                            <p>Copyright © 2020 <a href="http://www.wpthemesgrid.com/" target="_blank">Wpthemesgrid</a> - All Rights Reserved.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="right">
-                            <img src="images/payments.png" alt="#">
+                    <div class="container">
+                        <div class="content-index-area bottom-index-p">
+                            <p>RO Care India is India's leading e-commerce and B2B &amp; B2C water purifier service marketplace. We are in this field for more than a decades, and currently, we are working with 5,500 business partner, and our services are
+                                available in more than 1350 cities across the nation.</p>&nbsp;
+                            <h6 style="color:  rgb(4, 253, 232);">Water Purifier :</h6>
+                            <p>At RO Care India, we have listed a wide range of advance and latest technology-based water purifier so people across the nation can buy the best water purifier for their home. RO Care India also enables water purifier manufacturer
+                                and distributor to list their product on our e-commerce platform.</p>
+                            <h6 style="color:  rgb(4, 253, 232);">Water Softner :</h6>
+                            <p>From Ion exchange to an electromagnetic water softener or from semi-automatic to automatic water softener, we offer you all kinds of the water softener. Moreover, our online e-commerce portal allows you to compare various kinds
+                                and brands of water softener altogether so that you can shop the best water softener here.</p>
+                            <h6 style="color: rgb(4, 253, 232);">RO Plant :</h6>
+                            <p>We have listed a wide range of RO plant so you can shop would-class RO plant at RO Care India. Here at RO Care India online e-commerce portal, people across the nation can buy the best RO plant for domestic, commercial or industrial
+                                purposes.
+                            </p>
+                            <h6 style="color: rgb(4, 253, 232);">Water ATM :</h6>
+                            <p>A water ATM is a water vending machine that brings 100% contamination-free water 24*7. RO Care India's e-commerce online platform offers affordable and reliable water ATM installation, repair, and regular maintenance services
+                                in PAN India.
+                            </p>
+                            <h6 style="color: rgb(4, 253, 232);">Spare Parts :</h6>
+                            <p>It is spare parts quality that makes a water purification system durable and long-lasting. We are India's best-emerging water purification system spare parts wholesales suppliers of domestic, commercial and industrial RO plant.
+                                Our spare parts are available in PAN India.</p>
+                            <h6 style="color: rgb(4, 253, 232);">Water Ionizer :</h6>
+                            <p>A water ionizer is an advantage purification system that maintains the pH of the water. At RO Care India, we have listed a wide range of water ionizers, thus allowing you to shop the best water ionizers online. At RO Care India
+                                e-commerce platform, you can purchase all kinds and brands of water ionizer at a competitive price.</p>
+                            <h6 style="color: rgb(4, 253, 232);">Water Purifier Service :</h6>
+                            <p>RO Care India aims to provide water purification system solution to the people across PAN India. We offer installation, repair, maintenance service, and AMC services of all brands and kinds of water purification systems like
+                                water purifier, water softener, and others.</p>
+                            <h6 style="color: rgb(4, 253, 232);">Why Should You Choose RO Care India :</h6>
+                            <p>Our service engineers, customer care executives, and the entire team are dedicated to customer satisfaction, thus offering world-class services at economical and affordable prices at the customer doorstep. RO Care India, customer
+                                care department, remains open 24*7 to help peoples.</p>
+                            <p>&nbsp;</p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </footer>
 <!-- /End Footer Area -->
