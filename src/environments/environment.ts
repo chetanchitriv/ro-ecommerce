@@ -3,9 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  apiUrl:"http://localhost:3000/",
   
 };
+// command for watch json ....  json-server --watch db.json
+
+// change class in website template navbar = navbar1, navbar-collapse = navbar-collapse-main , footer = footer1
+
 
 /*
  * For easier debugging in development mode, you can import the following file
