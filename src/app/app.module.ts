@@ -15,6 +15,10 @@ import { CustomerComponent } from './dashboard/customer/customer.component';
 import { OrdersComponent } from './dashboard/orders/orders.component';
 import { SettingComponent } from './dashboard/setting/setting.component';
 import { CouponsComponent } from './dashboard/coupons/coupons.component';
+import { CategoriesComponent } from './dashboard/categories/categories.component';
+
+import { OurstaffComponent } from './dashboard/ourstaff/ourstaff.component';
+import { CheckoutComponent } from './web/checkout/checkout.component';
 
 
 @NgModule({
@@ -32,6 +36,10 @@ import { CouponsComponent } from './dashboard/coupons/coupons.component';
     OrdersComponent,
     SettingComponent,
     CouponsComponent,
+    CategoriesComponent,
+   
+    OurstaffComponent,
+    CheckoutComponent,
    
   ],
   imports: [
