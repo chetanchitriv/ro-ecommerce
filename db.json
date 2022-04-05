@@ -30,10 +30,40 @@
   ],
   "categories": [
     {
+      "categoriestype": "Gamming Accessories",
+      "publisheddate": "2022-04-05",
+      "visibilitystatus": "",
+      "id": 2
+    },
+    {
+      "categoriestype": "TV",
+      "publisheddate": "2022-04-05",
+      "visibilitystatus": "",
+      "id": 3
+    },
+    {
+      "categoriestype": "Mobile",
+      "publisheddate": "2022-04-06",
+      "visibilitystatus": "1",
+      "id": 4
+    },
+    {
       "categoriestype": "Laptop",
       "publisheddate": "2022-04-06",
-      "visibilitystatus": "Published",
-      "id": 1
+      "visibilitystatus": "1",
+      "id": 5
+    },
+    {
+      "categoriestype": "Laptop",
+      "publisheddate": "2022-04-07",
+      "visibilitystatus": "Banana",
+      "id": 6
+    },
+    {
+      "categoriestype": "TV",
+      "publisheddate": "2022-04-15",
+      "visibilitystatus": "Scheduled",
+      "id": 7
     }
   ],
   "profile": {
