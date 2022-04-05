@@ -1,68 +1,76 @@
-<!-- <div class="main-content">
+<div class="main-content">
     <div class="content-wrapper">
-        <div class="container-fluid"> -->
+        <div class="container-fluid">
 
-<!-- 
+
             <div class="card gradient-aqua-marine d-block rounded box-shadow-2" data-bg-color="aqua-marine">
                 <div class="card-header">
                     <div class="card-title-wrap bar-warning">
-                        <h4 class="card-title" style=" color:#fff; ">Edit Profile</h4>
+                        <h4 class="card-title" style=" color:#fff; ">My Profile</h4>
                     </div>
                     <div class="d-flex add " style="margin: -44px 0px -7px 694px;">
 
-                        <button routerLink="/main/myprofile" type="btn " class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; "> My Profile</button>
+                        <button (click)="showEditProfile()" *ngIf="myProfile" type="btn " class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; "> Edit Profile</button>
 
-
+                        <button (click)="showMyProfile()" *ngIf="editProfile" type="btn " class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; "> My Profile</button>
                     </div>
+
                 </div>
-            </div> -->
+            </div>
 
-<!-- <div class="card-body">
+            <div *ngIf="myProfile && !editProfile" class="col-md-12 ">
+                <div class="card ">
 
-                <div class="form-group row">
-                    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
-                    <div class="col-sm-10">
-                        <input type="name" class="form-control" id="inputName3" placeholder="Name">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputnumber3" class="col-sm-2 col-form-label">Contact Number</label>
-                    <div class="col-sm-10">
-                        <input type="number" class="form-control" id="inputnumber3" placeholder="Contact number">
+                    <div class="card-body ">
+                        <div class="px-3 ">
+                            <form class="form ">
+                                <div class="form-body ">
+                                    <h4 class="form-section ">
+                                        <i class="icon-user "></i> My Profile</h4>
+                                    <div class="row form-group justify-content-center">
 
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
-                        <div class="col-sm-10">
-                            <input type="name" class="form-control" id="inputName3" placeholder="Name">
+                                        <!-- <label class="col-md-5c ml-3">Profile Picture </label> -->
+                                        <!-- <img class="inline-flex border rounded-md border-gray-100 dark:border-gray-300 w-5 max-h-5" src="https://i.ibb.co/WpM5yZZ/9.png" alt="product"> -->
+
+                                        <!-- <label id="projectinput8" class="file center-block col-md-6">
+                                        <input type="file" id="file" style="width: 350px;">
+                                        <span class="file-custom"></span>
+                                         </label> -->
+
+
+                                        <!-- <h2 style="text-align:center">User Profile Card</h2> -->
+
+                                        <div class="card-profile">
+                                            <img src="https://i.ibb.co/WpM5yZZ/9.png" alt="John" style="width:100%">
+                                            <h1>John Doe</h1>
+                                            <p class="title">CEO & Founder</p>
+                                            <p><i class="fa fa-phone" aria-hidden="true"></i> 202-555-0174
+                                            </p>
+                                            <p><i class="fa fa-envelope" aria-hidden="true"></i> johnpaul@gmail.com
+                                            </p>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+
+
+
+
+
+                                </div>
+
+
+                            </form>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputnumber3" class="col-sm-2 col-form-label">Contact Number</label>
-                        <div class="col-sm-10">
-                            <input type="number" class="form-control" id="inputnumber3" placeholder="Contact number">
-
-                        </div>
-
-
-
-                    </div>
                 </div>
-            </div> -->
+            </div>
 
-<!-- <div class="col-md-12 ">
+            <div *ngIf="editProfile && !myProfile" class="col-md-12 ">
                 <div class="card ">
 
                     <div class="card-body ">
@@ -113,6 +121,10 @@
                                             <option>Manager</option>
                                             </select>
                                         </div>
+                                        <button type="button " class="btn btn-success save">
+                                            <i class="icon-note "></i> Save
+                                        </button>
+
                                     </div>
 
 
@@ -123,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
-<!-- </div>
+            </div>
+        </div>
     </div>
-</div> -->
+</div>
