@@ -21,11 +21,8 @@ import { CategoriesComponent } from './dashboard/categories/categories.component
 import { OurstaffComponent } from './dashboard/ourstaff/ourstaff.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckoutComponent } from './web/checkout/checkout.component';
-<<<<<<< HEAD
 import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
-=======
 import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
->>>>>>> 6cf4f42fe65d38ccf3c87158395bb63614e9c9d6
 
 
 @NgModule({
@@ -47,11 +44,8 @@ import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.comp
    
     OurstaffComponent,
     CheckoutComponent,
-<<<<<<< HEAD
     MyprofileComponent,
-=======
     MainDashboardComponent,
->>>>>>> 6cf4f42fe65d38ccf3c87158395bb63614e9c9d6
    
   ],
   imports: [
