@@ -21,6 +21,7 @@ import { CategoriesComponent } from './dashboard/categories/categories.component
 import { OurstaffComponent } from './dashboard/ourstaff/ourstaff.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckoutComponent } from './web/checkout/checkout.component';
+import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { CheckoutComponent } from './web/checkout/checkout.component';
    
     OurstaffComponent,
     CheckoutComponent,
+    MainDashboardComponent,
    
   ],
   imports: [

@@ -1,14 +1,41 @@
 {
-  "customers": [
-    {
-      "cname": "Varsha",
-      "email": "v@gmail.com",
-      "phone": "7845124444",
-      "country": "India",
-      "totalOrder": "15",
-      "RegisterDate": "2022-04-05",
-      "id": 1
+    "customers": [{
+            "cname": "Varsha",
+            "email": "v@gmail.com",
+            "phone": "7845124444",
+            "country": "India",
+            "totalOrder": "15",
+            "RegisterDate": "2022-04-05",
+            "id": 1
+        },
+        {
+            "cname": "Kapil",
+            "email": "k@gmail.com",
+            "phone": "5896555444",
+            "country": "Austrailiya",
+            "totalOrder": "12",
+            "RegisterDate": "2022-04-04",
+            "id": 2
+        },
+        {
+            "cname": "Varsha",
+            "email": "v@gmail.com",
+            "phone": "7845124444",
+            "country": "India",
+            "totalOrder": "12",
+            "RegisterDate": "2022-04-05",
+            "id": 3
+        }
+    ],
+    "comments": [{
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+    }],
+    "profile": {
+        "name": "typicode"
     },
+<<<<<<< HEAD
     {
       "cname": "Kapil",
       "email": "k@gmail.com",
@@ -47,4 +74,11 @@
   "profile": {
     "name": "typicode"
   }
+=======
+    "products": [{
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+    }]
+>>>>>>> 6cf4f42fe65d38ccf3c87158395bb63614e9c9d6
 }
