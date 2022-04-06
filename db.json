@@ -1,14 +1,5 @@
 {
     "customers": [{
-            "cname": "Varsha",
-            "email": "v@gmail.com",
-            "phone": "7845124444",
-            "country": "India",
-            "totalOrder": "15",
-            "RegisterDate": "2022-04-05",
-            "id": 1
-        },
-        {
             "cname": "Kapil",
             "email": "k@gmail.com",
             "phone": "5896555444",
@@ -25,19 +16,31 @@
             "totalOrder": "12",
             "RegisterDate": "2022-04-05",
             "id": 3
+        },
+        {
+            "cname": "varsha",
+            "email": "varsha@gmail.com",
+            "phone": "4561236556",
+            "country": "India",
+            "totalOrder": "22",
+            "RegisterDate": "2022-04-04",
+            "id": 4
         }
     ],
-    "comments": [{
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-    }],
+    "categories": [{
+            "categoriestype": "TV",
+            "publisheddate": "2022-04-15",
+            "visibilitystatus": "Scheduled",
+            "id": 7
+        },
+        {
+            "categoriestype": "Cosmetics",
+            "publisheddate": "2022-04-23",
+            "visibilitystatus": "Published",
+            "id": 8
+        }
+    ],
     "profile": {
         "name": "typicode"
-    },
-    "products": [{
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-    }]
+    }
 }

@@ -21,6 +21,9 @@ import { CategoriesComponent } from './dashboard/categories/categories.component
 import { OurstaffComponent } from './dashboard/ourstaff/ourstaff.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckoutComponent } from './web/checkout/checkout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonModule} from '@angular/material/button';
 import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
 import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
 
@@ -53,7 +56,10 @@ import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.comp
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatRadioModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

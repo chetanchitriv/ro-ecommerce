@@ -1,4 +1,4 @@
-select.form-control{
+select.form-control {
     width: 344px;
     margin: 0px 0px 0px -16px;
    
@@ -11,3 +11,6 @@ select.form-control{
     padding: 17px 1px 62px 192px;
     color: rgb(197, 194, 194);
 }
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }

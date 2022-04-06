@@ -39,6 +39,7 @@ CustomerForm:any = FormGroup;
 getAllCustomers(){
 this.customerservice.getCustomers().subscribe(res=>{
   this.CustomersData = res;
+console.log(res, "gets");
 
 })
 }
