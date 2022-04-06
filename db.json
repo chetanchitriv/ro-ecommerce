@@ -1,46 +1,51 @@
 {
-    "customers": [{
-            "cname": "Kapil",
-            "email": "k@gmail.com",
-            "phone": "5896555444",
-            "country": "Austrailiya",
-            "totalOrder": "12",
-            "RegisterDate": "2022-04-04",
-            "id": 2
-        },
-        {
-            "cname": "Varsha",
-            "email": "v@gmail.com",
-            "phone": "7845124444",
-            "country": "India",
-            "totalOrder": "12",
-            "RegisterDate": "2022-04-05",
-            "id": 3
-        },
-        {
-            "cname": "varsha",
-            "email": "varsha@gmail.com",
-            "phone": "4561236556",
-            "country": "India",
-            "totalOrder": "22",
-            "RegisterDate": "2022-04-04",
-            "id": 4
-        }
-    ],
-    "categories": [{
-            "categoriestype": "TV",
-            "publisheddate": "2022-04-15",
-            "visibilitystatus": "Scheduled",
-            "id": 7
-        },
-        {
-            "categoriestype": "Cosmetics",
-            "publisheddate": "2022-04-23",
-            "visibilitystatus": "Published",
-            "id": 8
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "customers": [
+    {
+      "cname": "Kapil",
+      "email": "k@gmail.com",
+      "phone": "5896555444",
+      "country": "Austrailiya",
+      "totalOrder": "12",
+      "RegisterDate": "2022-04-04",
+      "id": 2
+    },
+    {
+      "cname": "Varsha",
+      "email": "v@gmail.com",
+      "phone": "7845124444",
+      "country": "India",
+      "totalOrder": "12",
+      "RegisterDate": "2022-04-05",
+      "id": 3
+    },
+    {
+      "cname": "varsha",
+      "email": "varsha@gmail.com",
+      "phone": "4561236556",
+      "country": "India",
+      "totalOrder": "22",
+      "RegisterDate": "2022-04-04",
+      "id": 4
     }
+  ],
+  "categories": [
+    {
+      "Category": "WATER PURIFIER",
+      "subcategories": "pta nahi",
+      "id": 3
+    },
+    {
+      "Category": "RO PLANT",
+      "subcategories": "pata nahi",
+      "id": 4
+    },
+    {
+      "Category": "WATER SOFTENER",
+      "subcategories": "pata nahi",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
