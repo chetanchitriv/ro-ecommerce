@@ -105,8 +105,10 @@
 
                                                         <th class="border-top-0">ID</th>
                                                         <th class="border-top-0 ">CATEGORIES</th>
-                                                        <th class="border-top-0 ">DATE</th>
-                                                        <th class="border-top-0 ">STATUS</th>
+                                                        <th class="border-top-0 "> SUB CATEGORIES</th>
+
+                                                        <!-- <th class="border-top-0 ">DATE</th>
+                                                        <th class="border-top-0 ">STATUS</th> -->
                                                         <!-- <th class="border-top-0 ">Stock</th>
                                                     <th class="border-top-0 ">Published</th> -->
                                                         <th class="border-top-0 "> &nbsp; &nbsp; &nbsp; &nbsp; Action</th>
@@ -116,8 +118,10 @@
                                                     <tr *ngFor="let data of CategoriesData; let i=index">
                                                         <td>{{i+1}}</td>
                                                         <td>{{data.categoriestype}}</td>
-                                                        <td>{{data.publisheddate}}</td>
-                                                        <td>{{data.visibilitystatus}}</td>
+                                                        <td>{{data.subcategories}}</td>
+
+                                                        <!-- <td>{{data.publisheddate}}</td>
+                                                        <td>{{data.visibilitystatus}}</td> -->
 
 
                                                         <td>
@@ -206,24 +210,28 @@
                                                         </select>
                                                         </fieldset>
                                                     </div>
+                                                    <div class="form-group ">
+                                                        <label for="projectinput1 "><b>Sub Categories :</b></label>
+                                                        <input type="text " id="projectinput1 " class="form-control " formControlName="subcategories" name="subcategories ">
+                                                    </div>
                                                     <!-- <div class="form-group ">
                                                             <label for="projectinput1 ">Parent category :</label>
                                                             <input type="text " id="projectinput1 " placeholder="category title" class="form-control " name="fname ">
                                                         </div> -->
 
-                                                    <div class="form-group ">
+                                                    <!-- <div class="form-group ">
                                                         <label for="projectinput1 "> Published Date :</label>
                                                         <input type="date" formControlName="publisheddate" class="form-control">
-                                                    </div>
+                                                    </div> -->
 
 
-                                                    <div class="form-group ">
+                                                    <!-- <div class="form-group ">
                                                         <label for="projectinput1 "> Select Status:</label><br>
                                                         <mat-radio-group aria-label="Select an option" formControlName="visibilitystatus">
                                                             <mat-radio-button *ngFor="let status of allstatus" [value]="status">{{status}}</mat-radio-button>
 
                                                         </mat-radio-group>
-                                                    </div>
+                                                    </div> -->
 
 
                                                     <div class="form-actions right ">

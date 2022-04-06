@@ -21,7 +21,8 @@ export class CategoriesComponent implements OnInit {
   CategoriesData: any=[];
   updateId: any;
   allstatus: string[] = ['Published', 'Scheduled', 'Hidden'];
-  categoriestypes=[ "Laptop", "TV","Mobile","Gamming Accessories", "Cooler", "Cosmetics", "Watch"]
+  categoriestypes=[ "Laptop", "TV","Mobile","Gamming Accessories", "Cooler", "Cosmetics", "Watch"];
+  subcategories=[ ]
 
   constructor(private formbuilder:FormBuilder, private categoriesservice:CategoriesService) { }
 
@@ -29,8 +30,9 @@ export class CategoriesComponent implements OnInit {
     this.getAllCategories()
     this.CategoriesForm = this.formbuilder.group({
      categoriestype : ['', Validators.required],
-      publisheddate : ['', Validators.required, ],
-      visibilitystatus: ['', Validators.required],
+      // publisheddate : ['', Validators.required, ],
+      // visibilitystatus: ['', Validators.required],
+      subcategories : ['', Validators.required]
       
     });
 

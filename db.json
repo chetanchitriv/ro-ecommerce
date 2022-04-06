@@ -30,16 +30,24 @@
   ],
   "categories": [
     {
-      "categoriestype": "TV",
-      "publisheddate": "2022-04-15",
-      "visibilitystatus": "Scheduled",
-      "id": 7
+      "categoriestype": "Laptop",
+      "subcategories": "Watch",
+      "id": 9
     },
     {
       "categoriestype": "Cosmetics",
-      "publisheddate": "2022-04-23",
-      "visibilitystatus": "Published",
-      "id": 8
+      "subcategories": "Gamming Accessories",
+      "id": 10
+    },
+    {
+      "categoriestype": "Laptop",
+      "subcategories": "Cosmetics",
+      "id": 11
+    },
+    {
+      "categoriestype": "Mobile",
+      "subcategories": "laptop",
+      "id": 12
     }
   ],
   "profile": {
