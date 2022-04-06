@@ -82,10 +82,10 @@
                                     <div class="row form-group ">
 
                                         <label class="col-md-5c ml-3">Profile Picture </label>
-                                        <img class="inline-flex border rounded-md border-gray-100 dark:border-gray-300 w-5 max-h-5" src="https://i.ibb.co/WpM5yZZ/9.png" alt="product">
+                                        <img class="inline-flex border rounded-md border-gray-100 dark:border-gray-300 w-5 max-h-5" [src]="url" alt="product">
 
                                         <label id="projectinput8" class="file center-block col-md-6">
-                                        <input type="file" id="file" style="width: 350px;">
+                                        <input type="file" (change)="onselectFile($event)" id="file" style="width: 350px;">
                                         <span class="file-custom"></span>
                                          </label>
 
