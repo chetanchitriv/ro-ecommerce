@@ -60,13 +60,85 @@
       "id": 6
     },
     {
-      "categoriestype": "TV",
-      "publisheddate": "2022-04-15",
-      "visibilitystatus": "Scheduled",
-      "id": 7
+      "categoriestype": "Mobile",
+      "publisheddate": "2022-04-20",
+      "visibilitystatus": "Published",
+      "id": 8
     }
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "products": [
+    {
+      "file": "C:\\fakepath\\Screen1.png",
+      "sku": "120000001",
+      "title": "Aqua Ro",
+      "slug": "best Ro",
+      "description": "best Ro",
+      "parentcategory": "Option 1",
+      "childcategory": "Option 2",
+      "unit": "5 liter",
+      "quantity": "20",
+      "saleprice": 6000,
+      "tag": "Ro, Aqua",
+      "id": 3
+    },
+    {
+      "file": "C:\\fakepath\\Screen1.png",
+      "sku": "120000001",
+      "title": "fdsfaf",
+      "slug": "sdfsd",
+      "description": "sffafa",
+      "parentcategory": "Option 1",
+      "childcategory": "Option 2",
+      "unit": "5 liter",
+      "quantity": "20",
+      "saleprice": 6000,
+      "tag": "Ro, Aqua",
+      "id": 4
+    },
+    {
+      "file": "C:\\fakepath\\solar-power-system-500x500.jpg",
+      "sku": "120000001",
+      "title": "Ro",
+      "slug": "best Ro",
+      "description": "best Ro",
+      "parentcategory": "Option 2",
+      "childcategory": "Option 4",
+      "unit": "5 liter",
+      "quantity": "20",
+      "saleprice": 6000,
+      "tag": "Ro, Aqua",
+      "id": 5
+    },
+    {
+      "file": "C:\\fakepath\\slider3.png",
+      "sku": "120000001",
+      "title": "table",
+      "slug": "best table",
+      "description": "best table",
+      "parentcategory": "Option 1",
+      "childcategory": "Option 2",
+      "unit": "5kg",
+      "quantity": "20",
+      "saleprice": 500,
+      "tag": "Ro, Aqua",
+      "id": 6
+    },
+    {
+      "file": "C:\\fakepath\\andhra-banner1.jpg",
+      "sku": "120000001",
+      "title": "Aqua Ro",
+      "slug": "best ro",
+      "description": "best ro",
+      "parentcategory": "Option 1",
+      "childcategory": "Option 2",
+      "unit": "5 liter",
+      "quantity": "20",
+      "saleprice": 6000,
+      "tag": "Ro, Aqua",
+      "id": 7
+    }
+  ]
 }

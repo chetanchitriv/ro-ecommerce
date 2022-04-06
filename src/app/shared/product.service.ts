@@ -11,16 +11,17 @@ export class ProductService {
 
   constructor(private http:HttpClient) { }
 
-  postCustomers(data : any){
-    return this.http.post<any>(this.dbUrl+"customers", data)
+  postProducts(data : any){
+    return this.http.post<any>(this.dbUrl+"products", data)
   }
-  getCustomers(){
-    return this.http.get<any>(this.dbUrl+"customers")
+  getProducts(){
+    return this.http.get<any>(this.dbUrl+"products")
   }
-  updateCustomers(data:any, id:number){
-    return this.http.put<any>(this.dbUrl+`customers/`+`${id}`, data)
+  updateProducts(data:any, id:number){
+    return this.http.put<any>(this.dbUrl+`products/`+`${id}`, data)
   }
-  deleteCustomers(id:number){
-    return this.http.delete<any>(this.dbUrl+`customers/`+`${id}`)
+  deleteProducts(id:number){
+    return this.http.delete<any>(this.dbUrl+`products/`+`${id}`)
   }
+  
 }
