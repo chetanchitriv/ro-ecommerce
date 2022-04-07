@@ -120,7 +120,7 @@
                         <div class="all-category">
                             <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
                             <ul class="main-category">
-                                <li class="main-mega"><a href="#">WATER PURIFIER<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                <li class="main-mega"><a href="#" *ngFor="let data of CategoriesData">{{data.Category}}<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                     <ul class="mega-menu">
                                         <li class="single-menu">
                                             <!-- <a href="#" class="title-link">Shop Kid's</a>
@@ -398,11 +398,13 @@
             <div class="col-12">
                 <div class="owl-carousel popular-slider">
                     <!-- Start Single Product -->
-                    <div class="single-product">
+                    <div class="single-product" *ngFor="let data of ProductsData">
                         <div class="product-img">
                             <a>
-                                <img class="default-img" src="assets/images/products/product_313_1.jpg" alt="#">
-                                <img class="hover-img" src="assets/images/products/product_313_1.jpg" alt="#">
+                                <!-- <img class="default-img" src="assets/images/products/product_313_1.jpg" alt="#"> -->
+                                <img [src]="imageSrc" *ngIf="imageSrc" class="default-img" alt="#">
+                                <!-- {{data.file}} -->
+                                <img class="hover-img" src="assets/images/products/p4.jpg" alt="#">
                                 <span class="out-of-stock">Out Of Stock</span>
                             </a>
                             <div class="button-head">
@@ -416,17 +418,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product-content">
+                        <!-- <div class="product-content">
                             <h3><a>Purelt Marvela UV+COLD</a></h3>
                             <div class="price">
                                 <b><label>₹14,006.40 </label></b>&nbsp;
                                 <del>₹14,590.00</del>
                             </div>
+                        </div> -->
+                        <div class="product-content">
+                            <h3><a>{{data.title}}</a></h3>
+                            <a>{{data.slug}}</a>
+                            <div class="price">
+                                <b><label>{{data.saleprice}}</label></b>&nbsp;
+                                <del>{{data.discountprice}}</del>
+                            </div>
                         </div>
                     </div>
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
+
+                    <!-- <div class="single-product">
                         <div class="product-img">
                             <a>
                                 <img class="default-img" src="assets/images/products/p1.jpg" alt="#">
@@ -450,10 +461,12 @@
                                 <del>₹17,590.00</del>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
+
+                    <!-- <div class="single-product">
                         <div class="product-img">
                             <a>
                                 <img class="default-img" src="assets/images/products/p3.jpg" alt="#">
@@ -480,10 +493,12 @@
                                 <del>₹13,400.00</del>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
+
+                    <!-- <div class="single-product">
                         <div class="product-img">
                             <a>
                                 <img class="default-img" src="assets/images/products/p5.jpg" alt="#">
@@ -508,9 +523,9 @@
                                 <del>₹16,400.00</del>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="single-product">
+                    <!-- <div class="single-product">
                         <div class="product-img">
                             <a>
                                 <img class="default-img" src="assets/images/products/p7.jpg" alt="#">
@@ -535,7 +550,7 @@
                                 <del>₹12,400.00</del>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Product -->
                 </div>
             </div>

@@ -148,6 +148,7 @@
                                                         <th class="border-top-0 ">Unit</th>
                                                         <th class="border-top-0 ">Quantity</th>
                                                         <th class="border-top-0 ">Sale Price</th>
+                                                        <th class="border-top-0 ">Discount Price</th>
                                                         <th class="border-top-0 ">Tag</th>
                                                         <th class="border-top-0 ">Action</th>
                                                     </tr>
@@ -158,18 +159,22 @@
                                                         <td class="text-truncate ">{{i+1}}</td>
                                                         <td class="text-truncate "> <img [src]="imageSrc" *ngIf="imageSrc" style="height: 50px; width:50px">{{data.file}}</td>
                                                         <td class="text-truncate ">{{data.sku}}</td>
-                                                        <td class="text-truncate ">{{data.title}}</td>
+                                                        <td>
+                                                            <button type="button " class="btn btn-sm btn-outline-primary round ">{{data.title}}</button>
+                                                        </td>
+
                                                         <td class="text-truncate ">{{data.slug}}</td>
                                                         <td class="text-truncate ">{{data.description}}</td>
                                                         <td>
                                                             <button type="button " class="btn btn-sm btn-outline-danger round ">{{data.parentcategory}}</button>
                                                         </td>
                                                         <td>
-                                                            <button type="button " class="btn btn-sm btn-outline-danger round ">{{data.childcategory}}</button>
+                                                            <button type="button " class="btn btn-sm btn-outline-success round ">{{data.childcategory}}</button>
                                                         </td>
                                                         <td class="text-truncate "> {{data.unit}}</td>
                                                         <td class="text-truncate "> {{data.quantity}}</td>
                                                         <td class="text-truncate "> {{data.saleprice}}</td>
+                                                        <td class="text-truncate "> {{data.discountprice}}</td>
                                                         <td class="text-truncate ">{{data.tag}}</td>
                                                         <td>
                                                             <!-- <a class="btn btn-outline-success ">
@@ -221,7 +226,7 @@
                                     </div>
                                     <div class="d-flex ">
                                         <!-- <button (click)="showTable() " type="button " class="btn btn-success mx-3 ">Show Table</button> -->
-                                        <button (click)="showTable() " *ngIf="addProduct " type="btn " class="form-control height-50 gradient-timber rounded box-shadow-2 " style="color: #fff; margin-top:-42px; "> Show Table</button>
+                                        <button (click)="showTable() " *ngIf="addProduct " type="btn " class="form-control height-50 gradient-timber rounded box-shadow-2 " style="color: #fff; margin: -36px -7px -13px -49px; width:  107px;"> Show Table</button>
                                     </div>
 
                                 </div>
@@ -316,6 +321,11 @@
                                                         </div>
 
                                                         <div class="col-md-10 ">
+                                                            <label>Discount Price</label>
+                                                            <input class="form-control border-primary " id="userinput7" type="number" formControlName="discountprice" value>
+                                                        </div>
+
+                                                        <div class="col-md-10 ">
                                                             <label>Product Tag</label>
                                                             <input class="form-control border-primary " id="userinput7 " type="text " formControlName="tag" value>
                                                         </div>
@@ -346,7 +356,7 @@
                                 </div>
                             </form>
                         </section>
-                        <!-- // Basic form layout section end -->
+
                     </div>
                 </div>
             </div>

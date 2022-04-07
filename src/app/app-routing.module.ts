@@ -14,6 +14,7 @@ import { LoginComponent } from './my-account/login/login.component';
 import { SignupComponent } from './my-account/signup/signup.component';
 import { CheckoutComponent } from './web/checkout/checkout.component';
 import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
+import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
 
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ children:[
   { path: "setting", component:SettingComponent},
   { path: "coupons",component:CouponsComponent},
   { path: "ourstaff",component:OurstaffComponent},
+  { path: "myprofile", component:MyprofileComponent}
   // { path: "categories",component:CategoriesComponent}
 ]
 },

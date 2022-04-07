@@ -30,40 +30,19 @@
   ],
   "categories": [
     {
-      "categoriestype": "Gamming Accessories",
-      "publisheddate": "2022-04-05",
-      "visibilitystatus": "",
-      "id": 2
-    },
-    {
-      "categoriestype": "TV",
-      "publisheddate": "2022-04-05",
-      "visibilitystatus": "",
+      "Category": "WATER PURIFIER",
+      "subcategories": "pta nahi",
       "id": 3
     },
     {
-      "categoriestype": "Mobile",
-      "publisheddate": "2022-04-06",
-      "visibilitystatus": "1",
+      "Category": "RO PLANT",
+      "subcategories": "pata nahi",
       "id": 4
     },
     {
-      "categoriestype": "Laptop",
-      "publisheddate": "2022-04-06",
-      "visibilitystatus": "1",
+      "Category": "WATER SOFTENER",
+      "subcategories": "pata nahi",
       "id": 5
-    },
-    {
-      "categoriestype": "Laptop",
-      "publisheddate": "2022-04-07",
-      "visibilitystatus": "Banana",
-      "id": 6
-    },
-    {
-      "categoriestype": "Mobile",
-      "publisheddate": "2022-04-20",
-      "visibilitystatus": "Published",
-      "id": 8
     }
   ],
   "profile": {
@@ -71,72 +50,17 @@
   },
   "products": [
     {
-      "file": "C:\\fakepath\\Screen1.png",
-      "sku": "120000001",
-      "title": "Aqua Ro",
-      "slug": "best Ro",
-      "description": "best Ro",
-      "parentcategory": "Option 1",
-      "childcategory": "Option 2",
-      "unit": "5 liter",
-      "quantity": "20",
-      "saleprice": 6000,
-      "tag": "Ro, Aqua",
-      "id": 3
-    },
-    {
-      "file": "C:\\fakepath\\Screen1.png",
-      "sku": "120000001",
-      "title": "fdsfaf",
-      "slug": "sdfsd",
-      "description": "sffafa",
-      "parentcategory": "Option 1",
-      "childcategory": "Option 2",
-      "unit": "5 liter",
-      "quantity": "20",
-      "saleprice": 6000,
-      "tag": "Ro, Aqua",
-      "id": 4
-    },
-    {
-      "file": "C:\\fakepath\\solar-power-system-500x500.jpg",
-      "sku": "120000001",
-      "title": "Ro",
-      "slug": "best Ro",
-      "description": "best Ro",
-      "parentcategory": "Option 2",
-      "childcategory": "Option 4",
-      "unit": "5 liter",
-      "quantity": "20",
-      "saleprice": 6000,
-      "tag": "Ro, Aqua",
-      "id": 5
-    },
-    {
-      "file": "C:\\fakepath\\slider3.png",
-      "sku": "120000001",
-      "title": "table",
-      "slug": "best table",
-      "description": "best table",
-      "parentcategory": "Option 1",
-      "childcategory": "Option 2",
-      "unit": "5kg",
-      "quantity": "20",
-      "saleprice": 500,
-      "tag": "Ro, Aqua",
-      "id": 6
-    },
-    {
       "file": "C:\\fakepath\\andhra-banner1.jpg",
       "sku": "120000001",
-      "title": "Aqua Ro",
-      "slug": "best ro",
+      "title": "Doctor Fresh Life Guard Plus",
+      "slug": "RO+UV+UF+TDS Infuser+ME+AS",
       "description": "best ro",
       "parentcategory": "Option 1",
       "childcategory": "Option 2",
       "unit": "5 liter",
       "quantity": "20",
-      "saleprice": 6000,
+      "saleprice": 17700.4,
+      "discountprice": 16400,
       "tag": "Ro, Aqua",
       "id": 7
     }

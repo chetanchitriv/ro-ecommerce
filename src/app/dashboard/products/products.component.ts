@@ -37,9 +37,10 @@ export class ProductsComponent implements OnInit {
       unit: ['', Validators.required],
       quantity: ['', Validators.required],
       saleprice: ['', Validators.required],
+      discountprice: ['', Validators.required],
       tag: ['', Validators.required],
 
-    })
+    });
   }
 
   getAllProducts() {

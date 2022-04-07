@@ -20,17 +20,20 @@ export class CategoriesComponent implements OnInit {
   today: any;
   CategoriesData: any=[];
   updateId: any;
-  allstatus: string[] = ['Published', 'Scheduled', 'Hidden'];
-  categoriestypes=[ "Laptop", "TV","Mobile","Gamming Accessories", "Cooler", "Cosmetics", "Watch"]
+  // allstatus: string[] = ['Published', 'Scheduled', 'Hidden'];
+  // categoriestypes=[ "Laptop", "TV","Mobile","Gamming Accessories", "Cooler", "Cosmetics", "Watch"];
+  subcategories=[ ]
 
   constructor(private formbuilder:FormBuilder, private categoriesservice:CategoriesService) { }
 
   ngOnInit(): void {
     this.getAllCategories()
     this.CategoriesForm = this.formbuilder.group({
-     categoriestype : ['', Validators.required],
-      publisheddate : ['', Validators.required, ],
-      visibilitystatus: ['', Validators.required],
+    //  categoriestype : ['', Validators.required],
+     Category : ['', Validators.required],
+      // publisheddate : ['', Validators.required, ],
+      // visibilitystatus: ['', Validators.required],
+      subcategories : ['', Validators.required]
       
     });
 
