@@ -137,12 +137,12 @@
                                             <table id="recent-orders " class="table table-hover table-xl mb-0 ">
                                                 <thead>
                                                     <tr>
-                                                        <th class="border-top-0 ">Status</th>
+                                                        <th class="border-top-0 ">Product Image</th>
                                                         <th class="border-top-0 ">Product Name</th>
                                                         <th class="border-top-0 ">Categories</th>
                                                         <th class="border-top-0 ">Price</th>
                                                         <th class="border-top-0 ">Stock</th>
-                                                        <th class="border-top-0 ">Published</th>
+
                                                         <th class="border-top-0 ">Action</th>
                                                     </tr>
                                                 </thead>
@@ -370,8 +370,13 @@
                                                             <i class="fa fa-shopping-bag"></i> Product Details</h4>
                                                         <div class="row form-group ">
                                                             <fieldset class="form-group ml-3">
+
                                                                 <label for="basicInputFile">Product Image:</label>
-                                                                <input type="file" class="form-control-file" id="basicInputFile" formControlName="image" value>
+                                                                <img class="inline-flex  " [src]="url" style="width: 291px;                                                                ">
+                                                                <br>
+                                                                <input type="file" (change)="onselectFile($event)" id="file" style="width: 350px;">
+                                                                <span class="file-custom"></span>
+
                                                             </fieldset>
                                                         </div>
 

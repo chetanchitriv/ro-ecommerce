@@ -10,7 +10,7 @@ import { CategoriesService } from '../shared/categories.service';
 export class HomeComponent implements OnInit {
   CategoriesForm: any=FormGroup;
   CategoriesData: any=[];
-
+  filteredList:any=[];
   constructor(private formbuilder:FormBuilder, private categoriesservice:CategoriesService) { }
 
   ngOnInit(): void {
@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
       });
 
       this.getAllCategories();
+     
   
     }
     getAllCategories() {
@@ -33,6 +34,7 @@ export class HomeComponent implements OnInit {
         console.log(res, "get"); 
       });
     }
-  }
+   
+}
 
 
