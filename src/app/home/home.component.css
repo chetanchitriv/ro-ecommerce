@@ -1,0 +1,21 @@
+.single-product1 {
+    background: #fff;
+    padding: 4px;
+    text-align: center;
+    box-shadow: 0 4px 8px 2px #c3c3c3;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 242px;
+    /* height: 158px; */
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.product-img1 {
+    width: 82px !important;
+    margin: auto;
+}
+
+.single-product1:hover {
+    transform: scale(1.1);
+}

@@ -72,5 +72,67 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "products": [
+    {
+      "file": "C:\\fakepath\\andhra-banner1.jpg",
+      "sku": "120000001",
+      "title": "Doctor Fresh Life Guard Plus",
+      "slug": "RO+UV+UF+TDS Infuser+ME+AS",
+      "description": "best ro",
+      "parentcategory": "Option 1",
+      "childcategory": "Option 2",
+      "unit": "5 liter",
+      "quantity": "20",
+      "saleprice": 17700.4,
+      "discountprice": 16400,
+      "tag": "Ro, Aqua",
+      "id": 7
+    },
+    {
+      "file": "",
+      "sku": "IOOP",
+      "title": "TV",
+      "slug": "TV",
+      "description": "TV",
+      "parentcategory": "WATER PURIFIER",
+      "childcategory": "Option 1",
+      "unit": "10",
+      "stock": "10",
+      "saleprice": 10,
+      "discountprice": "",
+      "tag": "J",
+      "id": 8
+    },
+    {
+      "file": "",
+      "sku": "IOOP",
+      "title": "IOOP",
+      "slug": "IAJKLSO",
+      "description": "kll",
+      "parentcategory": "WATER PURIFIER",
+      "childcategory": "Option 1",
+      "unit": "10",
+      "stock": "10",
+      "saleprice": "",
+      "discountprice": "",
+      "tag": "jio",
+      "id": 9
+    },
+    {
+      "file": "",
+      "sku": "jkk",
+      "title": "11",
+      "slug": "22",
+      "description": "ss",
+      "parentcategory": "RO PLANT",
+      "childcategory": "Option 1",
+      "unit": "10",
+      "stock": "10",
+      "saleprice": "",
+      "discountprice": "",
+      "tag": "J",
+      "id": 10
+    }
+  ]
 }

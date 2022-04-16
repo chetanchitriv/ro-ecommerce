@@ -9,7 +9,11 @@ export const environment = {
 };
 // command for watch json ....  json-server --watch db.json
 
-// change class in website template navbar = navbar1, navbar-collapse = navbar-collapse-main , footer = footer1
+// change class in website template: navbar = navbar1, navbar-collapse = navbar-collapse-main , footer = footer1
+
+// details for our app:
+// 1. fetch details in catriges main home page from catagries components.
+// 2. fetch register details in costumer component table.
 
 
 /*

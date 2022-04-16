@@ -247,9 +247,10 @@
             <div class="col-12">
                 <div class="owl-carousel popular-slider">
                     <!-- Start Single Product -->
-                    <div class="single-product">
-                        <div class="product-img">
+                    <div class="single-product1">
+                        <div class="product-img1">
                             <a>
+
                                 <img class="default-img" style="height: 100px; width: 100px;" src="assets/images/119.jpg" alt="#">
 
 
@@ -257,14 +258,14 @@
 
                         </div>
                         <div class="product-content">
-                            <h6>Totally Free <span>Shipping</span></h6>
+                            <p>Totally Free <span>Shipping</span></p>
 
                         </div>
                     </div>
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
-                        <div class="product-img">
+                    <div class="single-product1">
+                        <div class="product-img1">
                             <a>
                                 <img class="default-img" style="height: 100px; width: 140px;" src="assets/images/114.jpg" alt="#">
 
@@ -272,33 +273,29 @@
 
                         </div>
                         <div class="product-content">
-                            <h6>Money Back <span>Garrenty</span></h6>
+                            <p>Money Back <span>Garrenty</span></p>
 
                         </div>
                     </div>
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
-                        <div class="product-img">
+                    <div class="single-product1">
+                        <div class="product-img1">
                             <a>
-                                <img class="default-img" style="height: 80px; width: 140px;" src="assets/images/55.jpg" alt="#">
-
+                                <img class="default-img" style="height: 100px; width: 140px;" src="assets/images/55.jpg" alt="#">
 
                             </a>
 
                         </div>
                         <div class="product-content">
-                            <h6>Free <span>Installation</span></h6>
-
-
-
+                            <p>Free <span>Installation</span></p>
 
                         </div>
                     </div>
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
-                        <div class="product-img">
+                    <div class="single-product1">
+                        <div class="product-img1">
                             <a>
                                 <img class="default-img" style="height: 100px; width: 140px;" src="assets/images/emi.png" alt="#">
 
@@ -306,13 +303,13 @@
 
                         </div>
                         <div class="product-content">
-                            <h6>Easy EMI <span>Option</span></h6>
+                            <p>Easy EMI <span>Option</span></p>
 
                         </div>
                     </div>
 
-                    <div class="single-product">
-                        <div class="product-img">
+                    <div class="single-product1">
+                        <div class="product-img1">
                             <a>
                                 <img class="default-img" style="height: 100px; width: 140px;" src="assets/images/service.png" alt="#">
 
@@ -320,7 +317,7 @@
 
                         </div>
                         <div class="product-content">
-                            <h6>Service Within<span>24Hours</span></h6>
+                            <p>Service Within<span>24Hours</span></p>
 
 
                         </div>
@@ -349,16 +346,18 @@
             <div class="col-12">
                 <div class="owl-carousel popular-slider">
                     <!-- Start Single Product -->
-                    <div class="single-product">
+                    <div class="single-product" *ngFor="let data of ProductsData">
                         <div class="product-img">
                             <a>
-                                <img class="default-img" src="assets/images/products/product_313_1.jpg" alt="#">
-                                <img class="hover-img" src="assets/images/products/product_313_1.jpg" alt="#">
+                                <!-- <img class="default-img" src="assets/images/products/product_313_1.jpg" alt="#"> -->
+                                <img [src]="imageSrc" *ngIf="imageSrc" class="default-img" alt="#">
+                                <!-- {{data.file}} -->
+                                <img class="hover-img" src="assets/images/products/p4.jpg" alt="#">
                                 <span class="out-of-stock">Out Of Stock</span>
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -367,17 +366,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product-content">
+                        <!-- <div class="product-content">
                             <h3><a>Purelt Marvela UV+COLD</a></h3>
                             <div class="price">
                                 <b><label>₹14,006.40 </label></b>&nbsp;
                                 <del>₹14,590.00</del>
                             </div>
+                        </div> -->
+                        <div class="product-content">
+                            <h3><a>{{data.title}}</a></h3>
+                            <a>{{data.slug}}</a>
+                            <div class="price">
+                                <b><label>{{data.saleprice}}</label></b>&nbsp;
+                                <del>{{data.discountprice}}</del>
+                            </div>
                         </div>
                     </div>
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
+
+                    <!-- <div class="single-product">
                         <div class="product-img">
                             <a>
                                 <img class="default-img" src="assets/images/products/p1.jpg" alt="#">
@@ -401,10 +409,12 @@
                                 <del>₹17,590.00</del>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
+
+                    <!-- <div class="single-product">
                         <div class="product-img">
                             <a>
                                 <img class="default-img" src="assets/images/products/p3.jpg" alt="#">
@@ -431,10 +441,12 @@
                                 <del>₹13,400.00</del>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
                     <!-- End Single Product -->
                     <!-- Start Single Product -->
-                    <div class="single-product">
+
+                    <!-- <div class="single-product">
                         <div class="product-img">
                             <a>
                                 <img class="default-img" src="assets/images/products/p5.jpg" alt="#">
@@ -459,9 +471,9 @@
                                 <del>₹16,400.00</del>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="single-product">
+                    <!-- <div class="single-product">
                         <div class="product-img">
                             <a>
                                 <img class="default-img" src="assets/images/products/p7.jpg" alt="#">
@@ -486,7 +498,7 @@
                                 <del>₹12,400.00</del>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Product -->
                 </div>
             </div>
@@ -516,7 +528,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -544,7 +556,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -573,7 +585,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -601,7 +613,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -649,7 +661,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -677,7 +689,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -706,7 +718,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -734,7 +746,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -782,7 +794,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -811,7 +823,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -841,7 +853,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -868,7 +880,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -915,7 +927,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -942,7 +954,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -970,7 +982,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -997,7 +1009,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -1046,7 +1058,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -1073,7 +1085,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -1101,7 +1113,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -1128,7 +1140,7 @@
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
