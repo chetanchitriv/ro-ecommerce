@@ -12,7 +12,7 @@ export class ProductsComponent implements OnInit {
   productForm: any = FormGroup;
 
   updateId: any;
-  ProductsData: any;
+  ProductsData: any=[];
   imageSrc: any;
 
   addProduct:boolean=false;
@@ -27,15 +27,15 @@ export class ProductsComponent implements OnInit {
     this.getAllProducts();
     this.productForm = this.formbuilder.group({
 
-      file: ['', Validators.required],
+      image: ['', Validators.required],
       sku: ['', Validators.required],
       title: ['', Validators.required],
       slug: ['', Validators.required],
-      description: ['', Validators.required],
+      details: ['', Validators.required],
       parentcategory: ['', Validators.required],
       childcategory: ['', Validators.required],
       unit: ['', Validators.required],
-      quantity: ['', Validators.required],
+      stock: ['', Validators.required],
       saleprice: ['', Validators.required],
       discountprice: ['', Validators.required],
       tag: ['', Validators.required],
@@ -52,17 +52,20 @@ export class ProductsComponent implements OnInit {
   }
 
   postProductsDetails(){
-    console.log(this.productForm.value, "post");
-    
-    this.productservice.postProducts(this.productForm.value).subscribe((res:any)=>{
-      alert("Product Added Successfully!");
+    console.log(this.productForm.value, "PRODUCT");
+
+  
+  
+    this.productservice.postProducts(this.productForm.value).subscribe(res=>{
+      alert("Customer Added Successfully!");
       this.productForm.reset();
      this.getAllProducts()
     this.showTable()
     })
+    
   }
   deleteProducts(data:any){
-    this.productservice.deleteProducts(data.id).subscribe(res=>{
+    this.productservice.deleteProducts(data._id).subscribe(res=>{
       alert("Records Deleted Successfully!")
       
     this.getAllProducts()
@@ -76,7 +79,7 @@ export class ProductsComponent implements OnInit {
     this.showAddbutton=false;
     this.showUpdatebutton=true;
   
-    this.updateId=data.id
+    this.updateId=data._id
   
     this.productForm.patchValue(data)
   }
@@ -120,5 +123,18 @@ onFileChange(event:any) {
     };
   
   }
+}
+url="";
+
+
+onselectFile(e : any){
+  if(e.target.files){
+     var reader = new FileReader();
+     reader.readAsDataURL(e.target.files[0])
+     reader.onload=(event:any)=>{
+       this.url=event.target.result;
+     }
+  }
+
 }
 }

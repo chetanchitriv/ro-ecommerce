@@ -6,22 +6,30 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ProductService {
+  getAllProducts(): any {
+    throw new Error('Method not implemented.');
+  }
   
   dbUrl=environment.apiUrl
+  nodeUrl=environment.nodeapiUrl
 
   constructor(private http:HttpClient) { }
 
   postProducts(data : any){
-    return this.http.post<any>(this.dbUrl+"products", data)
-  }
-  getProducts(){
-    return this.http.get<any>(this.dbUrl+"products")
-  }
-  updateProducts(data:any, id:number){
-    return this.http.put<any>(this.dbUrl+`products/`+`${id}`, data)
-  }
-  deleteProducts(id:number){
-    return this.http.delete<any>(this.dbUrl+`products/`+`${id}`)
+    return this.http.post<any>(this.nodeUrl+"products", data)
   }
   
+  getProducts(){
+    return this.http.get<any>(this.nodeUrl+"products")
+  }
+  updateProducts(data:any, id:number){
+    return this.http.put<any>(this.nodeUrl+`products/`+`${id}`, data)
+  }
+  deleteProducts(id:number){
+    return this.http.delete<any>(this.nodeUrl+`products/`+`${id}`)
+  }
+  
+  getOne(id: any){
+    return this.http.get<any>(this.nodeUrl+`products/`+`${id}`)
+  }
 }

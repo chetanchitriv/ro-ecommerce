@@ -26,6 +26,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
 import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
 import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.comp
     CheckoutComponent,
     MyprofileComponent,
     MainDashboardComponent,
+    ProductdetailsComponent,
    
   ],
   imports: [

@@ -43,6 +43,31 @@
       "Category": "WATER SOFTENER",
       "subcategories": "pata nahi",
       "id": 5
+    },
+    {
+      "Category": "VACCUM CLEANER",
+      "subcategories": "pta nahi",
+      "id": 6
+    },
+    {
+      "Category": "WATER DISPENSER",
+      "subcategories": "pta nahi",
+      "id": 7
+    },
+    {
+      "Category": "WATER ATM",
+      "subcategories": "pata nahi",
+      "id": 8
+    },
+    {
+      "Category": "WATER IONIZER",
+      "subcategories": "pta nahi",
+      "id": 9
+    },
+    {
+      "Category": "WATER COOLER",
+      "subcategories": "WATER TANK",
+      "id": 10
     }
   ],
   "profile": {
@@ -50,19 +75,79 @@
   },
   "products": [
     {
-      "file": "C:\\fakepath\\andhra-banner1.jpg",
-      "sku": "120000001",
-      "title": "Doctor Fresh Life Guard Plus",
-      "slug": "RO+UV+UF+TDS Infuser+ME+AS",
-      "description": "best ro",
-      "parentcategory": "Option 1",
+      "file": "",
+      "sku": "HGO0000",
+      "title": "PIZZA",
+      "slug": "IOOP",
+      "description": "GHY",
+      "parentcategory": "RO PLANT",
       "childcategory": "Option 2",
-      "unit": "5 liter",
-      "quantity": "20",
-      "saleprice": 17700.4,
-      "discountprice": 16400,
-      "tag": "Ro, Aqua",
-      "id": 7
+      "unit": "14",
+      "stock": "10",
+      "saleprice": "",
+      "discountprice": "",
+      "tag": "ghu",
+      "id": 1
+    },
+    {
+      "file": "",
+      "sku": "IOOP",
+      "title": "ghjkh",
+      "slug": "hhg",
+      "description": "huuj",
+      "parentcategory": "WATER PURIFIER",
+      "childcategory": "Option 2",
+      "unit": "10",
+      "stock": "14",
+      "saleprice": 12,
+      "discountprice": "",
+      "tag": "hj",
+      "id": 2
+    },
+    {
+      "file": "",
+      "sku": "HGO0000",
+      "title": "PIZZA",
+      "slug": "IOOP",
+      "description": "GHY",
+      "parentcategory": "RO PLANT",
+      "childcategory": "Option 2",
+      "unit": "10",
+      "stock": "10",
+      "saleprice": 15,
+      "discountprice": "",
+      "tag": "ghu",
+      "id": 3
+    },
+    {
+      "file": "",
+      "sku": "hjui",
+      "title": "TV",
+      "slug": "HJ",
+      "description": "KAK",
+      "parentcategory": "RO PLANT",
+      "childcategory": "Option 4",
+      "unit": "10",
+      "stock": "14",
+      "saleprice": 10,
+      "discountprice": "",
+      "tag": "ghu",
+      "id": 4
+    },
+    {
+      "file": "C:\\fakepath\\itl.cat_cute-girl-hd-wallpapers_2345861.png",
+      "sku": "HJJ",
+      "title": "FRIDGE",
+      "slug": "JKK",
+      "description": "HJUI",
+      "parentcategory": "WATER SOFTNER",
+      "childcategory": "Option 4",
+      "unit": "10",
+      "stock": "10",
+      "saleprice": 10,
+      "discountprice": null,
+      "tag": "LL",
+      "id": 5
     }
   ]
 }

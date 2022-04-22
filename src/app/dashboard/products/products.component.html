@@ -136,57 +136,50 @@
                                         <div class="table-responsive ">
                                             <table id="recent-orders " class="table table-hover table-xl mb-0 ">
                                                 <thead>
+
                                                     <tr>
-                                                        <th class="border-top-0 ">id</th>
+                                                        <th class="border-top-0 ">ID</th>
                                                         <th class="border-top-0 ">Product Image</th>
-                                                        <th class="border-top-0 ">SKU</th>
-                                                        <th class="border-top-0 ">Name</th>
-                                                        <th class="border-top-0 ">Slug</th>
-                                                        <th class="border-top-0 ">Description</th>
-                                                        <th class="border-top-0 ">Category</th>
-                                                        <th class="border-top-0 ">Sub-Category</th>
+                                                        <th class="border-top-0 ">Product SKU</th>
+                                                        <th class="border-top-0 ">Title</th>
+                                                        <th class="border-top-0 ">Discrption</th>
+                                                        <th class="border-top-0 ">Parent Category</th>
+                                                        <th class="border-top-0 ">Child Category</th>
                                                         <th class="border-top-0 ">Unit</th>
-                                                        <th class="border-top-0 ">Quantity</th>
-                                                        <th class="border-top-0 ">Sale Price</th>
-                                                        <th class="border-top-0 ">Discount Price</th>
+                                                        <th class="border-top-0 ">Stock</th>
+                                                        <th class="border-top-0 ">Price</th>
                                                         <th class="border-top-0 ">Tag</th>
                                                         <th class="border-top-0 ">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr *ngFor="let data of ProductsData; let i=index">
+                                                        <td>{{i+1}}</td>
+                                                        <td><img [src]="data.image" width="90"></td>
+                                                        <td>{{data.sku}}</td>
+                                                        <td>{{data.title}}</td>
+                                                        <td>{{data.details}}</td>
 
-                                                        <td class="text-truncate ">{{i+1}}</td>
-                                                        <td class="text-truncate "> <img [src]="imageSrc" *ngIf="imageSrc" style="height: 50px; width:50px">{{data.file}}</td>
-                                                        <td class="text-truncate ">{{data.sku}}</td>
+
+                                                        <td>{{data.parentcategory}}</td>
+                                                        <td>{{data.childcategory}}</td>
+                                                        <td>{{data.unit}}</td>
+                                                        <td>{{data.stock}}</td>
+                                                        <td>{{data.saleprice}}</td>
+                                                        <td>{{data.tag}}</td>
+
+
                                                         <td>
-                                                            <button type="button " class="btn btn-sm btn-outline-primary round ">{{data.title}}</button>
+
+                                                            <a (click)="onEdit(data)" class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit"></i>
+                                                            </a> &nbsp;
+                                                            <a (click)="deleteProducts(data)" class="btn btn-outline-danger ">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+
                                                         </td>
 
-                                                        <td class="text-truncate ">{{data.slug}}</td>
-                                                        <td class="text-truncate ">{{data.description}}</td>
-                                                        <td>
-                                                            <button type="button " class="btn btn-sm btn-outline-danger round ">{{data.parentcategory}}</button>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button " class="btn btn-sm btn-outline-success round ">{{data.childcategory}}</button>
-                                                        </td>
-                                                        <td class="text-truncate "> {{data.unit}}</td>
-                                                        <td class="text-truncate "> {{data.quantity}}</td>
-                                                        <td class="text-truncate "> {{data.saleprice}}</td>
-                                                        <td class="text-truncate "> {{data.discountprice}}</td>
-                                                        <td class="text-truncate ">{{data.tag}}</td>
-                                                        <td>
-                                                            <!-- <a class="btn btn-outline-success ">
-                                                                <i class="fa fa-eye "></i>
-                                                            </a> -->
-                                                            <a class="btn btn-outline-success " (click)="onEdit(data)">
-                                                                <i class="fa fa-edit "></i>
-                                                            </a>
-                                                            <a class="btn btn-outline-success" (click)="deleteProducts(data)">
-                                                                <i class="fa fa-trash "></i>
-                                                            </a>
-                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -243,13 +236,21 @@
                                                     <div class="form-body ">
                                                         <h4 class="form-section mt-3 ">
                                                             <i class="fa fa-shopping-bag"></i> Product Details</h4>
-                                                        <div class="row form-group ">
+                                                        <!-- <div class="row form-group ">
                                                             <fieldset class="form-group ml-3">
+
                                                                 <label for="basicInputFile">Product Image:</label>
-                                                                <input type="file" class="form-control-file" id="file" formControlName="file" (change)="onFileChange($event)"><br/>
-                                                                <img [src]="imageSrc" *ngIf="imageSrc" style="height: 200px; width:300px">
-                                                                <!-- <input formControlName="file" id="file" type="file" class="form-control" (change)="onFileChange($event)"> -->
+                                                                <img class="inline-flex  " [src]="url" style="width: 291px;                                                                ">
+                                                                <br>
+                                                                <input type="file" (change)="onselectFile($event)" id="file" style="width: 350px;" formControlName="image">
+                                                                <span class="file-custom"></span>
+
                                                             </fieldset>
+                                                        </div> -->
+
+                                                        <div class="form-group col-md-10">
+                                                            <label for="projectinput1 ">Product Image</label>
+                                                            <input type="text " id="projectinput1 " class="form-control" name="image" formControlName="image" value>
                                                         </div>
 
 
@@ -269,7 +270,7 @@
                                                         <div class="form-group row col-md-10">
                                                             <label class="col-md-3 label-control " for="projectinput9 ">Product Description: </label>
                                                             <div class="col-md-9 ">
-                                                                <textarea id="projectinput9 " rows="5 " class="form-control" name="comment" formControlName="description" value></textarea>
+                                                                <textarea id="projectinput9 " rows="5 " class="form-control" name="comment" formControlName="details" value></textarea>
                                                             </div>
                                                         </div>
 
@@ -281,11 +282,11 @@
                                                                 <label for="basicSelect ">Parent Category</label>
                                                                 <select class="form-control " id="basicSelect" formControlName="parentcategory" value>
                                                       <option>Select Option</option>
-                                                      <option>Option 1</option>
-                                                      <option>Option 2</option>
-                                                      <option>Option 3</option>
-                                                      <option>Option 4</option>
-                                                      <option>Option 5</option>
+                                                      <option>WATER PURIFIER</option>
+                                                      <option>RO PLANT</option>
+                                                      <option>WATER SOFTNER</option>
+                                                      <option>VACUUM CLEANER</option>
+                                                      <option>WATER DISPENSER</option>
                                                     </select>
                                                             </fieldset>
                                                         </div>
@@ -312,7 +313,7 @@
 
                                                         <div class="col-md-10 ">
                                                             <label for="userinput6 ">Product Quantity</label>
-                                                            <input class="form-control border-primary " type="number " id="userinput6" formControlName="quantity" value>
+                                                            <input class="form-control border-primary " type="number " id="userinput6" formControlName="stock" value>
                                                         </div>
 
                                                         <div class="col-md-10 ">
@@ -321,28 +322,21 @@
                                                         </div>
 
                                                         <div class="col-md-10 ">
-                                                            <label>Discount Price</label>
-                                                            <input class="form-control border-primary " id="userinput7" type="number" formControlName="discountprice" value>
-                                                        </div>
-
-                                                        <div class="col-md-10 ">
                                                             <label>Product Tag</label>
                                                             <input class="form-control border-primary " id="userinput7 " type="text " formControlName="tag" value>
                                                         </div>
 
                                                     </div>
-                                                    <div class="form-actions ">
+                                                    <div class="form-actions right ">
                                                         <button type="button " class="btn btn-danger mr-1 ">
                               <i class="icon-trash "></i> Cancel
                           </button>
-
-                                                        <button type="button " class="btn btn-success " *ngIf="showAddbutton" (click)="postProductsDetails()">
-                            <i class="icon-note "></i> Save
+                                                        <button type="submit " *ngIf="showAddbutton" (click)="postProductsDetails()" class="btn btn-success ">
+                              <i class="icon-note "></i> Save
+                          </button>
+                                                        <button type="submit " *ngIf="showUpdatebutton" (click)="updateProductsDetails()" class="btn btn-success ">
+                            <i class="icon-note "></i> Update
                         </button>
-
-                                                        <button *ngIf="showUpdatebutton" type="button " (click)="updateProductsDetails()" class="btn btn-success ">
-                                <i class="icon-note "></i> Update
-                            </button>
                                                     </div>
 
 
