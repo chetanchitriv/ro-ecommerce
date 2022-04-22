@@ -30,7 +30,7 @@ const routes: Routes = [
 
 { path:"home",component:HomeComponent},
 
-{ path: "productdetails", component:ProductdetailsComponent},
+{ path: "productdetails/:_id", component:ProductdetailsComponent},
 // {path:"dash",component:DashComponent},
 
 // { path:"nav-bar",component:NavBarComponent},

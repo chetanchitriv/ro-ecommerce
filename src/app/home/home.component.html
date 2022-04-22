@@ -396,22 +396,31 @@ text-align: center;">
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-12">
-                <div class="owl-carousel popular-slider">
-                    <!-- Start Single Product -->
-                    <div class="single-product" *ngFor="let data of ProductsData">
+            <div class="col-md-3" *ngFor="let data of ProductsData.slice(0 ,8); let i = index">
+
+                <!-- <div class="products-tabs"> -->
+                <!-- tab -->
+
+                <!-- <div id="tab1" class="tab-pane active">
+
+                        <div class="products-slick" data-nav="#slick-nav-1"> -->
+                <!-- product -->
+
+                <div class="product">
+
+                    <div class="single-product">
                         <div class="product-img">
                             <a>
-                                <img class="default-img" src="assets/images/products/product_313_1.jpg" alt="#">
-                                <!-- <img [src]="imageSrc" *ngIf="imageSrc" class="default-img" alt="#">
-                                {{data.file}} -->
-                                <img class="hover-img" src="assets/images/products/p4.jpg" alt="#">
+                                <!-- <img class="default-img" src="assets/images/products/p15.jpg" alt="#">
+                                <img class="hover-img" src="assets/images/products/p15.jpg" alt="#"> -->
+                                <img class="default-img" [src]="data.image" width="90">
                                 <span class="out-of-stock">Out Of Stock</span>
                             </a>
                             <div class="button-head">
                                 <div class="product-action">
-                                    <a routerLink="/productdetails" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                    <a [routerLink]="['/productdetails/'+data._id]" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
                                     <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
@@ -420,145 +429,43 @@ text-align: center;">
                                 </div>
                             </div>
                         </div>
-                        <div class="product-content">
-                            <h3><a>Purelt Marvela UV+COLD</a></h3>
-                            <div class="price">
-                                <b><label>₹14,006.40 </label></b>&nbsp;
-                                <del>₹14,590.00</del>
-                            </div>
-                        </div>
-                        <!-- <div class="product-content">
-                            <h3><a>{{data.title}}</a></h3>
-                            <a>{{data.slug}}</a>
-                            <div class="price">
-                                <b><label>{{data.saleprice}}</label></b>&nbsp;
-                                <del>{{data.discountprice}}</del>
-                            </div>
-                        </div> -->
-                    </div>
-                    <!-- End Single Product -->
-                    <!-- Start Single Product -->
 
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a>
-                                <img class="default-img" src="assets/images/products/p1.jpg" alt="#">
-                                <img class="hover-img" src="assets/images/products/p2.jpg" alt="#">
-                            </a>
-                            <div class="button-head">
-                                <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                    <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                </div>
-                                <div class="product-action-2">
-                                    <a title="Add to cart">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3><a>Copper Water Purifier</a></h3>
-                            <div class="price">
-                                <b><label>₹18,000.40 </label></b>&nbsp;
-                                <del>₹17,590.00</del>
-                            </div>
-                        </div>
                     </div>
 
-                    <!-- End Single Product -->
-                    <!-- Start Single Product -->
-
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a>
-                                <img class="default-img" src="assets/images/products/p3.jpg" alt="#">
-                                <img class="hover-img" src="assets/images/products/p4.jpg" alt="#">
-                                <span class="new">New</span>
-                            </a>
-                            <div class="button-head">
-                                <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                    <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                </div>
-                                <div class="product-action-2">
-                                    <a title="Add to cart">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3><a>Doctor Fresh Life Veda</a></h3>
-                            <a>Ro+Uv+UF+TDS+Infuser+ME+AS</a>
-
-                            <div class="price">
-                                <b><label>₹15,900.40 </label></b>&nbsp;
-                                <del>₹13,400.00</del>
-                            </div>
-                        </div>
+                    <div class="product-body" style="text-align:center">
+                        <!-- <p class="product-category">{{product.cat}}</p> -->
+                        <h3 class="product-name"><a>{{data.title}}</a></h3>
+                        <h4 class="product-price"><b>{{data.saleprice}}</b> <del class="product-old-price">$990.00</del></h4>
+                        <!-- <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div> -->
+                        <!-- <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><a routerLink="/ecom/view"><i class="fa fa-eye"></i></a><span class="tooltipp">quick view</span></button>
+                                    </div> -->
                     </div>
-
-                    <!-- End Single Product -->
-                    <!-- Start Single Product -->
-
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a>
-                                <img class="default-img" src="assets/images/products/p5.jpg" alt="#">
-                                <img class="hover-img" src="assets/images/products/p6.jpg" alt="#">
-                            </a>
-                            <div class="button-head">
-                                <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                    <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                </div>
-                                <div class="product-action-2">
-                                    <a title="Add to cart">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3><a>Doctor Fresh Life Guard Plus</a></h3>
-                            <a>RO+UV+UF+TDS Infuser+ME+AS</a>
-                            <div class="price">
-                                <b><label>₹17,700.40 </label></b>&nbsp;
-                                <del>₹16,400.00</del>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a>
-                                <img class="default-img" src="assets/images/products/p7.jpg" alt="#">
-                                <img class="hover-img" src="assets/images/products/p8.jpg" alt="#">
-                            </a>
-                            <div class="button-head">
-                                <div class="product-action">
-                                    <a data-toggle="modal" data-target="#exampleModal" title="Quick View"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Wishlist"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                    <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-                                </div>
-                                <div class="product-action-2">
-                                    <a title="Add to cart">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3><a>Doctor Fresh - Life Protector </a></h3>
-                            <a>RO+UV+TDS Infuser</a>
-                            <div class="price">
-                                <b><label>₹14,300.40 </label></b>&nbsp;
-                                <del>₹12,400.00</del>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Product -->
+                    <!-- <div class="add-to-cart"> -->
+                    <!-- <button class="add-to-cart-btn" (click)="addCart(product)"><i class="fa fa-shopping-cart" ></i> add to cart</button> -->
+                    <!-- </div> -->
                 </div>
+                <!-- /product -->
             </div>
         </div>
     </div>
+
 </div>
+
+
+
+<!-- </div> -->
+
+<!-- </div>
+</div> -->
 
 <div class="product-area most-popular section">
     <div class="container">

@@ -140,59 +140,46 @@
                                                     <tr>
                                                         <th class="border-top-0 ">ID</th>
                                                         <th class="border-top-0 ">Product Image</th>
-                                                        <th class="border-top-0 ">Product Name</th>
-                                                        <th class="border-top-0 ">Categories</th>
-                                                        <th class="border-top-0 ">Price</th>
+                                                        <th class="border-top-0 ">Product SKU</th>
+                                                        <th class="border-top-0 ">Title</th>
+                                                        <th class="border-top-0 ">Discrption</th>
+                                                        <th class="border-top-0 ">Parent Category</th>
+                                                        <th class="border-top-0 ">Child Category</th>
+                                                        <th class="border-top-0 ">Unit</th>
                                                         <th class="border-top-0 ">Stock</th>
-
+                                                        <th class="border-top-0 ">Price</th>
+                                                        <th class="border-top-0 ">Tag</th>
                                                         <th class="border-top-0 ">Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr *ngFor="let data of ProductsData; let i=index">
-                                                        <td class="text-truncate " {{i+1}}></td>
+                                                        <td>{{i+1}}</td>
+                                                        <td><img [src]="data.image" width="90"></td>
+                                                        <td>{{data.sku}}</td>
+                                                        <td>{{data.title}}</td>
+                                                        <td>{{data.details}}</td>
 
-                                                        <td class="text-truncate ">{{data.file}}</td>
 
-                                                        <td class="text-truncate ">{{data.title}}</td>
+                                                        <td>{{data.parentcategory}}</td>
+                                                        <td>{{data.childcategory}}</td>
+                                                        <td>{{data.unit}}</td>
+                                                        <td>{{data.stock}}</td>
+                                                        <td>{{data.saleprice}}</td>
+                                                        <td>{{data.tag}}</td>
 
-                                                        <td class="text-truncate ">{{data.parentcategory}}</td>
-
-                                                        <td class="text-truncate ">{{data.stock}}</td>
 
                                                         <td>
-                                                            <a class="btn btn-outline-success ">
-                                                                <i class="fa fa-eye "></i>
-                                                            </a>
-                                                            <a class="btn btn-outline-success ">
-                                                                <i class="fa fa-edit "></i>
-                                                            </a>
-                                                            <a class="btn btn-outline-success ">
-                                                                <i class="fa fa-trash "></i>
+
+                                                            <a (click)="onEdit(data)" class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit"></i>
+                                                            </a> &nbsp;
+                                                            <a (click)="deleteProducts(data)" class="btn btn-outline-danger ">
+                                                                <i class="fa fa-trash"></i>
                                                             </a>
 
                                                         </td>
 
-                                                    </tr>
-                                                    <tr>
-
-
-                                                        <td class="text-truncate "></td>
-
-                                                        <td class="text-truncate "></td>
-
-                                                        <td>
-                                                            <a class="btn btn-outline-success ">
-                                                                <i class="fa fa-eye "></i>
-                                                            </a>
-                                                            <a class="btn btn-outline-success ">
-                                                                <i class="fa fa-edit "></i>
-                                                            </a>
-                                                            <a class="btn btn-outline-success ">
-                                                                <i class="fa fa-trash "></i>
-                                                            </a>
-
-                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -249,16 +236,21 @@
                                                     <div class="form-body ">
                                                         <h4 class="form-section mt-3 ">
                                                             <i class="fa fa-shopping-bag"></i> Product Details</h4>
-                                                        <div class="row form-group ">
+                                                        <!-- <div class="row form-group ">
                                                             <fieldset class="form-group ml-3">
 
                                                                 <label for="basicInputFile">Product Image:</label>
                                                                 <img class="inline-flex  " [src]="url" style="width: 291px;                                                                ">
                                                                 <br>
-                                                                <input type="file" (change)="onselectFile($event)" id="file" style="width: 350px;">
+                                                                <input type="file" (change)="onselectFile($event)" id="file" style="width: 350px;" formControlName="image">
                                                                 <span class="file-custom"></span>
 
                                                             </fieldset>
+                                                        </div> -->
+
+                                                        <div class="form-group col-md-10">
+                                                            <label for="projectinput1 ">Product Image</label>
+                                                            <input type="text " id="projectinput1 " class="form-control" name="image" formControlName="image" value>
                                                         </div>
 
 
@@ -278,7 +270,7 @@
                                                         <div class="form-group row col-md-10">
                                                             <label class="col-md-3 label-control " for="projectinput9 ">Product Description: </label>
                                                             <div class="col-md-9 ">
-                                                                <textarea id="projectinput9 " rows="5 " class="form-control" name="comment" formControlName="description" value></textarea>
+                                                                <textarea id="projectinput9 " rows="5 " class="form-control" name="comment" formControlName="details" value></textarea>
                                                             </div>
                                                         </div>
 
@@ -339,9 +331,12 @@
                                                         <button type="button " class="btn btn-danger mr-1 ">
                               <i class="icon-trash "></i> Cancel
                           </button>
-                                                        <button type="button " (click)="postProductsDetails()" class="btn btn-success ">
+                                                        <button type="submit " *ngIf="showAddbutton" (click)="postProductsDetails()" class="btn btn-success ">
                               <i class="icon-note "></i> Save
                           </button>
+                                                        <button type="submit " *ngIf="showUpdatebutton" (click)="updateProductsDetails()" class="btn btn-success ">
+                            <i class="icon-note "></i> Update
+                        </button>
                                                     </div>
 
 

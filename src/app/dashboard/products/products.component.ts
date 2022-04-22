@@ -27,11 +27,11 @@ export class ProductsComponent implements OnInit {
     this.getAllProducts();
     this.productForm = this.formbuilder.group({
 
-      file: ['', Validators.required],
+      image: ['', Validators.required],
       sku: ['', Validators.required],
       title: ['', Validators.required],
       slug: ['', Validators.required],
-      description: ['', Validators.required],
+      details: ['', Validators.required],
       parentcategory: ['', Validators.required],
       childcategory: ['', Validators.required],
       unit: ['', Validators.required],
@@ -65,7 +65,7 @@ export class ProductsComponent implements OnInit {
     
   }
   deleteProducts(data:any){
-    this.productservice.deleteProducts(data.id).subscribe(res=>{
+    this.productservice.deleteProducts(data._id).subscribe(res=>{
       alert("Records Deleted Successfully!")
       
     this.getAllProducts()
@@ -79,7 +79,7 @@ export class ProductsComponent implements OnInit {
     this.showAddbutton=false;
     this.showUpdatebutton=true;
   
-    this.updateId=data.id
+    this.updateId=data._id
   
     this.productForm.patchValue(data)
   }
