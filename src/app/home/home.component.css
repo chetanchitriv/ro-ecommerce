@@ -19,3 +19,1512 @@
 .single-product1:hover {
     transform: scale(1.1);
 }
+
+
+
+
+#d1 {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+  }
+  
+  #d2 {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+  }
+  
+  #d3 {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+  }
+  
+  #d4 {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+  }
+
+
+
+
+p.mns {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.butns-call-saler {
+    background: #199d02;
+    color: #fff;
+    text-align: center;
+    padding: 0 13px;
+    line-height: 11px;
+    border-radius: 0;
+    width: 140px;
+    float: left;
+    padding: 10px 15px 8px 15px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  h1.mein-heading-water-purifier {
+      margin: 0;
+  }
+  section.content-areass.main-contctbs table p {
+    padding: 0 !important;
+  }
+  .become.saleservice-pop {
+    padding: 0;
+  }
+  div#share {
+      display: none;
+  }
+  .pay_now {
+      width: 100%;
+      float: left;
+      text-align: center;
+  }
+  .modal-content.fd {
+    background: 0 0;
+    box-shadow: 0 0;
+    border: 0;
+  }
+  .pay_buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      width: 100%;
+  }
+  
+  #myModal2 {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.35) !important;
+  }
+  #myModal2 .modal-dialog.become-model {
+    width: 100%;
+  }
+  .modal-body.ro-pop {
+    background: 0 0 !important;
+    box-shadow: 0 0;
+  }
+  #myModal2 .become li h3 {
+    font-size: 21px;
+    background: #fb641b;
+    padding: 19px;
+    color: #fff;
+    font-weight: 400 !important;
+    margin-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  h2.title_here-pops {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800 !important;
+  }
+  h2.title_here-pops.titl {
+    margin-bottom: 6px;
+  }
+  .become.saleservice-pop p {
+    font-size: 21px;
+    color: #fff;
+  }
+  button.close.sd.service-pops {
+    background: 0 0;
+    font-weight: 100;
+    position: absolute;
+    top: 36px;
+    right: 255px;
+    border-radius: 50px;
+    font-size: 62px;
+    width: 86px;
+  }
+  section.content-areass blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #3ebeee;
+    background: #f0f0f0;
+  }
+  section.content-areass blockquote p {
+    font-weight: 400;
+    font-size: 17px !important;
+    line-height: 26px;
+    text-align: justify;
+    font-style: italic;
+  }
+  .servic li a {
+    float: left;
+    width: 100%;
+  }
+  .servic {
+    box-shadow: 10px 10px 40px 0 rgb(87 151 228 / 16%);
+    background: #fff;
+    padding: 9px 0;
+    border-radius: 20px;
+    float: left;
+    width: 100%;
+  }
+  .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .owl-next {
+    right: -45px;
+    background: url(https://www.rocareindia.online/uploads/others/next-round.png)
+      no-repeat center center !important;
+    position: absolute;
+    top: 41px;
+    height: 71px;
+    font-size: 0 !important;
+    width: 68px;
+    color: #28435f;
+    line-height: 31px;
+    border-radius: 50%;
+  }
+  .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .owl-prev {
+    left: -45px;
+    background: url(https://www.rocareindia.online/uploads/others/next-round.png)
+      no-repeat center center !important;
+    position: absolute;
+    top: 41px;
+    height: 71px;
+    font-size: 0 !important;
+    width: 68px;
+    color: #28435f;
+    transform: rotate(180deg);
+    line-height: 31px;
+    border-radius: 50%;
+  }
+  .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded {
+    box-shadow: 10px 10px 40px 0 rgb(87 151 228 / 16%);
+    background: #fff;
+    padding: 9px 0;
+    border-radius: 20px;
+  }
+  section.inter-linking-here ul li {
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none;
+  }
+  .linking-here h2 {
+      font-size: 22px;
+      font-weight: 600 !important;
+  }
+  section.inter-linking-here ul li a {
+      padding: 4px 11px;
+      border: 1px solid #6b6a6a;
+      margin: 13px 15px 0 0;
+      border-radius: 38px;
+      float: left;
+      color: #333;
+      font-size: 13px;
+      white-space: nowrap;
+      width: 198px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: none;
+  }
+  section.inter-linking-here ul {
+      margin: 0;
+      padding: 0;
+  }
+  section.inter-linking-here {
+      overflow: hidden;
+      margin: 27px 0;
+      box-shadow: 0 0 8px rgb(0 0 0 / 5%);
+      border-radius: 3px;
+      background: #fff;
+      padding: 0 0 23px 0;
+      border: 1px solid #e2e2e2;
+      padding: 39px 30px;
+  }
+  .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .owl-dots {
+    display: none !important;
+  }
+  .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .first {
+    box-shadow: 0 0 !important;
+    padding: 14px 0 0 !important;
+  }
+  .first img {
+    width: 72px !important;
+    margin: auto;
+  }
+  .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .first img {
+    border: 2px solid #116466;
+    width: 65px !important;
+    padding: 9px;
+    height: 65px !important;
+    border-radius: 10%;
+  }
+  .first h3 {
+    font-size: 12px !important;
+    color: #333;
+    padding: 10px 0 0;
+    font-weight: 600 !important;
+  }
+  footer#dk-footer .col-md-12.col-lg-12 {
+    margin: 0;
+  }
+  section.main-cat.our-catgris.ourss.our-services-four {
+    display: none;
+  }
+  .inner-policy-links span a {
+    font-size: 12px;
+  }
+  .inner-policy-links span {
+    padding: 0 11px 0 0;
+  }
+  .dk-footer {
+    padding: 72px 0 0;
+    background-image: url(https://www.rocareindia.online/template/front/landing_page/images/water-back.jpg);
+    position: relative;
+    float: left;
+    width: 100%;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: scroll;
+  }
+  .buttons.all-buttonsss {
+    float: left;
+    width: 100%;
+  }
+  .call-saleer-button.disktop {
+    float: left;
+    height: 45px;
+  }
+  .inner-policy-links span a {
+    font-size: 15px;
+    color: #232323;
+  }
+  .inner-policy-links {
+    text-align: left;
+    float: left;
+    width: 70%;
+    position: relative;
+  }
+  #dk-footer:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    left: 0;
+    background: rgba(26, 108, 206, 0.9) none repeat scroll 0 0;
+    top: 0;
+  }
+  .modal-header.inquery.book-now-forms {
+      padding: 0;
+      background: transparent !important;
+      border: 0;
+      position: absolute;
+      right: 0;
+  }
+  .form-card.dd.book-ser h2 {
+      padding: 24px 0;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 800 !important;
+      margin-bottom: 0;
+      padding-bottom: 13px;
+  }
+  .pay_now a {
+      font-size: 15px;
+      background: #349b00;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 6px 26px;
+      border-radius: 48px;
+      margin: 12px 0;
+      /* float: left; */
+      background-image: linear-gradient(to top, rgb(255 143 8), rgb(248 167 37));
+      display: inline-block;
+  }
+  .form-style-agile {
+      margin-bottom: 11px;
+  }
+  .pay_later input {
+      float: none !important;
+      padding: 4px 10px !important;
+      font-size: 15px !important;
+      text-transform: uppercase !important;
+      margin-top: 10px !important;
+  }
+  
+  .pay_later {
+      float: left;
+      width: 48%;
+      text-align: center;
+  }
+  .form-card.dd.book-ser input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+  }
+  .form-card.dd.book-ser .form-style-agile.city_area {
+      float: left;
+      width: 50%;
+  }
+  .form-card.dd.book-ser .form-style-agile.state_area {
+      float: left;
+      width: 48%;
+      margin-right: 5px;
+  }
+  div#myModal-one .col-md-12.mx-0 {
+      margin: 0;
+  }
+  .modal-header.inquery.book-now-forms button.close {
+      opacity: 2;
+      font-size: 30px;
+      font-weight: normal;
+      padding: 7px;
+      z-index: 9999;
+      position: relative;
+  }
+  .footer-widget.footer-left-widgetcties-pop {
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid #adaaaa;
+    float: left;
+    width: 100%;
+  }
+  .footer-widget .section-heading {
+    margin-bottom: 3px;
+  }
+  .footer-widget ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .copyright-menu li {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  .dk-footer-box-info .footer-social-link a i.fa-facebook {
+    background-color: #3b5998;
+  }
+  .dk-footer-box-info .footer-social-link li {
+    display: inline-block;
+  }
+  .dk-footer-box-info .footer-social-link a i.fa-twitter {
+    background-color: #55acee;
+  }
+  .dk-footer-box-info .footer-social-link a i.fa-instagram {
+    background-color: #b7242a;
+  }
+  .dk-footer-box-info .footer-social-link a i {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 1%;
+    text-align: center;
+    line-height: 29px;
+    background: #000;
+    margin-right: 5px;
+    color: #fff;
+  }
+  .col-md-6.subcribe input {
+    float: left;
+    width: 38%;
+    margin-right: 15px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #000 !important;
+    box-shadow: 0 0;
+    border: 2px solid #fff;
+  }
+  .form-group.coupon-btnss {
+    display: flex;
+  }
+  .form-group.coupon-btnss input {
+    width: 202px;
+    margin-right: 10px;
+  }
+  .form-group.coupon-btnss span {
+    border: 0;
+  }
+  div#map-canvas {
+    display: none;
+  }
+  .orange {
+    background-color: #ff9800 !important;
+  }
+  .owl-carousel.our-customer-sayy.partners.owl-theme.owl-loaded .owl-next {
+    top: 90px;
+  }
+  span.icon-view.btn.btn-shopping-cart {
+    position: relative;
+    top: -3px;
+  }
+  .owl-carousel.our-customer-sayy.partners.owl-theme.owl-loaded .owl-prev {
+    top: 90px;
+  }
+  .recentBox {
+    width: 298px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 7%);
+    padding: 14px 13px 13px;
+    float: left;
+    margin: 19px 0 19px;
+    height: 173px;
+    position: relative;
+    border: 1px solid #ddd;
+  }
+  .date {
+    display: none;
+  }
+  .blue {
+    background-color: #2196f3 !important;
+  }
+  .leftSecdiv span {
+    position: relative;
+    top: 10px;
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .rightSecdiv {
+    float: left;
+    width: 214px;
+  }
+  .rightSecdiv span {
+    color: #7a7a7a;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 15px;
+  }
+  .rightSecdiv h5 {
+    color: #212121;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  .red {
+    background: #e74c3c;
+  }
+  .gr {
+    background: #1abc9c;
+  }
+  .leftSecdiv {
+    float: left;
+    width: 39px;
+    margin-right: 12px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .countStar img {
+    height: 15px;
+    vertical-align: bottom;
+    display: inline-block !important;
+    margin-right: 8px !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+  .rightSecdiv p {
+    color: #7a7a7a;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: 0;
+  }
+  .owl-carousel.partners.owl-theme.owl-loaded .owl-next {
+    right: -45px;
+    background: url(https://www.rocareindia.online/uploads/others/next-round.png)
+      no-repeat center center !important;
+    position: absolute;
+    top: 40px;
+    height: 71px;
+    font-size: 0 !important;
+    width: 68px;
+    color: #28435f;
+    line-height: 31px;
+    border-radius: 50%;
+    border: 0;
+  }
+  section.main-cat.our-catgris.our-clinetsvs.our-customer-say {
+    margin-top: 39px;
+  }
+  .owl-carousel.partners.owl-theme.owl-loaded .owl-dots {
+    display: none !important;
+  }
+  .owl-carousel.partners.owl-theme.owl-loaded .owl-prev {
+    right: -45px;
+    background: url(https://www.rocareindia.online/uploads/others/next-round.png)
+      no-repeat center center !important;
+    position: absolute;
+    top: 40px;
+    height: 71px;
+    font-size: 0 !important;
+    width: 68px;
+    transform: rotate(180deg);
+    color: #28435f;
+    line-height: 31px;
+    border-radius: 50%;
+    border: 0;
+  }
+  span.btn.btn-subcribe.subscriber.enterer {
+    background: #116466;
+    padding: 9px 15px;
+    border-radius: 2px;
+    position: absolute;
+    right: 27px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid;
+  }
+  .copyright {
+    padding: 0 0 14px 0;
+    margin-top: 1px;
+    background-color: #054e50;
+  }
+  .copyright a,
+  .copyright span {
+    color: #878787;
+  }
+  .copy a {
+    color: #fff;
+  }
+  .copy {
+    color: #fff;
+    font-size: 12px;
+    line-height: 27px;
+  }
+  i.fa.fa-youtube {
+    background: red !important;
+  }
+  .footer-social-link ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .copyright .col-md-4 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .copyright .col-md-8 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .copyright .row {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .dk-footer-box-info {
+    text-align: center;
+  }
+  .footer-widget ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-widget.footer-left-widgetcties-pop ul li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 13px;
+  }
+  .footer-widget li {
+    margin-bottom: 0;
+    display: inline-block;
+    padding: 1px 15px 1px 0;
+    line-height: 29px;
+  }
+  .footer-widget.footer-left-widgetcties-pop.popular-city-footers {
+    border: 0;
+  }
+  .footer-widget h3 {
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 2px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin-right: 21px;
+    margin-top: 0;
+    font-weight: 600 !important;
+  }
+  .post-wrap blockquote {
+    padding: 20px 20px 24px 20px;
+    border-top: solid 6px #00b16a;
+    background-color: #116466;
+    position: relative;
+  }
+  .post-wrap blockquote a {
+      color: #faa11d;
+  }
+  blockquote p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 35px;
+      color: #fff;
+  }
+  .footer-links- {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  .footer-links- ul li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  .footer-links- ul li:last-child:after {
+    display: none;
+  }
+  .footer-links- ul li a {
+    color: #fff;
+    font-size: 12px;
+  }
+  .footer-links- ul li:after {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 2px;
+    background: #fff;
+    top: 2px;
+    margin-left: 10px;
+  }
+  .widget-content.blog-sidebar {
+    padding: 18px 25px !important;
+  }
+  .checkbox label,
+  .radio label {
+    min-height: 20px;
+    padding-left: 14px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  span.count {
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    text-align-last: center;
+    line-height: 8px;
+    color: #424242;
+  }
+  .widget.shop-categories ul .arrow .fa {
+    font-size: 19px;
+    line-height: 2px;
+    position: relative;
+    left: -6px;
+    top: -6px;
+  }
+  .widget.shop-categories ul li {
+    padding: 4px 15px 3px 0;
+    overflow: hidden;
+  }
+  .widget.shop-categories ul li + li {
+    border-top: solid 0 rgba(35, 35, 35, 0.1);
+  }
+  .search_cat {
+    padding: 10px 18px;
+  }
+  .content .widget + .widget,
+  .footer .widget + .widget,
+  .sidebar .widget + .widget {
+    margin-top: 13px;
+  }
+  .butns-call-saler a span {
+    font-size: 10px;
+  }
+  .butns-call-saler a {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .call-saleer-button.mobile-view {
+    display: none;
+  }
+  .sidebar-menu-left .vertical-menu ul.megamenu > li > a {
+    font-size: 14px !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 400 !important;
+    font-family: Poppins, sans-serif !important;
+  }
+  section.main-cat.our-catgris.ourss {
+    margin-top: 9px;
+  }
+  .servic ul li {
+    background: 0 0;
+    padding: 5px 0;
+    text-align: center;
+    box-shadow: 0 0;
+    border-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    width: 20%;
+    height: auto;
+    float: left;
+    border-left: 1px solid #ddd;
+    margin: auto;
+    list-style: none !important;
+  }
+  .modal-header.booknow h4 {
+    color: #fff;
+    text-align: center;
+  }
+  .book-now-buttons {
+    display: inline-block;
+  }
+  .book-now-buttons a {
+    background: #116466;
+    width: 100px;
+    float: left;
+    color: #fff;
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  .call-saleer-button.disktop .butns-call-saler {
+    margin-right: 10px;
+  }
+  div#myModalpopup .close {
+      background: #fff;
+      opacity: 1;
+      height: 24px;
+      width: 24px;
+      border-radius: 23px;
+      font-size: 16px;
+  }
+  .file input[type=button i], input[type=file i]::-webkit-file-upload-button, input[type=reset i], input[type=submit i] {
+      cursor: pointer;
+      display: inline-block;
+      color: #fff;
+      font-size: 16px;
+      text-transform: none;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      margin-left: -12px;
+      margin-top: -6px;
+      background-color: #fd9611;
+      /* float: left; */
+  }
+  input.btn.btn-danger.gfg.categ-rgt1 {
+    margin: 0 0 0 7px;
+    width: 49%;
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+    left: 25%;
+  }
+  .modal-dialog.modal-md {
+    width: 343px;
+  }
+  .countStar {
+    color: #212121;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 15px;
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: 700;
+  }
+  .main-button button {
+    position: absolute;
+    height: 44px;
+    width: 43px;
+    color: #848484 !important;
+    bottom: 23px;
+    right: 54px;
+    font-size: 23px;
+    background: 0 0 !important;
+    border: 0;
+  }
+  .main-button:hover .fa-plus {
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  section.content-areass h3 {
+    color: #878787 !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    margin-bottom: 13px !important;
+    text-transform: capitalize !important;
+    padding-left: 28px;
+  }
+  .social-btn {
+    opacity: 0;
+    display: block;
+    position: absolute;
+    bottom: 41px;
+    right: 38px;
+    transition: opacity 0.7s;
+  }
+  .main-button:hover > .social-btn {
+    opacity: 1;
+    display: block;
+  }
+  .main-button .btn-primary .fa {
+    font-size: 15px;
+  }
+  span.dd {
+    font-size: 14px;
+  }
+  .social-btn li i {
+    float: right;
+    font-size: 17px;
+    margin-top: 0;
+  }
+  .main-button ul li {
+    width: 171px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 700;
+    height: 32px;
+  }
+  .social-btn .Facebook,
+  .social-btn .Google-plus,
+  .social-btn .Twitter,
+  .social-btn .Whatsapp,
+  .social-btn .YouTube {
+    background-color: #4267b2;
+    color: #fff;
+  }
+  .social-btn .Twitter {
+    background-color: #1da1f2;
+  }
+  .social-btn .Whatsapp {
+    background-color: #009688;
+  }
+  .social-btn .email {
+    background-color: #b23121;
+    color: #fff;
+  }
+  .social-btn .YouTube {
+    background-color: #ed2423;
+  }
+  .main-button ul li i {
+    position: absolute;
+    right: 20px;
+  }
+  #myP {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 7px 0;
+  }
+  #faq-accordion .panel-heading {
+    border-bottom: 0;
+  }
+  .footer1 {
+    margin-top: 32px !important;
+  }
+  #share-buttons img {
+    width: 35px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+  }
+  div#faq-accordion .panel {
+    border: 1px solid #ddd;
+  }
+  #faq-accordion .panel-body p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  div#faq-accordion .panel-heading {
+    padding: 8px 15px 8px !important;
+  }
+  section.content-areass.inms {
+    padding: 14px;
+    margin-bottom: 26px;
+  }
+  #faq-accordion {
+    padding-top: 20px !important;
+    float: left;
+    width: 100%;
+  }
+  .accordion .panel {
+    border: none;
+    border-radius: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff;
+    padding-left: 10px;
+    border-bottom: solid 1px #e9e9e9;
+    border-radius: 27px !important;
+    margin-bottom: 10px;
+  }
+  #faq-accordion .panel-heading {
+    padding: 8px 15px 29px;
+  }
+  @media (max-width: 767px) {
+    .call-saleer-button.mobile-view {
+      display: block;
+      float: left;
+      width: 100%;
+      margin-top: 15px;
+    }
+    .all-services-imgages ul li {
+      list-style: none;
+      width: 100% !important;
+      margin: 0 4px;
+      border: 1px solid #ddd;
+      padding: 0;
+      float: left;
+      margin-bottom: 6px;
+      border-top-left-radius: 10px;
+      list-style: none !important;
+      border-top-right-radius: 10px;
+  }
+    section.inter-linking-here ul li a {
+      padding: 4px 11px;
+      border: 1px solid #6b6a6a;
+      margin: 13px 15px 0 0;
+      border-radius: 38px;
+      float: left;
+      color: #333;
+      font-size: 13px;
+      white-space: nowrap;
+      width: 156px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: none;
+  }
+    .modal-dialog.become-model .modal-body {
+      background: #f3f7f8;
+      border-radius: 24px !important;
+      margin-top: 57px;
+    }
+    .become ul li img {
+      width: 90%;
+      padding: 6px;
+    }
+    #myModal2 .become ul li {
+      background: #fff;
+      width: 44%;
+      display: inline-block;
+      margin: 7px 7px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 2px #2b2a2a;
+    }
+    .become.saleservice-pop ul {
+      margin: 0;
+      padding: 0;
+    }
+    #myModal2 .become li h3 {
+      font-size: 16px;
+      background: #fb641b;
+      padding: 8px;
+      color: #fff;
+      font-weight: 400 !important;
+      margin-bottom: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    button.close.sd.service-pops {
+      background: 0 0;
+      font-weight: 100;
+      position: absolute;
+      top: -30px;
+      right: -9px;
+      border-radius: 50px;
+      font-size: 39px;
+      width: 86px;
+    }
+    h2.title_here-pops {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 800 !important;
+    }
+    .become.saleservice-pop p {
+      font-size: 15px;
+      color: #fff;
+    }
+    section.main-cat.our-catgris.ourss.our-services-four {
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 15px;
+    }
+    section.main-cat.our-catgris.our-clinetsvs {
+      float: left;
+      width: 100%;
+      padding: 0 0;
+      display: block;
+      padding: 21px 0 !important;
+    }
+    .owl-carousel.categoies.service-four.customer-reviews.owl-theme.owl-loaded
+      .book-now-buttons
+      a {
+      text-align: center;
+      font-size: 10px;
+      padding: 3px;
+      width: 67px;
+    }
+    .owl-carousel.categoies.service-four.customer-reviews.owl-theme.owl-loaded
+      .book-now-buttons
+      a {
+      text-align: center;
+      font-size: 10px;
+      padding: 3px;
+      width: 67px;
+    }
+    .owl-carousel.categoies.service-four.customer-reviews.owl-theme.owl-loaded
+      .item {
+      text-align: center;
+    }
+    .owl-carousel.categoies.service-four.customer-reviews.owl-theme.owl-loaded
+      h4 {
+      font-size: 12px;
+      text-align: center;
+    }
+    .owl-carousel.categoies.service-four.customer-reviews.owl-theme.owl-loaded
+      img {
+      width: 53px;
+      margin: auto;
+    }
+    section.main-cat.our-catgris.ourss {
+      display: block;
+    }
+    section.main-cat.our-catgris {
+      display: none;
+    }
+    .main-cat.our-catgris.our-clinetsvs.our-customer-say {
+      margin-top: -7px;
+      padding: 0 !important;
+    }
+    section.main-cat.our-catgris.our-clinetsvs.our-customer-say {
+      margin-top: 20px !important;
+    }
+    .col-md-6.subcribe input {
+      float: left;
+      width: 100%;
+      margin-right: 15px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      color: #000 !important;
+      box-shadow: 0 0;
+      border: 2px solid #1a6cce;
+    }
+    span.btn.btn-subcribe.subscriber.enterer {
+      background: #1a6cce;
+      padding: 9px 15px;
+      border-radius: 2px;
+      position: relative;
+      right: 0;
+      text-transform: uppercase;
+      color: #fff;
+      margin-top: 10px;
+    }
+    .recentBox {
+      width: 100%;
+      border-radius: 2px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 7%);
+      padding: 14px 13px 13px;
+      float: left;
+      margin: 2px 0 2px;
+      min-height: 134px;
+      position: relative;
+      border: 1px solid #ddd;
+    }
+    .servic {
+      box-shadow: 0 0;
+      background: 0 0;
+      padding: 9px 0;
+      border-radius: 20px;
+      float: left;
+    }
+    .first {
+      background: #fff;
+      padding: 14px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px 2px #c3c3c3;
+      border-radius: 9px;
+      cursor: pointer;
+      width: 100% !important;
+      float: left;
+      margin: 5px;
+    }
+    .outer.required {
+      float: left;
+      width: 100%;
+    }
+    input.btn.btn-danger.gfg.categ-rgt1 {
+      margin: 0 0 0 7px;
+      width: 49% !important;
+      padding: 4px;
+      border-radius: 3px;
+      font-size: 16px;
+      position: relative;
+      top: -15px;
+      left: 25%;
+      padding: 7px !important;
+    }
+    .col-md-3.col-sm-12.useful-links-mobile {
+      margin-top: 35px;
+    }
+    .inner-policy-links {
+      text-align: left;
+      float: left;
+      width: 100%;
+      position: relative;
+    }
+    .col-lg-3.col-md-3.col-sm-sm.col-xs-12.dff {
+      display: none;
+    }
+    .left-section-in {
+      float: left;
+      width: 100%;
+      margin: 0 0;
+      margin-top: 420px !important;
+    }
+    .copy {
+      color: #fff;
+      font-size: 14px;
+      line-height: 27px;
+      text-align: center;
+    }
+    .dk-footer {
+      padding: 73px 0 0;
+      background-color: #1a6cce;
+      position: relative;
+      float: left;
+      width: 100%;
+      z-index: 999;
+    }
+    .footer-widget.footer-left-widgetcties-pop ul li a {
+      color: #fff;
+      text-decoration: none;
+      opacity: 1;
+      font-size: 11px;
+    }
+    .footer-widget li {
+      margin-bottom: 0;
+      display: inline-block;
+      padding: 1px 15px 1px 0;
+      line-height: 20px;
+    }
+    .post-body img {
+      width: 100% !important;
+      height: auto !important;
+    }
+    section.page-section.brands {
+      margin-top: 250px;
+      display: none;
+    }
+    .footer-links- ul li:after {
+      content: "";
+      position: absolute;
+      height: 17px;
+      width: 2px;
+      background: #fff;
+      top: 2px;
+      margin-left: 10px;
+      display: none;
+    }
+    section.mobileApp.animated.fadeInUp {
+      display: none;
+    }
+    .form-div.home-froms {
+      background: #fff;
+      padding: 15px 17px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px 2px #c3c3c3;
+      margin: 6px 0 30px 0;
+      border-radius: 12px;
+      margin-top: 33px;
+    }
+    .footer1-meta {
+      padding: 41px 0 0;
+    }
+    section.page-section.image.testimonials.vendors.image_delay {
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
+    }
+    .butns-call-saler {
+      background: #199d02;
+      color: #fff;
+      text-align: center;
+      padding: 0 13px;
+      line-height: 11px;
+      border-radius: 0;
+      width: 162px;
+      float: left;
+      padding: 10px 15px 8px 15px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .owl-next {
+      right: -19px;
+      background: url(https://www.rocareindia.online/uploads/others/next-round.png)
+        no-repeat center center !important;
+      position: absolute;
+      top: 27px;
+      height: 71px;
+      font-size: 0 !important;
+      width: 68px;
+      color: #28435f;
+      line-height: 31px;
+      border-radius: 50%;
+    }
+    .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .owl-prev {
+      left: -21px;
+      background: url(https://www.rocareindia.online/uploads/others/next-round.png)
+        no-repeat center center !important;
+      position: absolute;
+      top: 27px;
+      height: 71px;
+      font-size: 0 !important;
+      width: 68px;
+      color: #28435f;
+      transform: rotate(180deg);
+      line-height: 31px;
+      border-radius: 50%;
+    }
+    .page-section {
+      position: relative;
+      overflow: visible;
+      padding-top: 18px !important;
+      padding-bottom: 0 !important;
+    }
+    section.main-cat.our-catgris.ourss {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 19px;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #232323;
+      overflow: hidden;
+    }
+    .caret,
+    .fa-angle-right,
+    .responsive ul.megamenu > li.home,
+    ul.megamenu > li.search {
+      display: block !important;
+    }
+    .featured-products-carousel
+      .owl-theme
+      .owl-controls
+      .owl-nav
+      [class*="owl-"] {
+      position: absolute;
+      top: 50%;
+      margin: -20px 0 0 0;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 30px;
+      line-height: 30px;
+      border: solid 3px #00000096;
+      background: 0 0;
+      background: #000;
+      color: #fff;
+      box-shadow: 0 0 5px 3px #96959566;
+    }
+    .featured-products-carousel .owl-theme .owl-controls {
+      display: block !important;
+    }
+    ul.social-btn br {
+      display: none;
+    }
+    .row aside[class*="col-"],
+    .row div[class*="col-"] {
+      margin-top: 11px;
+    }
+    section.page-section.category_menu
+      .col-md-12.col-sm-12.col-xs-12.padding-lr-0-md {
+      margin-top: 61px !important;
+    }
+    .servic p {
+      font-size: 12px;
+      padding: 0 13px;
+      text-align: center;
+      display: none;
+    }
+    .sub-cateroys ul li {
+      width: 26% !important;
+      display: inline-block;
+      margin: 0 11px 10px;
+    }
+    .sub-cateroys ul li img {
+      width: 48px;
+    }
+    .servic h4 {
+      font-size: 13px;
+      text-transform: capitalize;
+      font-weight: 600 !important;
+    }
+    .section-title.section-title-lg {
+      font-size: 18px !important;
+    }
+    .owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .first img {
+      border: 2px solid #2179d3;
+      width: 57px !important;
+      padding: 5px;
+      height: auto !important;
+      border-radius: 10%;
+    }
+    .owl-theme .owl-controls {
+      margin-top: -16px !important;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .first h3 {
+      font-size: 15px;
+      color: #333;
+      padding: 2px 0 0;
+      font-weight: 600 !important;
+    }
+    .sub-cateroys li h3 {
+      font-size: 9px;
+    }
+    .servic ul li {
+      background: #fff;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 10px 10px 40px 0 rgb(87 151 228 / 16%);
+      border-radius: 10px !important;
+      cursor: pointer;
+      width: 43% !important;
+      height: 103px !important;
+      margin: 10px !important;
+      float: left;
+      margin: 10px 10 !important;
+      border-top-right-radius: 10px !important;
+      border-bottom-left-radius: 10px !important;
+    }
+    .content .table li {
+      width: 100% !important;
+      height: 180px;
+      padding: 27px 18px 45px !important;
+      border-bottom: 1px solid #e0e0e0;
+      float: left;
+    }
+    ul.social-btn a {
+      float: left;
+      width: auto;
+    }
+    .main-button {
+      float: left;
+      width: 100%;
+    }
+    .rates {
+      width: 76px;
+      padding: 0 7px;
+    }
+    .partner {
+      display: none !important;
+    }
+    .disclamer {
+      padding: 21px;
+      text-align: justify;
+    }
+    .star-rating span {
+      color: #534e4e !important;
+      font-size: 9px !important;
+      text-align: center !important;
+    }
+    .star-rating {
+      position: relative !important;
+      right: 0 !important;
+      top: 0 !important;
+      text-align: center !important;
+    }
+    section.content-areass p {
+      color: #878787;
+      font-size: 11px;
+      margin-bottom: 0;
+      text-align: justify;
+    }
+    span.dd {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #000;
+    }
+    i.fa.fa-share-alt {
+      display: none;
+    }
+    .main-button ul li i {
+      position: relative;
+      right: 5px;
+    }
+    .social-btn li i {
+      float: none;
+      font-size: 17px;
+      margin-top: 0;
+    }
+    .main-button ul li {
+      width: 31px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 700;
+      height: 32px;
+      float: left;
+      margin: 20px 5px;
+    }
+    ul.social-btn li span {
+      display: none;
+    }
+    .social-btn {
+      opacity: 1;
+      display: block;
+      position: relative;
+      bottom: 0;
+      right: 0;
+      transition: opacity 0.7s;
+    }
+    .main-button button {
+      position: initial;
+      height: 67px;
+      width: 43px;
+      color: #848484 !important;
+      bottom: 23px;
+      right: 54px;
+      font-size: 23px;
+      background: 0 0 !important;
+      border: 0;
+      float: left;
+      width: 21%;
+      text-align: left;
+    }
+    .call-saleer-button.disktop {
+      display: none;
+    }
+  }
+  
+
+
+div#myModalpopup .close {
+    background: #fff;
+    opacity: 1;
+    height: 24px;
+    width: 24px;
+    border-radius: 23px;
+    font-size: 16px;
+}
