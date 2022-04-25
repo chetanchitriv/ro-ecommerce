@@ -63,7 +63,8 @@ import { AllbrandsComponent } from './allbrands/allbrands.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatRadioModule,
-    MatButtonModule
+    MatButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
