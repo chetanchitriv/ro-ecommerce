@@ -82,37 +82,32 @@
                                     <span>2 Items</span>
                                     <a>View Cart</a>
                                 </div>
-                                <ul class="shopping-list">
+                                <ul class="shopping-list" *ngFor="let item of products">
                                     <li>
                                         <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                        <a class="cart-img"><img src="assets/images/product-1.jpg" alt="#"></a>
-                                        <h4><a>Doctor Fresh Life Veda</a></h4>
+                                        <a class="cart-img"><img [src]="item.image" width="90"></a>
+                                        <h4><a>{{item.title}}</a></h4>
                                         <b>
-                                            <p class="quantity">1x - <span>15,940/-</span></p>
+                                            <p class="quantity">1x - <span>{{item.saleprice}}/-</span></p>
                                         </b>
                                     </li>
-                                    <li>
-                                        <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                        <a class="cart-img"><img src="assets/images/product-2.jpg" alt="#"></a>
-                                        <h4><a>Puret Marvela RO+Cold</a></h4>
-                                        <p class="quantity">1x - <span class="amount">14660/-</span></p>
-                                    </li>
+
                                 </ul>
-                                <div class="bottom">
-                                    <div class="total">
-                                        <span>Total</span>
-                                        <span class="total-amount">26,560/-</span>
-                                    </div>
-                                    <a routerLink="/main-dashboard/checkout" class="btn animate">Checkout</a>
+                                <div class="bottom"></div>>
+                                <div class="total">
+                                    <span>Total</span>
+                                    <span class="total-amount" *ngFor="let item of products">{{item.total}}/-</span>
                                 </div>
+                                <a routerLink="/main-dashboard/checkout" class="btn animate">Checkout</a>
                             </div>
-                            <!--/ End Shopping Item -->
                         </div>
+                        <!--/ End Shopping Item -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
 
