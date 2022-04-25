@@ -27,6 +27,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
 import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { AllbrandsComponent } from './allbrands/allbrands.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     MyprofileComponent,
     MainDashboardComponent,
     ProductdetailsComponent,
+    AllbrandsComponent,
    
   ],
   imports: [
