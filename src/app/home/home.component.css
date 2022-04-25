@@ -1523,8 +1523,41 @@ p.mns {
 div#myModalpopup .close {
     background: #fff;
     opacity: 1;
-    height: 24px;
-    width: 24px;
-    border-radius: 23px;
-    font-size: 16px;
+    height: 22px;
+    width: 22px;
+    border-radius: 24px;
+    font-size: 12px;
 }
+
+
+
+.modal-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #116466;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+
+
+/* input.btn.btn-info.btn-md:hover {
+
+  background-color: black;
+  color: white;
+
+} */
