@@ -28,4 +28,6 @@ this.productservice.getOne(this.id).subscribe((data)=>{
 
 
   }
+
+
 }

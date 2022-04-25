@@ -75,7 +75,7 @@
                             <a class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                         </div>
                         <div class="sinlge-bar shopping">
-                            <a class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+                            <a routerLink="/cartpage" class="single-icon"><i class="ti-bag"></i> <span class="total-count">{{totalItemNumber}}</span></a>
                             <!-- Shopping Item -->
                             <div class="shopping-item">
                                 <div class="dropdown-cart-header">
@@ -845,7 +845,7 @@ text-align: center;">
                                     <a title="Compare"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
                                 </div>
                                 <div class="product-action-2">
-                                    <a title="Add to cart">Add to cart</a>
+                                    <a title="Add to cart" (click)="addtoCart(data)">Add to cart</a>
                                 </div>
                             </div>
                         </div>

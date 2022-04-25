@@ -1,5 +1,4 @@
 <header class="header shop">
-    <!-- Topbar -->
     <div class="topbar" data-bg-color="aqua-marine" class="card gradient-aqua-marine d-block rounded box-shadow-2" style="margin: 0px;color: #fff;">
         <div class="container">
             <div class="row">
@@ -74,7 +73,7 @@
                             <a class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                         </div>
                         <div class="sinlge-bar shopping">
-                            <a class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+                            <a routerLink="/cartpage" class="single-icon"><i class="ti-bag"></i> <span class="total-count">{{totalItemNumber}}</span></a>
                             <!-- Shopping Item -->
                             <div class="shopping-item">
                                 <div class="dropdown-cart-header">
@@ -87,8 +86,8 @@
                                         <a class="cart-img"><img src="assets/images/product-1.jpg" alt="#"></a>
                                         <h4><a>Doctor Fresh Life Veda</a></h4>
                                         <b>
-                                            <p class="quantity">1x - <span>15,940/-</span></p>
-                                        </b>
+                                        <p class="quantity">1x - <span>15,940/-</span></p>
+                                    </b>
                                     </li>
                                     <li>
                                         <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
@@ -112,40 +111,70 @@
             </div>
         </div>
     </div>
-
 </header>
-<!--/ End Header -->
 
+<ng-container *ngIf="products.length !=0">
+    <div class="card-table">
+        <div class="card-product">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sr. no.</th>
+                        <th>product image</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
 
-<div class="modal-body">
-    <div class="row no-gutters">
-        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <!-- Product Slider -->
-            <div class="product-gallery">
-                <div class="quickview-slider-active">
-                    <div class="single-slider">
-                        <img class="default-img" [src]="data.image" width="400">
-                    </div>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of products, let i=index">
+                        <td>{{i+1}}</td>
+                        <td><img [src]="item.image" width="90"></td>
+                        <td>{{item.title}}</td>
+                        <td>${{item.saleprice}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>{{item.total}}</td>
+                        <td>
+                            <button class="btn btn-danger" (click)="removeProduct(item)">
+        Delete
+    </button>
+                        </td>
 
-                </div>
-            </div>
-            <!-- End Product slider -->
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td class="btn btn-danger" (click)="removeAllProduct()">Empty cart</td>
+                        <td routerLink="/home" class="btn btn-warning">Shop more</td>
+                        <td class="btn btn-primary">Check out</td>
+                        <td><strong>Total:${{allProducts}}</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <div class="quickview-content">
-                <h2>{{data.title}}</h2>
 
-                <h3>{{data.saleprice}}</h3>
-                <div class="quickview-peragraph">
-                    <p>{{data.details}}</p>
-                </div>
-
-                <div class="add-to-cart">
-                    <a href="#" class="btn">Add to cart</a>
-                    <a href="#" class="btn min"><i class="ti-heart"></i></a>
-                    <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
-                </div>
-
-            </div>
-        </div>
     </div>
+
+</ng-container>
+
+
+<ng-container *ngIf="products.length ==0">
+    <div class="container">
+        <div class="card">
+            <h4 class="cart-title">My Cart</h4>
+
+        </div>
+
+        <div class="center">
+            <img src="https://cdni.iconscout.com/illustration/free/thumb/empty-cart-4085814-3385483.png">
+            <h5>Your Cart is empty!</h5>
+            <h6>Add item to it now</h6>
+            <button routerLink="/home" class="btn btn-primary">Shop now</button>
+
+        </div>
+
+    </div>
+</ng-container>
