@@ -27,7 +27,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
 import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
-import { CartPageComponent } from './cart-page/cart-page.component';
+import { AllbrandsComponent } from './allbrands/allbrands.component';
 
 
 @NgModule({
@@ -52,7 +52,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
     MyprofileComponent,
     MainDashboardComponent,
     ProductdetailsComponent,
-    CartPageComponent,
+    AllbrandsComponent,
    
   ],
   imports: [
@@ -63,7 +63,8 @@ import { CartPageComponent } from './cart-page/cart-page.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatRadioModule,
-    MatButtonModule
+    MatButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
