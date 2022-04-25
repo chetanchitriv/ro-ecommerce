@@ -3,13 +3,16 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CategoriesService } from '../shared/categories.service';
 import { ProductService } from '../shared/product.service';
 import { DomSanitizer } from '@angular/platform-browser';
+import { CartService } from '../shared/cart.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  
 })
 export class HomeComponent implements OnInit {
+  totalItemNumber:number =0;
   CategoriesForm: any=FormGroup;
   CategoriesData: any=[];
   filteredList:any=[];
@@ -20,10 +23,14 @@ export class HomeComponent implements OnInit {
   imageSrc: any;
   isImageLoading: boolean |any;
 
-  constructor(private formbuilder:FormBuilder, private categoriesservice:CategoriesService, private productservice :ProductService, public _sanitizer: DomSanitizer) { }
+  constructor(private formbuilder:FormBuilder, private categoriesservice:CategoriesService, private productservice :ProductService, public _sanitizer: DomSanitizer, private cartservice:CartService) { }
 
   ngOnInit(): void {
     // add categries start//
+
+    this.cartservice.getProductData().subscribe(res=>{
+      this.totalItemNumber=res.length;
+    })
 
     
     this.CategoriesForm = this.formbuilder.group({
@@ -92,12 +99,18 @@ export class HomeComponent implements OnInit {
        getAllProducts() {
         this.productservice.getProducts().subscribe(res=>{
           this.ProductsData = res;
+this.ProductsData.forEach((a:any)=>{
+  Object.assign(a,{quantity:1, total:a.saleprice})
+})
 
-        
           console.log(res, "get"); 
         });
       }
      // add product end//
+
+     addtoCart(item:any){
+this.cartservice.addToCart(item);
+     }
 
      onFileChange(event:any) {
       const reader = new FileReader();

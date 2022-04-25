@@ -16,6 +16,7 @@ import { CheckoutComponent } from './web/checkout/checkout.component';
 import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.component';
 import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,8 @@ const routes: Routes = [
 { path:"home",component:HomeComponent},
 
 { path: "productdetails/:_id", component:ProductdetailsComponent},
+
+{ path: "cartpage", component:CartPageComponent},
 // {path:"dash",component:DashComponent},
 
 // { path:"nav-bar",component:NavBarComponent},
