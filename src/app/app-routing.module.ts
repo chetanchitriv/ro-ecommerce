@@ -18,6 +18,7 @@ import { MyprofileComponent } from './dashboard/myprofile/myprofile.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { AllbrandsComponent } from './allbrands/allbrands.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,7 @@ const routes: Routes = [
 
 
 { path: "allbrands", component:AllbrandsComponent},
+{ path: "blogs", component:BlogsComponent},
 
 // { path: "login", component: LoginComponent },
 // { path: "signup", component: SignupComponent },
