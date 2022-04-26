@@ -34,6 +34,10 @@ allProducts:any =0;
 
     this.cartservice.getProductData().subscribe(res=>{
       this.totalItemNumber=res.length;
+      console.log(this.cartservice.getProductData())
+      
+      
+
     })
 
     

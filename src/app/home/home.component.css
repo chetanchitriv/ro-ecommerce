@@ -954,3 +954,7 @@ div#myModalpopup .close {
   color: white;
 
 } */
+
+.container {
+    max-width: 1350px;
+}

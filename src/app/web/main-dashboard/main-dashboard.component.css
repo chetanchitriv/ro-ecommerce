@@ -1,0 +1,960 @@
+.single-product1 {
+    background: #fff;
+    padding: 4px;
+    text-align: center;
+    box-shadow: 0 4px 8px 2px #c3c3c3;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 242px;
+    /* height: 158px; */
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.product-img1 {
+    width: 82px !important;
+    margin: auto;
+}
+
+.single-product1:hover {
+    transform: scale(1.1);
+}
+
+#d1 {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+#d2 {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+#d3 {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+#d4 {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+p.mns {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.butns-call-saler {
+    background: #199d02;
+    color: #fff;
+    text-align: center;
+    padding: 0 13px;
+    line-height: 11px;
+    border-radius: 0;
+    width: 140px;
+    float: left;
+    padding: 10px 15px 8px 15px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+h1.mein-heading-water-purifier {
+    margin: 0;
+}
+
+section.content-areass.main-contctbs table p {
+    padding: 0 !important;
+}
+
+.become.saleservice-pop {
+    padding: 0;
+}
+
+div#share {
+    display: none;
+}
+
+.pay_now {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.modal-content.fd {
+    background: 0 0;
+    box-shadow: 0 0;
+    border: 0;
+}
+
+.pay_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100%;
+}
+
+#myModal2 {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+#myModal2 .modal-dialog.become-model {
+    width: 100%;
+}
+
+.modal-body.ro-pop {
+    background: 0 0 !important;
+    box-shadow: 0 0;
+}
+
+#myModal2 .become li h3 {
+    font-size: 21px;
+    background: #fb641b;
+    padding: 19px;
+    color: #fff;
+    font-weight: 400 !important;
+    margin-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h2.title_here-pops {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800 !important;
+}
+
+h2.title_here-pops.titl {
+    margin-bottom: 6px;
+}
+
+.become.saleservice-pop p {
+    font-size: 21px;
+    color: #fff;
+}
+
+button.close.sd.service-pops {
+    background: 0 0;
+    font-weight: 100;
+    position: absolute;
+    top: 36px;
+    right: 255px;
+    border-radius: 50px;
+    font-size: 62px;
+    width: 86px;
+}
+
+section.content-areass blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #3ebeee;
+    background: #f0f0f0;
+}
+
+section.content-areass blockquote p {
+    font-weight: 400;
+    font-size: 17px !important;
+    line-height: 26px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.servic li a {
+    float: left;
+    width: 100%;
+}
+
+.servic {
+    box-shadow: 10px 10px 40px 0 rgb(87 151 228 / 16%);
+    background: #fff;
+    padding: 9px 0;
+    border-radius: 20px;
+    float: left;
+    width: 100%;
+}
+
+.owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .owl-next {
+    right: -45px;
+    background: url(https://www.rocareindia.online/uploads/others/next-round.png) no-repeat center center !important;
+    position: absolute;
+    top: 41px;
+    height: 71px;
+    font-size: 0 !important;
+    width: 68px;
+    color: #28435f;
+    line-height: 31px;
+    border-radius: 50%;
+}
+
+.owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .owl-prev {
+    left: -45px;
+    background: url(https://www.rocareindia.online/uploads/others/next-round.png) no-repeat center center !important;
+    position: absolute;
+    top: 41px;
+    height: 71px;
+    font-size: 0 !important;
+    width: 68px;
+    color: #28435f;
+    transform: rotate(180deg);
+    line-height: 31px;
+    border-radius: 50%;
+}
+
+.owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded {
+    box-shadow: 10px 10px 40px 0 rgb(87 151 228 / 16%);
+    background: #fff;
+    padding: 9px 0;
+    border-radius: 20px;
+}
+
+section.inter-linking-here ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+
+.linking-here h2 {
+    font-size: 22px;
+    font-weight: 600 !important;
+}
+
+section.inter-linking-here ul li a {
+    padding: 4px 11px;
+    border: 1px solid #6b6a6a;
+    margin: 13px 15px 0 0;
+    border-radius: 38px;
+    float: left;
+    color: #333;
+    font-size: 13px;
+    white-space: nowrap;
+    width: 198px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+section.inter-linking-here ul {
+    margin: 0;
+    padding: 0;
+}
+
+section.inter-linking-here {
+    overflow: hidden;
+    margin: 27px 0;
+    box-shadow: 0 0 8px rgb(0 0 0 / 5%);
+    border-radius: 3px;
+    background: #fff;
+    padding: 0 0 23px 0;
+    border: 1px solid #e2e2e2;
+    padding: 39px 30px;
+}
+
+.owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .owl-dots {
+    display: none !important;
+}
+
+.owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .first {
+    box-shadow: 0 0 !important;
+    padding: 14px 0 0 !important;
+}
+
+.first img {
+    width: 72px !important;
+    margin: auto;
+}
+
+.owl-carousel.categoies.customer-reviews.owl-theme.owl-loaded .first img {
+    border: 2px solid #116466;
+    width: 65px !important;
+    padding: 9px;
+    height: 65px !important;
+    border-radius: 10%;
+}
+
+.first h3 {
+    font-size: 12px !important;
+    color: #333;
+    padding: 10px 0 0;
+    font-weight: 600 !important;
+}
+
+footer#dk-footer .col-md-12.col-lg-12 {
+    margin: 0;
+}
+
+section.main-cat.our-catgris.ourss.our-services-four {
+    display: none;
+}
+
+.inner-policy-links span a {
+    font-size: 12px;
+}
+
+.inner-policy-links span {
+    padding: 0 11px 0 0;
+}
+
+.dk-footer {
+    padding: 72px 0 0;
+    background-image: url(https://www.rocareindia.online/template/front/landing_page/images/water-back.jpg);
+    position: relative;
+    float: left;
+    width: 100%;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: scroll;
+}
+
+.buttons.all-buttonsss {
+    float: left;
+    width: 100%;
+}
+
+.call-saleer-button.disktop {
+    float: left;
+    height: 45px;
+}
+
+.inner-policy-links span a {
+    font-size: 15px;
+    color: #232323;
+}
+
+.inner-policy-links {
+    text-align: left;
+    float: left;
+    width: 70%;
+    position: relative;
+}
+
+#dk-footer:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    left: 0;
+    background: rgba(26, 108, 206, 0.9) none repeat scroll 0 0;
+    top: 0;
+}
+
+.modal-header.inquery.book-now-forms {
+    padding: 0;
+    background: transparent !important;
+    border: 0;
+    position: absolute;
+    right: 0;
+}
+
+.form-card.dd.book-ser h2 {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800 !important;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+}
+
+.pay_now a {
+    font-size: 15px;
+    background: #349b00;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 26px;
+    border-radius: 48px;
+    margin: 12px 0;
+    /* float: left; */
+    background-image: linear-gradient(to top, rgb(255 143 8), rgb(248 167 37));
+    display: inline-block;
+}
+
+.form-style-agile {
+    margin-bottom: 11px;
+}
+
+.pay_later input {
+    float: none !important;
+    padding: 4px 10px !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important;
+    margin-top: 10px !important;
+}
+
+.pay_later {
+    float: left;
+    width: 48%;
+    text-align: center;
+}
+
+.form-card.dd.book-ser input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-card.dd.book-ser .form-style-agile.city_area {
+    float: left;
+    width: 50%;
+}
+
+.form-card.dd.book-ser .form-style-agile.state_area {
+    float: left;
+    width: 48%;
+    margin-right: 5px;
+}
+
+div#myModal-one .col-md-12.mx-0 {
+    margin: 0;
+}
+
+.modal-header.inquery.book-now-forms button.close {
+    opacity: 2;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 7px;
+    z-index: 9999;
+    position: relative;
+}
+
+.footer-widget.footer-left-widgetcties-pop {
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid #adaaaa;
+    float: left;
+    width: 100%;
+}
+
+.footer-widget .section-heading {
+    margin-bottom: 3px;
+}
+
+.footer-widget ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright-menu li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.dk-footer-box-info .footer-social-link a i.fa-facebook {
+    background-color: #3b5998;
+}
+
+.dk-footer-box-info .footer-social-link li {
+    display: inline-block;
+}
+
+.dk-footer-box-info .footer-social-link a i.fa-twitter {
+    background-color: #55acee;
+}
+
+.dk-footer-box-info .footer-social-link a i.fa-instagram {
+    background-color: #b7242a;
+}
+
+.dk-footer-box-info .footer-social-link a i {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 1%;
+    text-align: center;
+    line-height: 29px;
+    background: #000;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.col-md-6.subcribe input {
+    float: left;
+    width: 38%;
+    margin-right: 15px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #000 !important;
+    box-shadow: 0 0;
+    border: 2px solid #fff;
+}
+
+.form-group.coupon-btnss {
+    display: flex;
+}
+
+.form-group.coupon-btnss input {
+    width: 202px;
+    margin-right: 10px;
+}
+
+.form-group.coupon-btnss span {
+    border: 0;
+}
+
+div#map-canvas {
+    display: none;
+}
+
+.orange {
+    background-color: #ff9800 !important;
+}
+
+.owl-carousel.our-customer-sayy.partners.owl-theme.owl-loaded .owl-next {
+    top: 90px;
+}
+
+span.icon-view.btn.btn-shopping-cart {
+    position: relative;
+    top: -3px;
+}
+
+.owl-carousel.our-customer-sayy.partners.owl-theme.owl-loaded .owl-prev {
+    top: 90px;
+}
+
+.recentBox {
+    width: 298px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 7%);
+    padding: 14px 13px 13px;
+    float: left;
+    margin: 19px 0 19px;
+    height: 173px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.date {
+    display: none;
+}
+
+.blue {
+    background-color: #2196f3 !important;
+}
+
+.leftSecdiv span {
+    position: relative;
+    top: 10px;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.rightSecdiv {
+    float: left;
+    width: 214px;
+}
+
+.rightSecdiv span {
+    color: #7a7a7a;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 15px;
+}
+
+.rightSecdiv h5 {
+    color: #212121;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.red {
+    background: #e74c3c;
+}
+
+.gr {
+    background: #1abc9c;
+}
+
+.leftSecdiv {
+    float: left;
+    width: 39px;
+    margin-right: 12px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.countStar img {
+    height: 15px;
+    vertical-align: bottom;
+    display: inline-block !important;
+    margin-right: 8px !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+
+.rightSecdiv p {
+    color: #7a7a7a;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: 0;
+}
+
+.owl-carousel.partners.owl-theme.owl-loaded .owl-next {
+    right: -45px;
+    background: url(https://www.rocareindia.online/uploads/others/next-round.png) no-repeat center center !important;
+    position: absolute;
+    top: 40px;
+    height: 71px;
+    font-size: 0 !important;
+    width: 68px;
+    color: #28435f;
+    line-height: 31px;
+    border-radius: 50%;
+    border: 0;
+}
+
+section.main-cat.our-catgris.our-clinetsvs.our-customer-say {
+    margin-top: 39px;
+}
+
+.owl-carousel.partners.owl-theme.owl-loaded .owl-dots {
+    display: none !important;
+}
+
+.owl-carousel.partners.owl-theme.owl-loaded .owl-prev {
+    right: -45px;
+    background: url(https://www.rocareindia.online/uploads/others/next-round.png) no-repeat center center !important;
+    position: absolute;
+    top: 40px;
+    height: 71px;
+    font-size: 0 !important;
+    width: 68px;
+    transform: rotate(180deg);
+    color: #28435f;
+    line-height: 31px;
+    border-radius: 50%;
+    border: 0;
+}
+
+span.btn.btn-subcribe.subscriber.enterer {
+    background: #116466;
+    padding: 9px 15px;
+    border-radius: 2px;
+    position: absolute;
+    right: 27px;
+    text-transform: uppercase;
+    color: rgb(96, 96, 96);
+    border: 1px solid;
+}
+
+.copyright {
+    padding: 0 0 14px 0;
+    margin-top: 1px;
+    background-color: #f0efef;
+}
+
+.copyright a,
+.copyright span {
+    color: #878787;
+}
+
+.copy a {
+    color: rgb(48, 48, 48);
+}
+
+.copy {
+    color: #fff;
+    font-size: 12px;
+    line-height: 27px;
+}
+
+i.fa.fa-youtube {
+    background: red !important;
+}
+
+.footer-social-link ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.copyright .col-md-4 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.copyright .col-md-8 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.copyright .row {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.dk-footer-box-info {
+    text-align: center;
+}
+
+.footer-widget ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-widget.footer-left-widgetcties-pop ul li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 13px;
+}
+
+.footer-widget li {
+    margin-bottom: 0;
+    display: inline-block;
+    padding: 1px 15px 1px 0;
+    line-height: 29px;
+}
+
+.footer-widget.footer-left-widgetcties-pop.popular-city-footers {
+    border: 0;
+}
+
+.footer-widget h3 {
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 2px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin-right: 21px;
+    margin-top: 0;
+    font-weight: 600 !important;
+}
+
+.post-wrap blockquote {
+    padding: 20px 20px 24px 20px;
+    border-top: solid 6px #00b16a;
+    background-color: #116466;
+    position: relative;
+}
+
+.post-wrap blockquote a {
+    color: #faa11d;
+}
+
+blockquote p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 35px;
+    color: #fff;
+}
+
+.footer-links- {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.footer-links- ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer-links- ul li:last-child:after {
+    display: none;
+}
+
+.footer-links- ul li a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-links- ul li:after {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 2px;
+    background: #fff;
+    top: 2px;
+    margin-left: 10px;
+}
+
+.widget-content.blog-sidebar {
+    padding: 18px 25px !important;
+}
+
+.checkbox label,
+.radio label {
+    min-height: 20px;
+    padding-left: 14px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+span.count {
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    text-align-last: center;
+    line-height: 8px;
+    color: #424242;
+}
+
+.widget.shop-categories ul .arrow .fa {
+    font-size: 19px;
+    line-height: 2px;
+    position: relative;
+    left: -6px;
+    top: -6px;
+}
+
+.widget.shop-categories ul li {
+    padding: 4px 15px 3px 0;
+    overflow: hidden;
+}
+
+.widget.shop-categories ul li+li {
+    border-top: solid 0 rgba(35, 35, 35, 0.1);
+}
+
+.search_cat {
+    padding: 10px 18px;
+}
+
+.content .widget+.widget,
+.footer .widget+.widget,
+.sidebar .widget+.widget {
+    margin-top: 13px;
+}
+
+.butns-call-saler a span {
+    font-size: 10px;
+}
+
+.butns-call-saler a {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.call-saleer-button.mobile-view {
+    display: none;
+}
+
+.sidebar-menu-left .vertical-menu ul.megamenu>li>a {
+    font-size: 14px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400 !important;
+    font-family: Poppins, sans-serif !important;
+}
+
+section.main-cat.our-catgris.ourss {
+    margin-top: 9px;
+}
+
+.servic ul li {
+    background: 0 0;
+    padding: 5px 0;
+    text-align: center;
+    box-shadow: 0 0;
+    border-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    width: 20%;
+    height: auto;
+    float: left;
+    border-left: 1px solid #ddd;
+    margin: auto;
+    list-style: none !important;
+}
+
+.modal-header.booknow h4 {
+    color: #fff;
+    text-align: center;
+}
+
+.book-now-buttons {
+    display: inline-block;
+}
+
+.book-now-buttons a {
+    background: #116466;
+    width: 100px;
+    float: left;
+    color: #fff;
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.call-saleer-button.disktop .butns-call-saler {
+    margin-right: 10px;
+}
+
+div#myModalpopup .close {
+    background: #fff;
+    opacity: 1;
+    height: 22px;
+    width: 22px;
+    border-radius: 24px;
+    font-size: 12px;
+}
+
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #116466;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+
+/* input.btn.btn-info.btn-md:hover {
+
+  background-color: black;
+  color: white;
+
+} */
+
+.container {
+    max-width: 1350px;
+}
