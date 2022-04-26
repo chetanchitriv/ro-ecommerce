@@ -6053,8 +6053,8 @@ Version:1.0
 }
 
 .card1 {
-    width: 80%;
-    margin-left: 10%;
+    width: 89%;
+    margin-left: 6%;
     box-shadow: 10px 10px 40px 0 rgb(87 151 228 / 16%);
     background: #fff;
     padding: 9px 0;
@@ -6077,51 +6077,26 @@ Version:1.0
     border-radius: 10%;
 }
 
-#bgslider {
-    overflow: hidden;
-}
 
-#bgslider figure {
-    position: relative;
-    width: 500%;
+/* .owl-carousel1 {
     margin: 0;
+    position: absolute;
     left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 30s slidy infinite;
+    right: 0;
 }
 
-#bgslider figure {
-    float: left;
-    height: 100vh;
-}
-
-@keyframes slidy {
-    0% {
-        left: 0%;
-    }
-    20% {
-        left: 0%;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
-}
+.owl-carousel1 div {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    margin: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 0;
+    border-radius: 0;
+} */

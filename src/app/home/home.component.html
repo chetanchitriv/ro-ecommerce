@@ -69,50 +69,48 @@
                     <div class="right-bar">
                         <!-- Search Form -->
                         <div class="sinlge-bar">
-                            <a class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a class="single-icon"><i class="ti-heart"></i></a>
                         </div>
                         <div class="sinlge-bar">
-                            <a class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                            <a class="single-icon"><i class="ti-user"></i></a>
                         </div>
                         <div class="sinlge-bar shopping">
-                            <a routerLink="/cartpage" class="single-icon"><i class="ti-bag"></i> <span class="total-count">{{totalItemNumber}}</span></a>
+                            <a class="single-icon">
+                                <i class="ti-bag"></i>
+                                <span class="total-count">{{totalItemNumber}}</span>
+                            </a>
                             <!-- Shopping Item -->
                             <div class="shopping-item">
                                 <div class="dropdown-cart-header">
-                                    <span>2 Items</span>
-                                    <a>View Cart</a>
+                                    <span>{{totalItemNumber}} Items</span>
+                                    <a routerLink="/main-dashboard/cartpage">View Cart</a>
                                 </div>
-                                <ul class="shopping-list">
+                                <ul class="shopping-list" *ngFor="let item of products">
                                     <li>
                                         <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                        <a class="cart-img"><img src="assets/images/product-1.jpg" alt="#"></a>
-                                        <h4><a>Doctor Fresh Life Veda</a></h4>
+                                        <a class="cart-img"><img [src]="item.image" width="90"></a>
+                                        <h4><a>{{item.title}}</a></h4>
                                         <b>
-                                            <p class="quantity">1x - <span>15,940/-</span></p>
+                                            <p class="quantity">1x - <span>{{item.saleprice}}/-</span></p>
                                         </b>
                                     </li>
-                                    <li>
-                                        <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                        <a class="cart-img"><img src="assets/images/product-2.jpg" alt="#"></a>
-                                        <h4><a>Puret Marvela RO+Cold</a></h4>
-                                        <p class="quantity">1x - <span class="amount">14660/-</span></p>
-                                    </li>
+
                                 </ul>
-                                <div class="bottom">
-                                    <div class="total">
-                                        <span>Total</span>
-                                        <span class="total-amount">26,560/-</span>
-                                    </div>
-                                    <a routerLink="/main-dashboard/checkout" class="btn animate">Checkout</a>
+                                <div class="bottom"></div>>
+                                <div class="total">
+                                    <span>Total</span>
+                                    <span class="total-amount" *ngFor="let item of products">{{item.total}}/-</span>
                                 </div>
+                                <a routerLink="/main-dashboard/checkout" class="btn animate">Checkout</a>
                             </div>
-                            <!--/ End Shopping Item -->
                         </div>
+                        <!--/ End Shopping Item -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
 
@@ -569,7 +567,7 @@
         <p class="mns">Quick and Instant water purifier service at your doorstep within 2 hours</p>
         <div class="our-ser">
 
-            <div class="servic">
+            <div class="servic" style="margin-bottom: 18px;">
                 <ul>
                     <li>
                         <img src="https://www.rocareindia.online/uploads/others/repeat.png">
@@ -737,7 +735,7 @@
 
 
 
-
+<br><br><br>
 <div style=" margin-top:10px;line-height: 0.5;
 text-align: center;">
     <br>
@@ -750,7 +748,7 @@ text-align: center;">
     </h2>
     <div class="card1">
         <div class="row">
-
+            <!-- <div class="owl-carousel popular-slider"> -->
             <div class="first1">
                 <img src="https://www.rocareindia.online/uploads/others/water-purifier.png">
                 <h3>Water <span>Purifier</span></h3>
@@ -787,11 +785,12 @@ text-align: center;">
                 <img src="https://www.rocareindia.online/uploads/others/veg.png">
                 <h3> Veg <span> Purifier</span></h3>
             </div> -->
-
+            <!-- </div>-->
         </div>
-
     </div>
+
 </div>
+
 
 
 
@@ -1948,7 +1947,7 @@ text-align: center;">
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-tag"></i>
-                    <h4>Best Peice</h4>
+                    <h4>Best Price</h4>
                     <p>Guaranteed price</p>
                 </div>
                 <!-- End Single Service -->
@@ -2184,34 +2183,34 @@ text-align: center;">
 
                     <div class="container">
                         <div class="content-index-area bottom-index-p">
-                            <p>RO Care India is India's leading e-commerce and B2B &amp; B2C water purifier service marketplace. We are in this field for more than a decades, and currently, we are working with 5,500 business partner, and our services are
+                            <p style="color:#888484;">RO Care India is India's leading e-commerce and B2B &amp; B2C water purifier service marketplace. We are in this field for more than a decades, and currently, we are working with 5,500 business partner, and our services are
                                 available in more than 1350 cities across the nation.</p>&nbsp;
-                            <h6 style="color:  rgb(4, 253, 232);">Water Purifier :</h6>
-                            <p>At RO Care India, we have listed a wide range of advance and latest technology-based water purifier so people across the nation can buy the best water purifier for their home. RO Care India also enables water purifier manufacturer
+                            <h6 style="color:rgb(2 26 255);    font-size: 18px;">Water Purifier :</h6>
+                            <p style="color:#888484;">At RO Care India, we have listed a wide range of advance and latest technology-based water purifier so people across the nation can buy the best water purifier for their home. RO Care India also enables water purifier manufacturer
                                 and distributor to list their product on our e-commerce platform.</p>
-                            <h6 style="color:  rgb(4, 253, 232);">Water Softner :</h6>
-                            <p>From Ion exchange to an electromagnetic water softener or from semi-automatic to automatic water softener, we offer you all kinds of the water softener. Moreover, our online e-commerce portal allows you to compare various kinds
+                            <h6 style="color:  rgb(2 26 255);    font-size: 18px;">Water Softner :</h6>
+                            <p style="color:#888484;">From Ion exchange to an electromagnetic water softener or from semi-automatic to automatic water softener, we offer you all kinds of the water softener. Moreover, our online e-commerce portal allows you to compare various kinds
                                 and brands of water softener altogether so that you can shop the best water softener here.
                             </p>
-                            <h6 style="color: rgb(4, 253, 232);">RO Plant :</h6>
-                            <p>We have listed a wide range of RO plant so you can shop would-class RO plant at RO Care India. Here at RO Care India online e-commerce portal, people across the nation can buy the best RO plant for domestic, commercial or industrial
+                            <h6 style="color: rgb(2 26 255);    font-size: 18px;">RO Plant :</h6>
+                            <p style="color:#888484;">We have listed a wide range of RO plant so you can shop would-class RO plant at RO Care India. Here at RO Care India online e-commerce portal, people across the nation can buy the best RO plant for domestic, commercial or industrial
                                 purposes.
                             </p>
-                            <h6 style="color: rgb(4, 253, 232);">Water ATM :</h6>
-                            <p>A water ATM is a water vending machine that brings 100% contamination-free water 24*7. RO Care India's e-commerce online platform offers affordable and reliable water ATM installation, repair, and regular maintenance services
+                            <h6 style="color: rgb(2 26 255);    font-size: 18px;">Water ATM :</h6>
+                            <p style="color:#888484;">A water ATM is a water vending machine that brings 100% contamination-free water 24*7. RO Care India's e-commerce online platform offers affordable and reliable water ATM installation, repair, and regular maintenance services
                                 in PAN India.
                             </p>
-                            <h6 style="color: rgb(4, 253, 232);">Spare Parts :</h6>
-                            <p>It is spare parts quality that makes a water purification system durable and long-lasting. We are India's best-emerging water purification system spare parts wholesales suppliers of domestic, commercial and industrial RO plant.
+                            <h6 style="color: rgb(2 26 255);    font-size: 18px;">Spare Parts :</h6>
+                            <p style="color:#888484;">It is spare parts quality that makes a water purification system durable and long-lasting. We are India's best-emerging water purification system spare parts wholesales suppliers of domestic, commercial and industrial RO plant.
                                 Our spare parts are available in PAN India.</p>
-                            <h6 style="color: rgb(4, 253, 232);">Water Ionizer :</h6>
-                            <p>A water ionizer is an advantage purification system that maintains the pH of the water. At RO Care India, we have listed a wide range of water ionizers, thus allowing you to shop the best water ionizers online. At RO Care India
+                            <h6 style="color: rgb(2 26 255);    font-size: 18px;">Water Ionizer :</h6>
+                            <p style="color:#888484;">A water ionizer is an advantage purification system that maintains the pH of the water. At RO Care India, we have listed a wide range of water ionizers, thus allowing you to shop the best water ionizers online. At RO Care India
                                 e-commerce platform, you can purchase all kinds and brands of water ionizer at a competitive price.</p>
-                            <h6 style="color: rgb(4, 253, 232);">Water Purifier Service :</h6>
-                            <p>RO Care India aims to provide water purification system solution to the people across PAN India. We offer installation, repair, maintenance service, and AMC services of all brands and kinds of water purification systems like
+                            <h6 style="color: rgb(2 26 255);    font-size: 18px;">Water Purifier Service :</h6>
+                            <p style="color:#888484;">RO Care India aims to provide water purification system solution to the people across PAN India. We offer installation, repair, maintenance service, and AMC services of all brands and kinds of water purification systems like
                                 water purifier, water softener, and others.</p>
-                            <h6 style="color: rgb(4, 253, 232);">Why Should You Choose RO Care India :</h6>
-                            <p>Our service engineers, customer care executives, and the entire team are dedicated to customer satisfaction, thus offering world-class services at economical and affordable prices at the customer doorstep. RO Care India, customer
+                            <h6 style="color: rgb(2 26 255);    font-size: 18px;">Why Should You Choose RO Care India :</h6>
+                            <p style="color:#888484;">Our service engineers, customer care executives, and the entire team are dedicated to customer satisfaction, thus offering world-class services at economical and affordable prices at the customer doorstep. RO Care India, customer
                                 care department, remains open 24*7 to help peoples.</p>
                             <p>&nbsp;</p>
 

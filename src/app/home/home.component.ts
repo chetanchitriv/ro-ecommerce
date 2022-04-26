@@ -12,6 +12,10 @@ import { CartService } from '../shared/cart.service';
   
 })
 export class HomeComponent implements OnInit {
+
+  products:any =[];
+allProducts:any =0;
+
   totalItemNumber:number =0;
   CategoriesForm: any=FormGroup;
   CategoriesData: any=[];
@@ -30,6 +34,10 @@ export class HomeComponent implements OnInit {
 
     this.cartservice.getProductData().subscribe(res=>{
       this.totalItemNumber=res.length;
+      console.log(this.cartservice.getProductData())
+      
+      
+
     })
 
     
@@ -37,8 +45,26 @@ export class HomeComponent implements OnInit {
         Category : ['', Validators.required],
         subcategories : ['', Validators.required]
       });
+     
       this.getAllCategories();
       this. getAllProducts();
+
+      this.cartservice.getProductData().subscribe(res=>{
+        this.products=res;
+        this.allProducts = this.cartservice.getTotalAmount();
+      })
+  
+      this.cartservice.getProductData().subscribe(res=>{
+        this.totalItemNumber=res.length;
+      })
+    }
+      removeProduct(item:any){
+        this.cartservice.removeCartData(item);
+  
+  }
+  removeAllProduct(){
+    this.cartservice.removeAllCart();
+  }
      
   
        // add categries end//
@@ -62,8 +88,9 @@ export class HomeComponent implements OnInit {
    
       //  });
        // add product end//
+
      
-    }
+    
     sanitize(image:any){
      
       return this._sanitizer.bypassSecurityTrustUrl(image);

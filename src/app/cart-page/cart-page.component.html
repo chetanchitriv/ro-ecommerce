@@ -1,19 +1,19 @@
-<header class="header shop">
+<!-- <header class="header shop">
     <div class="topbar" data-bg-color="aqua-marine" class="card gradient-aqua-marine d-block rounded box-shadow-2" style="margin: 0px;color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
-                    <!-- Top Left -->
+                  
                     <div class="top-left">
                         <ul class="list-main">
                             <li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
                             <li><i class="ti-email"></i> support@shophub.com</li>
                         </ul>
                     </div>
-                    <!--/ End Top Left -->
+                   
                 </div>
                 <div class="col-lg-6 col-md-12 col-12">
-                    <!-- Top Right -->
+                
                     <div class="right-content">
                         <ul class="list-main">
                             <li><i class="ti-location-pin"></i> Store location</li>
@@ -22,34 +22,33 @@
                             <li><i class="ti-power-off"></i><a routerLink="/main-dashboard/login">Login</a></li>
                         </ul>
                     </div>
-                    <!-- End Top Right -->
+                 
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Topbar -->
+  
     <div class="middle-inner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-12">
-                    <!-- Logo -->
+                   
                     <div class="logo">
                         <a><img src="assets/images/logo.png" alt="logo"></a>
                     </div>
-                    <!--/ End Logo -->
-                    <!-- Search Form -->
+                    
                     <div class="search-top">
                         <div class="top-search"><a><i class="ti-search"></i></a></div>
-                        <!-- Search Form -->
+                       
                         <div class="search-top">
                             <form class="search-form">
                                 <input type="text" placeholder="Search here..." name="search">
                                 <button value="search" type="submit"><i class="ti-search"></i></button>
                             </form>
                         </div>
-                        <!--/ End Search Form -->
+                      
                     </div>
-                    <!--/ End Search Form -->
+                   
                     <div class="mobile-nav"></div>
                 </div>
                 <div class="col-lg-8 col-md-7 col-12">
@@ -65,7 +64,7 @@
                 </div>
                 <div class="col-lg-2 col-md-3 col-12">
                     <div class="right-bar">
-                        <!-- Search Form -->
+                       
                         <div class="sinlge-bar">
                             <a class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                         </div>
@@ -74,107 +73,297 @@
                         </div>
                         <div class="sinlge-bar shopping">
                             <a routerLink="/cartpage" class="single-icon"><i class="ti-bag"></i> <span class="total-count">{{totalItemNumber}}</span></a>
-                            <!-- Shopping Item -->
+                          
                             <div class="shopping-item">
                                 <div class="dropdown-cart-header">
                                     <span>2 Items</span>
                                     <a>View Cart</a>
                                 </div>
-                                <ul class="shopping-list">
-                                    <li>
-                                        <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                        <a class="cart-img"><img src="assets/images/product-1.jpg" alt="#"></a>
-                                        <h4><a>Doctor Fresh Life Veda</a></h4>
-                                        <b>
-                                        <p class="quantity">1x - <span>15,940/-</span></p>
-                                    </b>
-                                    </li>
-                                    <li>
-                                        <a class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-                                        <a class="cart-img"><img src="assets/images/product-2.jpg" alt="#"></a>
-                                        <h4><a>Puret Marvela RO+Cold</a></h4>
-                                        <p class="quantity">1x - <span class="amount">14660/-</span></p>
-                                    </li>
-                                </ul>
-                                <div class="bottom">
-                                    <div class="total">
-                                        <span>Total</span>
-                                        <span class="total-amount">26,560/-</span>
-                                    </div>
-                                    <a routerLink="/main-dashboard/checkout" class="btn animate">Checkout</a>
-                                </div>
+
+
                             </div>
-                            <!--/ End Shopping Item -->
+                          
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
+</header> -->
+<!-- cart page start -->
+<!-- <ng-container *ngIf="products.length !=0"> -->
+<!-- <div class="card-table">
+    <div class="card-product">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>Sr. no.</th>
+                    <th>product image</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
 
-<ng-container *ngIf="products.length !=0">
-    <div class="card-table">
-        <div class="card-product">
-            <table class="table table-responsive">
-                <thead>
-                    <tr>
-                        <th>Sr. no.</th>
-                        <th>product image</th>
-                        <th>Title</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Action</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let item of products, let i=index">
-                        <td>{{i+1}}</td>
-                        <td><img [src]="item.image" width="90"></td>
-                        <td>{{item.title}}</td>
-                        <td>${{item.saleprice}}</td>
-                        <td>{{item.quantity}}</td>
-                        <td>{{item.total}}</td>
-                        <td>
-                            <button class="btn btn-danger" (click)="removeProduct(item)">
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of products, let i=index">
+                    <td>{{i+1}}</td>
+                    <td><img [src]="item.image" width="90"></td>
+                    <td>{{item.title}}</td>
+                    <td>${{item.saleprice}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td>{{item.total}}</td>
+                    <td>
+                        <button class="btn btn-danger" (click)="removeProduct(item)">
         Delete
     </button>
-                        </td>
+                    </td>
 
-                    </tr>
-                    <tr>
-                        <td colspan="4"></td>
-                        <td class="btn btn-danger" (click)="removeAllProduct()">Empty cart</td>
-                        <td routerLink="/home" class="btn btn-warning">Shop more</td>
-                        <td class="btn btn-primary">Check out</td>
-                        <td><strong>Total:${{allProducts}}</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td class="btn btn-danger" (click)="removeAllProduct()">Empty cart</td>
+                    <td routerLink="/home" class="btn btn-warning">Shop more</td>
+                    <td class="btn btn-primary">Check out</td>
+                    <td><strong>Total:${{allProducts}}</strong></td>
+                </tr>
+            </tbody>
+        </table>
 
     </div>
 
-</ng-container>
+</div> -->
+
+<!-- </ng-container> -->
 
 
-<ng-container *ngIf="products.length ==0">
-    <div class="container">
-        <div class="card">
-            <h4 class="cart-title">My Cart</h4>
-
-        </div>
-
-        <div class="center">
-            <img src="https://cdni.iconscout.com/illustration/free/thumb/empty-cart-4085814-3385483.png">
-            <h5>Your Cart is empty!</h5>
-            <h6>Add item to it now</h6>
-            <button routerLink="/home" class="btn btn-primary">Shop now</button>
-
-        </div>
+<!-- <ng-container *ngIf="products.length ==0"> -->
+<!-- <div class="container">
+    <div class="card">
+        <h4 class="cart-title">My Cart</h4>
 
     </div>
-</ng-container>
+
+    <div class="center">
+        <img src="https://cdni.iconscout.com/illustration/free/thumb/empty-cart-4085814-3385483.png">
+        <h5>Your Cart is empty!</h5>
+        <h6>Add item to it now</h6>
+        <button routerLink="/home" class="btn btn-primary">Shop now</button>
+
+    </div>
+
+</div> -->
+<!-- </ng-container> -->
+
+<!-- cart page..end -->
+
+<div class="container">
+
+    <div class="heading">
+        <h1>
+            <span class="shopper"></span> Shopping Cart
+        </h1>
+
+        <!-- <a href="#" class="visibility-cart transition is-open">X</a> -->
+    </div>
+
+    <div class="cart transition is-open">
+
+        <a href="#" class="btn btn-update">Update cart</a>
+
+
+        <div class="table">
+
+            <div class="layout-inline row th">
+                <div class="col col-pro" style="margin-left:15px;">id</div>
+                <div class="col col-pro">Product Image</div>
+                <div class="col col-price align-center">Title</div>
+                <div class="col col-price align-center">Price</div>
+                <div class="col col-qty align-center">QTY</div>
+                <div class="col">Total</div>
+                <div class="col">Action</div>
+            </div><br>
+
+            <tr *ngFor="let item of products, let i=index">
+                <td class="col col-price col-numeric align-center ">{{i+1}}</td>
+                <td class="col col-price col-numeric align-center "><img [src]="item.image" width="90"></td>
+                <td class="col col-price col-numeric align-center ">{{item.title}}</td>
+                <td class="col col-price col-numeric align-center ">${{item.saleprice}}</td>
+                <td class="col col-price col-numeric align-center ">{{item.quantity}}</td>
+                <td class="col col-price col-numeric align-center ">{{item.total}}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="removeProduct(item)">Delete</button>
+                </td>
+
+            </tr>
+
+            <tr class="layout-inline row">
+                <td class="col col-price col-numeric align-center ">1</td>
+                <td class="col col-price col-numeric align-center "><img width="90"></td>
+                <td class="col col-price col-numeric align-center ">title</td>
+                <td class="col col-price col-numeric align-center ">$saleprice</td>
+                <td class="col col-price col-numeric align-center ">quantity</td>
+                <td class="col col-price col-numeric align-center ">total</td>
+                <td class="col col-price col-numeric align-center ">
+                    <button class="btn btn-danger">Delete</button>
+                </td>
+
+            </tr>
+
+            <!-- <div class="layout-inline row" style="margin-left: 34px;" *ngFor="let item of products, let i=index">
+
+                <div class="col col-pro layout-inline">
+                    {{i+1}}
+                </div>
+
+                <div class="col col-pro layout-inline">
+                    <img src="http://static.ddmcdn.com/gif/10-kitten-cuteness-1.jpg" alt="kitten" />
+                    <p>Happy Little Critter</p>
+                    <img [src]="item.image" width="90">
+                </div>
+
+                <div class="col col-price col-numeric align-center ">
+                    <p>{{item.title}}</p>
+                </div>
+
+                <div class="col col-price col-numeric align-center ">
+                    <p>{{item.saleprice}}</p>
+                </div>
+
+                <div class="col col-qty layout-inline">
+                    <a href="#" class="qty qty-minus">-</a>
+                    <input type="numeric" value="3" />
+                    <a href="#" class="qty qty-plus">+</a>
+                </div>
+
+                <div class="col col-vat col-numeric">
+                    <p>{{item.total}}</p>
+                </div>
+                <div class="col col-total col-numeric">
+                    <button class="btn btn-danger" (click)="removeProduct(item)">
+                    Delete
+                  </button>
+                </div>
+            </div> -->
+
+            <!-- <div class="layout-inline row row-bg2">
+
+                <div class="col col-price col-numeric align-center ">
+                    <p>1</p>
+                </div>
+
+                <div class="col col-pro layout-inline">
+                    <img src="http://lovemeow.com/wp-content/uploads/2012/05/kitten81.jpg" alt="kitten" />
+
+                </div>
+
+                <div class="col col-price col-numeric align-center ">
+                    <p>Scared Little Kittie</p>
+                </div>
+
+                <div class="col col-price col-numeric align-center ">
+                    <p>£23.99</p>
+                </div>
+
+                <div class="col col-qty  layout-inline">
+                    <a href="#" class="qty qty-minus ">-</a>
+                    <input type="numeric" value="1" />
+                    <a href="#" class="qty qty-plus">+</a>
+                </div>
+
+
+                <div class="col col-total col-numeric">
+                    <p>£25.94</p>
+                </div>
+                <div class="col col-vat col-numeric">
+                    <button class="btn btn-danger">
+                    Delete
+                  </button>
+                </div>
+
+            </div> -->
+
+            <!-- <div class="layout-inline row row-bg2">
+
+                <div class="col col-price col-numeric align-center ">
+                    <p>2</p>
+                </div>
+
+                <div class="col col-pro layout-inline">
+                    <img src="http://lovemeow.com/wp-content/uploads/2012/05/kitten81.jpg" alt="kitten" />
+
+                </div>
+
+                <div class="col col-price col-numeric align-center ">
+                    <p>Scared Little Kittie</p>
+                </div>
+
+                <div class="col col-price col-numeric align-center ">
+                    <p>£23.99</p>
+                </div>
+
+                <div class="col col-qty  layout-inline">
+                    <a href="#" class="qty qty-minus ">-</a>
+                    <input type="numeric" value="1" />
+                    <a href="#" class="qty qty-plus">+</a>
+                </div>
+
+
+                <div class="col col-total col-numeric">
+                    <p>£25.94</p>
+                </div>
+                <div class="col col-vat col-numeric">
+                    <button class="btn btn-danger">
+                  Delete
+                </button>
+                </div>
+
+            </div> -->
+
+
+
+            <div class="tf">
+                <div class="row layout-inline">
+                    <div class="col">
+                        <p>VAT</p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row layout-inline">
+                    <div class="col">
+                        <p>Shipping</p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row layout-inline">
+                    <div class="col">
+                        <p>Total</p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-update">Checkout</a>
+
+    </div>
+
+    <!-- <div *ngIf="products.length ==0">
+        <div class="container">
+            <div class="card">
+                <h4 class="cart-title">My Cart</h4>
+
+            </div>
+
+            <div class="center">
+                <img src="https://cdni.iconscout.com/illustration/free/thumb/empty-cart-4085814-3385483.png">
+                <h5>Your Cart is empty!</h5>
+                <h6>Add item to it now</h6>
+                <button routerLink="/home" class="btn btn-primary">Shop now</button>
+
+            </div>
+
+        </div>
+    </div> -->

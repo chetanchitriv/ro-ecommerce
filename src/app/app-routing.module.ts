@@ -39,7 +39,7 @@ const routes: Routes = [
 
 { path: "productdetails/:_id", component:ProductdetailsComponent},
 
-{ path: "cartpage", component:CartPageComponent},
+
 // {path:"dash",component:DashComponent},
 
 // { path:"nav-bar",component:NavBarComponent},
@@ -65,6 +65,8 @@ children:[
 { path:"main-dashboard", component:MainDashboardComponent ,
 children:[
   { path: "checkout", component:CheckoutComponent },
+  { path: "cartpage", component:CartPageComponent},
+  { path: "allbrands", component:AllbrandsComponent},
   { path: "login", component: LoginComponent },
   { path: "signup", component: SignupComponent }
 ]
