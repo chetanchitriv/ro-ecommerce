@@ -102,6 +102,8 @@ export class CategoriesComponent implements OnInit {
     this.showAddbutton=false;
     this.showUpdatebutton=true;
   }
+
+  
   }
 
 

@@ -1,527 +1,499 @@
-
 <!-- CONTENT AREA -->
 <div class="content-area" page_name="blog">
     <input type="hidden" value="" id="blog_cat">
     <!-- PAGE WITH SIDEBAR -->
     <section class="page-section with-sidebar">
-        <div class="container-fluid">
-            <div class="row">
-
-
-
-                <!-- SIDEBAR -->
-                <aside class="col-md-3 hidden-sm hidden-xs" id="sidebar">
-                    
-                    <div class="widget shop-categories card"  style="width: 250px;height: 250px;">
-                        <div class="widget-content blog-sidebar">
-                            <ul style="color:black;">
-                                <li class=""><a href="#" onclick="get_blogs_by_cat('all')">All Blogs</a></li>
-                                <li class="">
-                                    <a href="#" onclick="get_blogs_by_cat('1')">
-                                        Water Purifier
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="#" onclick="get_blogs_by_cat('3')">
-                                        Water Softener
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="#" onclick="get_blogs_by_cat('5')">
-                                        Air Purifier
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="#" onclick="get_blogs_by_cat('6')">
-                                        Hindi Blog
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="#" onclick="get_blogs_by_cat('7')">
-                                        News
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="#" onclick="get_blogs_by_cat('8')">
-                                        Health
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                   
-                    <br>
-                    
-                    <!-- <div class="row">
-                        <div class="col-md-12">
-                            <div class="widget widget-tabs">
-                                <div class="widget-content special-blogs">
-
-                                    <div class="tab-content">
-                                     
-                                        <div class="tab-pane fade in active" id="tab-s1">
-                                            <div class="product-list">
-                                                <div class="media">
-                                                    <a class="pull-left media-link"
-                                                        href="https://www.rocareindia.online/blog/6/best-water-purifier-in-gurgaon">
-                                                        <img class="img-responsive"
-                                                            src="https://www.rocareindia.online/uploads/blog_image/blog_6_thumb.jpg"
-                                                            alt="">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h6 class="media-heading">
-                                                            <a
-                                                                href="https://www.rocareindia.online/blog/6/best-water-purifier-in-gurgaon">
-                                                                Best Water Purifier In Gurgaon in 2022 </a>
-                                                        </h6>
-                                                        <div class="date">
-                                                            <ins>2022-04-16</ins>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="media">
-                                                    <a class="pull-left media-link"
-                                                        href="https://www.rocareindia.online/blog/5/what-is-mf-in-water-purifier">
-                                                        <img class="img-responsive"
-                                                            src="https://www.rocareindia.online/uploads/blog_image/blog_5_thumb.jpg"
-                                                            alt="">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h6 class="media-heading">
-                                                            <a
-                                                                href="https://www.rocareindia.online/blog/5/what-is-mf-in-water-purifier">
-                                                                What Is MF In Water Purifier- Buy Best MF Purifier </a>
-                                                        </h6>
-                                                        <div class="date">
-                                                            <ins>2022-03-17</ins>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="media">
-                                                    <a class="pull-left media-link"
-                                                        href="https://www.rocareindia.online/blog/4/how-to-check-my-water-tds-at-home">
-                                                        <img class="img-responsive"
-                                                            src="https://www.rocareindia.online/uploads/blog_image/blog_4_thumb.jpg"
-                                                            alt="">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h6 class="media-heading">
-                                                            <a
-                                                                href="https://www.rocareindia.online/blog/4/how-to-check-my-water-tds-at-home">
-                                                                How To Check My Water TDS At Home </a>
-                                                        </h6>
-                                                        <div class="date">
-                                                            <ins>2022-02-22</ins>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+       <div class="container-fluid">
+          <div class="row">
+             <!-- SIDEBAR -->
+             <aside class="col-md-3 hidden-sm hidden-xs" id="sidebar">
+                <div class="widget shop-categories card" >
+                   <div class="widget-content blog-sidebar" style="width: 250px;height: 250px; line-height: 0.8;">
+                      <ul style="color:black; font-family:'Poppins', sans-serif; font-size: 13px;">
+                         <li class=""><a href="#" onclick="get_blogs_by_cat('all')">All Blogs</a></li>
+                         <li class="">
+                            <a href="#" onclick="get_blogs_by_cat('1')">
+                            Water Purifier
+                            </a>
+                         </li>
+                         <li class="">
+                            <a href="#" onclick="get_blogs_by_cat('3')">
+                            Water Softener
+                            </a>
+                         </li>
+                         <li class="">
+                            <a href="#" onclick="get_blogs_by_cat('5')">
+                            Air Purifier
+                            </a>
+                         </li>
+                         <li class="">
+                            <a href="#" onclick="get_blogs_by_cat('6')">
+                            Hindi Blog
+                            </a>
+                         </li>
+                         <li class="">
+                            <a href="#" onclick="get_blogs_by_cat('7')">
+                            News
+                            </a>
+                         </li>
+                         <li class="">
+                            <a href="#" onclick="get_blogs_by_cat('8')">
+                            Health
+                            </a>
+                         </li>
+                      </ul>
+                   </div>
+                </div>
+                <br>
+                <div class="row">
+                   <div class="col-md-12">
+                      <div class="widget widget-tabs">
+                         <div class="widget-content special-blogs">
+                            <div class="tab-content">
+                               <div class="tab-pane fade in active" id="tab-s1">
+                                  <div class="product-list">
+                                     <div class="media">
+                                        <a class="pull-left media-link"
+                                           href="https://www.rocareindia.online/blog/6/best-water-purifier-in-gurgaon">
+                                        <img class="img-responsive"
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_6_thumb.jpg"
+                                           alt="">
+                                        <i class="fa fa-eye"></i>
+                                        </a>
+                                        <div class="media-body">
+                                           <h6 class="media-heading">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/6/best-water-purifier-in-gurgaon">
+                                              Best Water Purifier In Gurgaon in 2022 </a>
+                                           </h6>
+                                           <div class="date">
+                                              <ins>2022-04-16</ins>
+                                           </div>
                                         </div>
-
-                                     
-
-                                        <div class="tab-pane fade" id="tab-s2">
-                                            <div class="product-list">
-                                                <div class="media">
-                                                    <a class="pull-left media-link"
-                                                        href="https://www.rocareindia.online/blog/1/advent-international-is-all-set-to-buy-eureka-forbes-for-4400">
-                                                        <img class="img-responsive"
-                                                            src="https://www.rocareindia.online/uploads/blog_image/blog_1_thumb.jpg"
-                                                            alt="">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h6 class="media-heading">
-                                                            <a
-                                                                href="https://www.rocareindia.online/blog/1/advent-international-is-all-set-to-buy-eureka-forbes-for-4400">
-                                                                Advent International Is All Set To Buy Eureka Forbes For
-                                                                4,400 </a>
-                                                        </h6>
-                                                        <div class="date">
-                                                            <ins>2021-09-21</ins>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="media">
-                                                    <a class="pull-left media-link"
-                                                        href="https://www.rocareindia.online/blog/2/best-water-purifier-for-home-in-india">
-                                                        <img class="img-responsive"
-                                                            src="https://www.rocareindia.online/uploads/blog_image/blog_2_thumb.jpg"
-                                                            alt="">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h6 class="media-heading">
-                                                            <a
-                                                                href="https://www.rocareindia.online/blog/2/best-water-purifier-for-home-in-india">
-                                                                10 Best Water Purifier For Home In India (2022) | Review
-                                                                And Buying Guide </a>
-                                                        </h6>
-                                                        <div class="date">
-                                                            <ins>2021-12-23</ins>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="media">
-                                                    <a class="pull-left media-link"
-                                                        href="https://www.rocareindia.online/blog/3/water-purification-process-and-importance">
-                                                        <img class="img-responsive"
-                                                            src="https://www.rocareindia.online/uploads/blog_image/blog_3_thumb.jpg"
-                                                            alt="">
-                                                        <i class="fa fa-eye"></i>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <h6 class="media-heading">
-                                                            <a
-                                                                href="https://www.rocareindia.online/blog/3/water-purification-process-and-importance">
-                                                                Water Purification Process &amp; Importance | Various
-                                                                Methods Of Water Purification </a>
-                                                        </h6>
-                                                        <div class="date">
-                                                            <ins>2022-01-04</ins>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                     </div>
+                                     <div class="media">
+                                        <a class="pull-left media-link"
+                                           href="https://www.rocareindia.online/blog/5/what-is-mf-in-water-purifier">
+                                        <img class="img-responsive"
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_5_thumb.jpg"
+                                           alt="">
+                                        <i class="fa fa-eye"></i>
+                                        </a>
+                                        <div class="media-body">
+                                           <h6 class="media-heading">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/5/what-is-mf-in-water-purifier">
+                                              What Is MF In Water Purifier- Buy Best MF Purifier </a>
+                                           </h6>
+                                           <div class="date">
+                                              <ins>2022-03-17</ins>
+                                           </div>
                                         </div>
-
-                                    </div>
-                                </div>
+                                     </div>
+                                     <div class="media">
+                                        <a class="pull-left media-link"
+                                           href="https://www.rocareindia.online/blog/4/how-to-check-my-water-tds-at-home">
+                                        <img class="img-responsive"
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_4_thumb.jpg"
+                                           alt="">
+                                        <i class="fa fa-eye"></i>
+                                        </a>
+                                        <div class="media-body">
+                                           <h6 class="media-heading">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/4/how-to-check-my-water-tds-at-home">
+                                              How To Check My Water TDS At Home </a>
+                                           </h6>
+                                           <div class="date">
+                                              <ins>2022-02-22</ins>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="tab-pane fade" id="tab-s2">
+                                  <div class="product-list">
+                                     <div class="media">
+                                        <a class="pull-left media-link"
+                                           href="https://www.rocareindia.online/blog/1/advent-international-is-all-set-to-buy-eureka-forbes-for-4400">
+                                        <img class="img-responsive"
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_1_thumb.jpg"
+                                           alt="">
+                                        <i class="fa fa-eye"></i>
+                                        </a>
+                                        <div class="media-body">
+                                           <h6 class="media-heading">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/1/advent-international-is-all-set-to-buy-eureka-forbes-for-4400">
+                                              Advent International Is All Set To Buy Eureka Forbes For
+                                              4,400 </a>
+                                           </h6>
+                                           <div class="date">
+                                              <ins>2021-09-21</ins>
+                                           </div>
+                                        </div>
+                                     </div>
+                                     <div class="media">
+                                        <a class="pull-left media-link"
+                                           href="https://www.rocareindia.online/blog/2/best-water-purifier-for-home-in-india">
+                                        <img class="img-responsive"
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_2_thumb.jpg"
+                                           alt="">
+                                        <i class="fa fa-eye"></i>
+                                        </a>
+                                        <div class="media-body">
+                                           <h6 class="media-heading">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/2/best-water-purifier-for-home-in-india">
+                                              10 Best Water Purifier For Home In India (2022) | Review
+                                              And Buying Guide </a>
+                                           </h6>
+                                           <div class="date">
+                                              <ins>2021-12-23</ins>
+                                           </div>
+                                        </div>
+                                     </div>
+                                     <div class="media">
+                                        <a class="pull-left media-link"
+                                           href="https://www.rocareindia.online/blog/3/water-purification-process-and-importance">
+                                        <img class="img-responsive"
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_3_thumb.jpg"
+                                           alt="">
+                                        <i class="fa fa-eye"></i>
+                                        </a>
+                                        <div class="media-body">
+                                           <h6 class="media-heading">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/3/water-purification-process-and-importance">
+                                              Water Purification Process &amp; Importance | Various
+                                              Methods Of Water Purification </a>
+                                           </h6>
+                                           <div class="date">
+                                              <ins>2022-01-04</ins>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
                             </div>
-                        </div>
-                    </div> -->
-                </aside>
-             
-
-
-
-
-                <!-- CONTENT -->
-                <div class="col-md-9 content" id="content">
-                    <div id="blog-content">
-                        <!-- Blog List -->
-
-                        <div class="products list">
-                            <div id="result">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-1
-                                     card " style="width:800px; height: 600px;">
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </aside>
+             <!-- CONTENT -->
+             <div class="col-md-9 content" id="content">
+                <div id="blog-content">
+                   <!-- Blog List -->
+                   <div class="container">
+                      <div class="row">
+                         <div class="col-md-4 col-sm-4 col-xs-1">
+                            <div class="products list">
+                               <div id="result">
+                                  <div class="
+                                     card " style="width: 300PX; height: 600px; padding: 15px;">
+                                     <img _ngcontent-ypj-c70=""
+                                        src="https://www.rocareindia.online/uploads/blog_image/blog_6_thumb.jpg"
+                                        alt="card image">
+                                     <div class="card-body">
+                                        <hr>
+                                        <h4 class="caption-title ">
+                                           <a
+                                              href="https://www.rocareindia.online/blog/6/best-water-purifier-in-gurgaon">
+                                           Best Water Purifier In Gurgaon in 2022
+                                           </a>
+                                        </h4>
+                                        <div class="caption-text">
+                                           The water quality in Gurgaon is unfit for consumption.
+                                           Thus, people
+                                           need the latest technology-based purifier so that
+                                           contaminants can
+                                           be eliminated from the water. In this blog, we have
+                                           listed the 15
+                                           best purifiers which you can consider buying in
+                                           2022.&nbsp;
+                                        </div>
+                                        <hr>
+                                        <div class="overflowed">
+                                           <div class="availability">Author: <strong>Abhishek
+                                              Kumar</strong>
+                                           </div>
+                                           <div class="price"><ins>2022-04-16</ins></div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="col-md-4 col-sm-4 col-xs-1 ">
+                            <div class="products list">
+                               <div id="result">
+                                  <div class="card" style="width: 300PX; height: 600px; padding: 15px;">
+                                     <img _ngcontent-ypj-c70=""
+                                        src="https://www.rocareindia.online/uploads/blog_image/blog_5_thumb.jpg"
+                                        alt="">
+                                     <div class="card-body">
+                                        <hr>
+                                        <h4 class="caption-title">
+                                           <a
+                                              href="https://www.rocareindia.online/uploads/blog_image/blog_5_thumb.jpg">
+                                           What Is MF In Water Purifier- Buy Best MF Purifier
+                                           </a>
+                                        </h4>
+                                        <div class="caption-text">
+                                           <p>
+                                              MF in water purifier stands for micro-filtration. This
+                                              technology-based purifier uses a semi-permeable membrane
+                                              having
+                                              a pore size of 0.1 µm. In this blog, we've elaborated on
+                                              all the
+                                              concepts about MF water purifiers. Thus reading this
+                                              post can be
+                                              worthy for you.
+                                           </p>
+                                        </div>
+                                        <hr>
+                                        <div class="overflowed">
+                                           <div class="availability">Author: <strong>Abhishek
+                                              Kumar</strong>
+                                           </div>
+                                           <div class="price"><ins>2022-03-17</ins></div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="col-md-4 col-sm-4 col-xs-1">
+                            <div class="products list">
+                               <div id="result">
+                                  <div class="card" style="width: 300PX; height: 600px; padding: 15px;">
+                                     <img _ngcontent-ypj-c70=""
+                                        src="https://www.rocareindia.online/uploads/blog_image/blog_4_thumb.jpg"
+                                        alt="card image">
+                                     <div class="card-body">
+                                        <hr>
+                                        <h4 class="caption-title">
+                                           <a
+                                              href="https://www.rocareindia.online/blog/4/how-to-check-my-water-tds-at-home">
+                                           How To Check My Water TDS At Home
+                                           </a>
+                                        </h4>
+                                        <div class="caption-text">
+                                           <p>Measuring water TDS is crucial as it ensures healthy drinking
+                                              water when you wish to drink water. There are various other
+                                              ways
+                                              to check water TDS at home, but here in this blog, we have
+                                              elaborated on the 3 most acceptable methods to measure water
+                                              TDS. Click to read more.
+                                           </p>
+                                        </div>
+                                        <hr>
+                                        <div class="overflowed">
+                                           <div class="availability">Author: <strong>Abhishek
+                                              Kumar</strong>
+                                           </div>
+                                           <div class="price"><ins>2022-02-22</ins></div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <br>
+                   <br>
+                   <div class="container">
+                      <div class="row">
+                         <div class="col-md-4 col-sm-4 col-xs-1">
+                            <div class="products list">
+                               <div id="result">
+                                  <div class="row">
+                                     <div class="card" style="width: 300PX; height: 600px; padding: 15px;">
                                         <img _ngcontent-ypj-c70=""
-                                            src="https://www.rocareindia.online/uploads/blog_image/blog_6_thumb.jpg"
-                                            alt="card image">
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_3_thumb.jpg"
+                                           alt="">
                                         <div class="card-body">
-                                            <hr>
-                                            <h4 class="caption-title ">
-                                                <a
-                                                    href="https://www.rocareindia.online/blog/6/best-water-purifier-in-gurgaon">
-                                                    Best Water Purifier In Gurgaon in 2022
-                                                </a>
-                                            </h4>
-                                            <div class="caption-text">
-                                                The water quality in Gurgaon is unfit for consumption.
-                                                Thus, people
-                                                need the latest technology-based purifier so that
-                                                contaminants can
-                                                be eliminated from the water. In this blog, we have
-                                                listed the 15
-                                                best purifiers which you can consider buying in
-                                                2022.&nbsp;
-                                            </div>
-                                            <hr>
-                                            <div class="overflowed">
-                                                <div class="availability">Author: <strong>Abhishek
-                                                        Kumar</strong>
-                                                </div>
-                                                <div class="price"><ins>2022-04-16</ins></div>
-                                            </div>
+                                           <hr>
+                                           <h4 class="caption-title">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/3/water-purification-process-and-importance">
+                                              Water Purification Process &amp; Importance | Various
+                                              Methods Of
+                                              Water Purification
+                                              </a>
+                                           </h4>
+                                           <div class="caption-text">
+                                              <p>The water purification process is used to eliminate the
+                                                 contamination present in the water. However, there are
+                                                 various
+                                                 other methods to purify water, but a water purifier is
+                                                 the best
+                                                 and most widely accepted to purify water.
+                                              </p>
+                                           </div>
+                                           <hr>
+                                           <div class="overflowed">
+                                              <div class="availability">Author: <strong>Abhishek
+                                                 Kumar</strong>
+                                              </div>
+                                              <div class="price"><ins>2022-01-04</ins></div>
+                                           </div>
                                         </div>
-                                    </div>
-                                </div>
+                                     </div>
+                                  </div>
+                               </div>
                             </div>
-                        </div>
-
-
-                        <br>
-                        <br>
-
-                        <div class="products list">
-                            <div id="result">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-1 card" style="width:800px; height: 600px;">
+                         </div>
+                         <div class="col-md-4 col-sm-4 col-xs-1">
+                            <div class="products list">
+                               <div id="result">
+                                  <div class="row">
+                                     <div class="card" style="width: 300PX; height: 600px; padding: 15px;">
                                         <img _ngcontent-ypj-c70=""
-                                            src="https://www.rocareindia.online/uploads/blog_image/blog_5_thumb.jpg"
-                                            alt="">
-                                        <div class="card-body">
-                                            <hr>
-                                            <h4 class="caption-title">
-                                                <a
-                                                    href="https://www.rocareindia.online/uploads/blog_image/blog_5_thumb.jpg">
-                                                    What Is MF In Water Purifier- Buy Best MF Purifier
-                                                </a>
-                                            </h4>
-                                            <div class="caption-text">
-                                                <p>
-                                                    MF in water purifier stands for micro-filtration. This
-                                                    technology-based purifier uses a semi-permeable membrane having
-                                                    a pore size of 0.1 µm. In this blog, we've elaborated on all the
-                                                    concepts about MF water purifiers. Thus reading this post can be
-                                                    worthy for you.
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <div class="overflowed">
-                                                <div class="availability">Author: <strong>Abhishek
-                                                        Kumar</strong>
-                                                </div>
-                                                <div class="price"><ins>2022-03-17</ins></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <br>
-                        <br>
-
-
-
-                        <div class="products list">
-                            <div id="result">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-1 card" style="width:800px; height: 600px;">
-                                        <img _ngcontent-ypj-c70=""
-                                            src="https://www.rocareindia.online/uploads/blog_image/blog_4_thumb.jpg"
-                                            alt="card image">
-                                        <div class="card-body">
-                                            <hr>
-                                            <h4 class="caption-title">
-                                                <a
-                                                    href="https://www.rocareindia.online/blog/4/how-to-check-my-water-tds-at-home">
-                                                    How To Check My Water TDS At Home
-                                                </a>
-                                            </h4>
-                                            <div class="caption-text">
-                                                <p>Measuring water TDS is crucial as it ensures healthy drinking
-                                                    water when you wish to drink water. There are various other ways
-                                                    to check water TDS at home, but here in this blog, we have
-                                                    elaborated on the 3 most acceptable methods to measure water
-                                                    TDS. Click to read more.</p>
-                                            </div>
-                                            <hr>
-                                            <div class="overflowed">
-                                                <div class="availability">Author: <strong>Abhishek
-                                                        Kumar</strong>
-                                                </div>
-                                                <div class="price"><ins>2022-02-22</ins></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <br>
-                        <br>
-
-
-
-
-
-                        <div class="products list">
-                            <div id="result">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-1 card" style="width:800px; height: 600px;">
-                                        <img _ngcontent-ypj-c70=""
-                                            src="https://www.rocareindia.online/uploads/blog_image/blog_3_thumb.jpg"
-                                            alt="">
-                                        <div class="card-body">
-                                            <hr>
-                                            <h4 class="caption-title">
-                                                <a
-                                                    href="https://www.rocareindia.online/blog/3/water-purification-process-and-importance">
-                                                    Water Purification Process &amp; Importance | Various Methods Of
-                                                    Water Purification
-                                                </a>
-                                            </h4>
-                                            <div class="caption-text">
-                                                <p>The water purification process is used to eliminate the
-                                                    contamination present in the water. However, there are various
-                                                    other methods to purify water, but a water purifier is the best
-                                                    and most widely accepted to purify water.</p>
-                                            </div>
-                                            <hr>
-                                            <div class="overflowed">
-                                                <div class="availability">Author: <strong>Abhishek
-                                                        Kumar</strong>
-                                                </div>
-                                                <div class="price"><ins>2022-01-04</ins></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <br>
-                        <br>
-
-
-
-                        <div class="products list">
-                            <div id="result">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-1 card"
-                                    style="width:800px; height: 600px;">
-                                        <img _ngcontent-ypj-c70=""
-                                            src="https://www.rocareindia.online/uploads/blog_image/blog_2_thumb.jpg"
-                                            alt="">
-
-                                        <div class="card-body">
-                                            <hr>
-                                            <h4 class="caption-title">
-                                                <a
-                                                    href="https://www.rocareindia.online/blog/2/best-water-purifier-for-home-in-india">
-                                                    10 Best Water Purifier For Home In India (2022) | Review And Buying
-                                                    Guide </a>
-                                            </h4>
-                                            <div class="caption-text">
-                                                <p>A water purifier is a need of all the houses in India as it brings pure and clean water. To fulfil the demand of the Indian people,
-                                                    various water purifiers are available on the market. Here in the article, we have briefly elaborated 10 best water purifiers for                                                  homes in India. Click here and check them out.</p>
-                                            </div>
-                                            <hr>
-                                            <div class="overflowed">
-                                                <div class="availability">Author: <strong>Abhishek
-                                                        Kumar</strong>
-                                                </div>
-                                                <div class="price"><ins>2021-12-23</ins></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <br>
-                        <br>
-
-
-
-
-                        <div class="products list">
-                            <div id="result">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-1 card" style="width:800px; height: 600px;">
-                                        <img _ngcontent-ypj-c70=""
-                                            src="https://www.rocareindia.online/uploads/blog_image/blog_1_thumb.jpg"
-                                            alt="">
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_1_thumb.jpg"
+                                           alt="">
                                         <br>
                                         <div class="card-body">
-                                            <hr>
-                                            <h4 class="caption-title">
-                                                <a
-                                                    href="https://www.rocareindia.online/blog/1/advent-international-is-all-set-to-buy-eureka-forbes-for-4400">
-                                                    Advent International Is All Set To Buy Eureka Forbes For 4,400
-                                                </a>
-                                            </h4>
-                                            <div class="caption-text">
-                                            </div>
-                                            <!-- <hr>
-                                            <div class="overflowed mt-3">
-                                                <div class="availability">Author: <strong>Abhishek
-                                                        Kumar</strong>
-                                                </div>
-                                                <div class="price"><ins>2021-12-23</ins></div>
-                                            </div> -->
+                                           <hr>
+                                           <h4 class="caption-title">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/1/advent-international-is-all-set-to-buy-eureka-forbes-for-4400">
+                                              Advent International Is All Set To Buy Eureka Forbes For
+                                              4,400
+                                              </a>
+                                           </h4>
+                                           <div class="caption-text">
+                                           </div>
+                                           <!-- <hr>
+                                              <div class="overflowed mt-3">
+                                                  <div class="availability">Author: <strong>Abhishek
+                                                          Kumar</strong>
+                                                  </div>
+                                                  <div class="price"><ins>2021-12-23</ins></div>
+                                              </div> -->
                                         </div>
-                                    </div>
-                                </div>
+                                     </div>
+                                  </div>
+                               </div>
                             </div>
-                        </div>
-
-
-
-                        <div class="pagination-wrapper">
-                        </div>
-
-                        <script>
-                            $(document).ready(function () {
-                                $('#title').html('All Blogs');
-                            });	
-                        </script>
-                    </div>
+                         </div>
+                         <div class="col-md-4 col-sm-4 col-xs-1">
+                            <div class="products list">
+                               <div id="result">
+                                  <div class="row">
+                                     <div class="card" style="width: 300PX; height: 600px; padding: 15px;">
+                                        <img _ngcontent-ypj-c70=""
+                                           src="https://www.rocareindia.online/uploads/blog_image/blog_2_thumb.jpg"
+                                           alt="">
+                                        <div class="card-body">
+                                           <hr>
+                                           <h4 class="caption-title">
+                                              <a
+                                                 href="https://www.rocareindia.online/blog/2/best-water-purifier-for-home-in-india">
+                                              10 Best Water Purifier For Home In India (2022) | Review
+                                              And Buying
+                                              Guide </a>
+                                           </h4>
+                                           <div class="caption-text">
+                                              <p>A water purifier is a need of all the houses in India as
+                                                 it brings
+                                                 pure and clean water. To fulfil the demand of the Indian
+                                                 people,
+                                                 various water purifiers are available on the market.
+                                                 Here in the
+                                                 article, we have briefly elaborated 10 best water
+                                                 purifiers for
+                                                 homes in India. Click here and check them out.
+                                              </p>
+                                           </div>
+                                           <hr>
+                                           <div class="overflowed">
+                                              <div class="availability">Author: <strong>Abhishek
+                                                 Kumar</strong>
+                                              </div>
+                                              <div class="price"><ins>2021-12-23</ins></div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <!--  END BLOG LIST  -->
+                   <div class="pagination-wrapper">
+                   </div>
+                   <script>
+                      $(document).ready(function () {
+                          $('#title').html('All Blogs');
+                      });	
+                   </script>
                 </div>
-                <!-- /Blog list -->
-
-                <form action="https://www.rocareindia.online/home/ajax_blog_list/" class="form-horizontal" method="post"
-                    id="filter_form" accept-charset="utf-8">
-                    <input type="hidden" name="csrf_test_name" value="608c4ab04994fe60e47824c8a1eb9362"
-                        style="display:none;">
-                    <input type="hidden" name="blog_category" value="" id="blog_category">
-                </form>
-
-                <script>
-                    function filter_blog(page) {
-                        var form = $('#filter_form');
-                        var alert = $('#result');
-                        var formdata = false;
-                        if (window.FormData) {
-                            formdata = new FormData(form[0]);
-                        }
-                        $.ajax({
-                            url: form.attr('action') + page + '/', // form action url
-                            type: 'POST', // form submit method get/post
-                            dataType: 'html', // request type html/json/xml
-                            data: formdata ? formdata : form.serialize(), // serialize form data 
-                            cache: false,
-                            contentType: false,
-                            processData: false,
-                            beforeSend: function () {
-                                var top = '200';
-                                alert.fadeOut();
-                                alert.html('<div style="text-align:center;width:100%;position:relative;top:' + top + 'px;"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div>').fadeIn(); // change submit button text
-                            },
-                            success: function (data) {
-                                setTimeout(function () {
-                                    alert.html(data); // fade in response data
-                                }, 20);
-                                setTimeout(function () {
-                                    alert.fadeIn(); // fade in response data
-                                }, 30);
-                            },
-                            error: function (e) {
-                                console.log(e)
-                            }
-                        });
-
+             </div>
+             <!-- /Blog list -->
+             <form action="https://www.rocareindia.online/home/ajax_blog_list/" class="form-horizontal" method="post"
+                id="filter_form" accept-charset="utf-8">
+                <input type="hidden" name="csrf_test_name" value="608c4ab04994fe60e47824c8a1eb9362"
+                   style="display:none;">
+                <input type="hidden" name="blog_category" value="" id="blog_category">
+             </form>
+             <script>
+                function filter_blog(page) {
+                    var form = $('#filter_form');
+                    var alert = $('#result');
+                    var formdata = false;
+                    if (window.FormData) {
+                        formdata = new FormData(form[0]);
                     }
-
-                    $(document).ready(function () {
-                        filter_blog('0');
-                    });	
-                </script>
-            </div>
-        </div>
-        <!-- /CONTENT -->
-        <!-- </div>
-</div> -->
+                    $.ajax({
+                        url: form.attr('action') + page + '/', // form action url
+                        type: 'POST', // form submit method get/post
+                        dataType: 'html', // request type html/json/xml
+                        data: formdata ? formdata : form.serialize(), // serialize form data 
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        beforeSend: function () {
+                            var top = '200';
+                            alert.fadeOut();
+                            alert.html('<div style="text-align:center;width:100%;position:relative;top:' + top + 'px;"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div>').fadeIn(); // change submit button text
+                        },
+                        success: function (data) {
+                            setTimeout(function () {
+                                alert.html(data); // fade in response data
+                            }, 20);
+                            setTimeout(function () {
+                                alert.fadeIn(); // fade in response data
+                            }, 30);
+                        },
+                        error: function (e) {
+                            console.log(e)
+                        }
+                    });
+                
+                }
+                
+                $(document).ready(function () {
+                    filter_blog('0');
+                });	
+             </script>
+          </div>
+       </div>
+       <!-- /CONTENT -->
+       <!-- </div>
+          </div> -->
     </section>
     <!-- /PAGE WITH SIDEBAR -->
     <script>
-        function get_blogs_by_cat(category) {
-            $("#blog-content").load("https://www.rocareindia.online/home/blog_by_cat/" + category);
-        }
-        $(document).ready(function () {
-            var category = $('#blog_cat').val();
-            get_blogs_by_cat(category);
-        });
+       function get_blogs_by_cat(category) {
+           $("#blog-content").load("https://www.rocareindia.online/home/blog_by_cat/" + category);
+       }
+       $(document).ready(function () {
+           var category = $('#blog_cat').val();
+           get_blogs_by_cat(category);
+       });
     </script>
-</div>
+ </div>

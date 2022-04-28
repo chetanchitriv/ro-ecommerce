@@ -19,6 +19,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { AllbrandsComponent } from './allbrands/allbrands.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { BlogComponent } from './dashboard/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,7 @@ children:[
   { path:"products",component:ProductsComponent },
   { path: "categories",component:CategoriesComponent},
   { path: "customer",component:CustomerComponent},
+  {path: "blog",component:BlogComponent},
   { path: "orders",component:OrdersComponent},
   { path: "setting", component:SettingComponent},
   { path: "coupons",component:CouponsComponent},

@@ -1,54 +1,46 @@
 .content-area {
     padding-bottom: 0;
-}
-
-section.page-section.with-sidebar {
+    }
+    section.page-section.with-sidebar {
     padding-bottom: 0;
-}
-
-.page-section {
+    }
+    .page-section {
     padding-top: 25px;
     padding-bottom: 25px;
-}
-.page-section {
+    }
+    .page-section {
     position: relative;
     padding-top: 15px;
     padding-bottom: 15px;
-}
-
-.container {
+    }
+    .container {
     width: 1276px;
-}
-
-.row {
+    }
+    .row {
     margin-top: -30px;
-}
-.row {
+    }
+    .row {
     margin-right: -15px;
     margin-left: -15px;
-}
-
-.row aside[class*=col-], .row div[class*=col-] {
+    }
+    .row aside[class*=col-], .row div[class*=col-] {
     margin-top: 30px;
-}
-
-.widget.shop-categories {
+    }
+    .widget.shop-categories {
     border: solid 1px rgba(35,35,35,.1);
     background: #fff;
-}
-
-.widget.shop-categories .widget-content {
+    }
+    .widget.shop-categories .widget-content {
     border-top: solid 1px rgba(35,35,35,.1);
     padding: 10px 15px;
-}
-.widget-content.blog-sidebar {
+    }
+    .widget-content.blog-sidebar {
     padding: 18px 25px !important;
-}
-.widget :last-child {
+    }
+    .widget :last-child {
     margin-bottom: 0;
-}
-
-.thumbnail.blog_box {
+    }
+    .thumbnail.blog_box {
     background: #fff;
     padding: 15px 10px;
     border: 1px solid #eee;
@@ -58,95 +50,79 @@ section.page-section.with-sidebar {
     margin-right: 18px;
     height: 497px;
     margin-bottom: 16px;
-}
-
-.thumbnail {
+    }
+    .thumbnail {
     margin: 0 auto;
     border-radius: 0;
     background-color: transparent;
     position: relative;
-}
-
-.products.list .pagination-wrapper {
+    }
+    .products.list .pagination-wrapper {
     float: left;
     margin-bottom: 50px;
     width: 100%;
-}
-.pagination-wrapper {
+    }
+    .pagination-wrapper {
     border-top: solid 1px #e9e9e9;
     margin: 30px 0;
     padding-top: 30px;
     line-height: 0;
-}
-
-
-.widget.widget-tabs {
+    }
+    .widget.widget-tabs {
     background: #fff;
-}
-
-.widget :last-child {
+    }
+    .widget :last-child {
     margin-bottom: 0;
-}
-
-
-.widget.widget-tabs .nav-justified {
+    }
+    .widget.widget-tabs .nav-justified {
     border: solid 1px rgba(35,35,35,.1);
-}
-.nav-justified {
+    }
+    .nav-justified {
     width: 100%;
-}
-.nav {
+    }
+    .nav {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-}
-
-.nav-justified>li {
+    }
+    .nav-justified>li {
     float: none;
-}
-.nav>li {
+    }
+    .nav>li {
     position: relative;
     display: block;
-}
-
-/* @media (min-width: 768px)
-.nav-justified>li {
+    }
+    /* @media (min-width: 768px)
+    .nav-justified>li {
     display: table-cell;
     width: 1%;
-} */
-
-.widget.widget-tabs .tab-content {
+    } */
+    .widget.widget-tabs .tab-content {
     overflow: hidden;
     border: 1px solid #e9e9e9;
     border-top: none;
     padding: 10px;
-}
-
-.widget :last-child {
+    }
+    .widget :last-child {
     margin-bottom: 0;
-}
-
-.tab-content>.active {
+    }
+    .tab-content>.active {
     display: block;
-}
-
-.tab-content>.tab-pane {
+    }
+    .tab-content>.tab-pane {
     display: none;
-}
-.fade.in {
+    }
+    .fade.in {
     opacity: 1;
-}
-
-
-.widget :last-child {
+    }
+    .widget :last-child {
     margin-bottom: 0;
-}
-.product-list {
+    }
+    .product-list {
     max-width: 450px;
     margin: 0 auto;
-}
-
-.product-list .media {
+    }
+    .product-list .media {
     clear: both;
     float: left;
     position: relative;
@@ -155,43 +131,31 @@ section.page-section.with-sidebar {
     width: 100%;
     padding: 15px 0;
     border-bottom: 1px solid #e9e9e9;
-}
-.media:first-child {
+    }
+    .media:first-child {
     margin-top: 0;
-}
-.media, .media-body {
+    }
+    .media, .media-body {
     overflow: hidden;
     zoom: 1;
-}
-
-
-.caption-title{
+    }
+    .caption-title{
     font-size: 15px; 
     color: black; 
     font:bold;
-}
-
-a:hover {
+    }
+    a:hover {
     color: #00010d;
     text-decoration: underline;
-}
-a{
+    }
+    a{
     color:#00010d;
-}
-
-img {
+    }
+    img {
     vertical-align: middle;
     border-style: none;
     padding-top: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
+    }
+    /* .col-md-4.col-sm-4.col-xs-1.card:hover {
+    transform: scale(1.1);
+    } */

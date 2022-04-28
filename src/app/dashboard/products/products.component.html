@@ -10,9 +10,7 @@
                             <div>
                                 <h4 class="card-title" style=" color:#fff; ">Products List</h4>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
 
@@ -30,33 +28,34 @@
                                             <div class="col-3 ">
                                                 <fieldset class="form-group ">
                                                     <label for="basicInput "></label>
-                                                    <input type="text " class="form-control pl-2 p-3 " placeholder="Search by product name " id="basicInput ">
+                                                    <input type="text " class="form-control pl-2 p-3 "
+                                                        placeholder="Search by product name " id="basicInput ">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 ">
                                                 <fieldset class="form-group ">
                                                     <label for="basicSelect "></label>
                                                     <select class="form-control height-50 " id="basicSelect ">
-                                                  <option>Categories</option>
-                                                  <option>Option 1</option>
-                                                  <option>Option 2</option>
-                                                  <option>Option 3</option>
-                                                  <option>Option 4</option>
-                                                  <option>Option 5</option>
-                                                </select>
+                                                        <option>Categories</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                        <option>Option 4</option>
+                                                        <option>Option 5</option>
+                                                    </select>
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 ">
                                                 <fieldset class="form-group ">
                                                     <label for="basicSelect "></label>
                                                     <select class="form-control height-50 " id="basicSelect ">
-                                                  <option>Price</option>
-                                                  <option>Option 1</option>
-                                                  <option>Option 2</option>
-                                                  <option>Option 3</option>
-                                                  <option>Option 4</option>
-                                                  <option>Option 5</option>
-                                                </select>
+                                                        <option>Price</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                        <option>Option 4</option>
+                                                        <option>Option 5</option>
+                                                    </select>
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 ">
@@ -65,13 +64,15 @@
                                                     <!-- <button type="btn " class="form-control height-50 bg-danger d-block rounded box-shadow-2 " style="color: #fff; " data-bs-toggle="modal " data-bs-target="#exampleModal "><i class="fa fa-plus " >&nbsp; Add Products</i></button> -->
 
 
-                                                    <button (click)="showForm()" type="button" class="form-control height-50 bg-danger d-block rounded box-shadow-2 " data-toggle="modal " data-backdrop="false " data-target="#primary " style="color: #fff; ">
-                                                    <i class="fa fa-plus " >&nbsp; Add Products</i>
+                                                    <button (click)="showForm()" type="button"
+                                                        class="form-control height-50 bg-danger d-block rounded box-shadow-2 "
+                                                        data-toggle="modal " data-backdrop="false "
+                                                        data-target="#primary " style="color: #fff; ">
+                                                        <i class="fa fa-plus ">&nbsp; Add Products</i>
                                                     </button>
                                                 </fieldset>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -92,20 +93,27 @@
                                             <div class="col-8 ">
                                                 <fieldset class="form-group ">
                                                     <label for="basicInput "></label>
-                                                    <input type="text " class="form-control pl-2 p-3 text-center " placeholder="Drop CSV file " id="basicInput ">
+                                                    <input type="text " class="form-control pl-2 p-3 text-center "
+                                                        placeholder="Drop CSV file " id="basicInput ">
                                                 </fieldset>
                                             </div>
                                             <div class="col-2 ">
                                                 <fieldset class="form-group ">
                                                     <label for="basicSelect "></label>
-                                                    <button type="btn " class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; "><i class="fa fa-upload ">&nbsp; Add Products</i></button>
+                                                    <button type="btn "
+                                                        class="form-control height-50 gradient-timber d-block rounded box-shadow-2 "
+                                                        style="color: #fff; "><i class="fa fa-upload ">&nbsp; Add
+                                                            Products</i></button>
                                                 </fieldset>
                                             </div>
 
                                             <div class="col-2 ">
                                                 <fieldset class="form-group ">
                                                     <label for="basicSelect "></label>
-                                                    <button type="btn " class="form-control height-50 gradient-crystal-clear d-block rounded box-shadow-2 selected " style="color: #fff; "><i class="fa fa-download ">&nbsp; Download</i></button>
+                                                    <button type="btn "
+                                                        class="form-control height-50 gradient-crystal-clear d-block rounded box-shadow-2 selected "
+                                                        style="color: #fff; "><i class="fa fa-download ">&nbsp;
+                                                            Download</i></button>
                                                 </fieldset>
                                             </div>
                                         </div>
@@ -174,7 +182,8 @@
                                                             <a (click)="onEdit(data)" class="btn btn-outline-success ">
                                                                 <i class="fa fa-edit"></i>
                                                             </a> &nbsp;
-                                                            <a (click)="deleteProducts(data)" class="btn btn-outline-danger ">
+                                                            <a (click)="deleteProducts(data)"
+                                                                class="btn btn-outline-danger ">
                                                                 <i class="fa fa-trash"></i>
                                                             </a>
 
@@ -199,10 +208,7 @@
 
 
 
-            <!-- form//////////////////////////////    product Add Form     ///////////////////////////////// -->
-
-
-
+            <!-- ADD PRODUCT FORM-->
 
 
             <div *ngIf="addProduct && !showUserTable" class="main-content1">
@@ -211,15 +217,20 @@
                         <!-- Basic form layout section start -->
                         <section id="basic-form-layouts ">
 
-                            <div class="card gradient-aqua-marine d-block rounded box-shadow-2 " data-bg-color="aqua-marine ">
+                            <div class="card gradient-aqua-marine d-block rounded box-shadow-2 "
+                                data-bg-color="aqua-marine ">
                                 <div class="card-header">
                                     <div class="card-title-wrap bar-warning ">
                                         <h4 class="card-title" style="color:#fff; ">Add Products</h4>
-                                        <p class="mb-0" style="color:rgb(224, 223, 223);">Add your product and necessary information from here</p>
+                                        <p class="mb-0" style="color:rgb(224, 223, 223);">Add your product and necessary
+                                            information from here</p>
                                     </div>
                                     <div class="d-flex ">
                                         <!-- <button (click)="showTable() " type="button " class="btn btn-success mx-3 ">Show Table</button> -->
-                                        <button (click)="showTable() " *ngIf="addProduct " type="btn " class="form-control height-50 gradient-timber rounded box-shadow-2 " style="color: #fff; margin: -36px -7px -13px -49px; width:  107px;"> Show Table</button>
+                                        <button (click)="showTable() " *ngIf="addProduct " type="btn "
+                                            class="form-control height-50 gradient-timber rounded box-shadow-2 "
+                                            style="color: #fff; margin: -36px -7px -13px -49px; width:  107px;"> Show
+                                            Table</button>
                                     </div>
 
                                 </div>
@@ -235,7 +246,8 @@
 
                                                     <div class="form-body ">
                                                         <h4 class="form-section mt-3 ">
-                                                            <i class="fa fa-shopping-bag"></i> Product Details</h4>
+                                                            <i class="fa fa-shopping-bag"></i> Product Details
+                                                        </h4>
                                                         <!-- <div class="row form-group ">
                                                             <fieldset class="form-group ml-3">
 
@@ -250,27 +262,34 @@
 
                                                         <div class="form-group col-md-10">
                                                             <label for="projectinput1 ">Product Image</label>
-                                                            <input type="text " id="projectinput1 " class="form-control" name="image" formControlName="image" value>
+                                                            <input type="text " id="projectinput1 " class="form-control"
+                                                                name="image" formControlName="image" value>
                                                         </div>
 
 
                                                         <div class="form-group col-md-10">
                                                             <label for="projectinput1 ">Product SKU</label>
-                                                            <input type="text " id="projectinput1 " class="form-control" name="fname" formControlName="sku" value>
+                                                            <input type="text " id="projectinput1 " class="form-control"
+                                                                name="fname" formControlName="sku" value>
                                                         </div>
                                                         <div class="form-group col-md-10">
                                                             <label for="projectinput1 ">Product Title/Name</label>
-                                                            <input type="text " id="projectinput1 " class="form-control" name="fname" formControlName="title" value>
+                                                            <input type="text " id="projectinput1 " class="form-control"
+                                                                name="fname" formControlName="title" value>
                                                         </div>
                                                         <div class="form-group col-md-10">
                                                             <label for="projectinput1 ">Product Slug</label>
-                                                            <input type="text " id="projectinput1 " class="form-control" name="fname" formControlName="slug" value>
+                                                            <input type="text " id="projectinput1 " class="form-control"
+                                                                name="fname" formControlName="slug" value>
                                                         </div>
 
                                                         <div class="form-group row col-md-10">
-                                                            <label class="col-md-3 label-control " for="projectinput9 ">Product Description: </label>
+                                                            <label class="col-md-3 label-control "
+                                                                for="projectinput9 ">Product Description: </label>
                                                             <div class="col-md-9 ">
-                                                                <textarea id="projectinput9 " rows="5 " class="form-control" name="comment" formControlName="details" value></textarea>
+                                                                <textarea id="projectinput9 " rows="5 "
+                                                                    class="form-control" name="comment"
+                                                                    formControlName="details" value></textarea>
                                                             </div>
                                                         </div>
 
@@ -280,27 +299,29 @@
                                                         <div class="col-md-10 ">
                                                             <fieldset class="form-group ">
                                                                 <label for="basicSelect ">Parent Category</label>
-                                                                <select class="form-control " id="basicSelect" formControlName="parentcategory" value>
-                                                      <option>Select Option</option>
-                                                      <option>WATER PURIFIER</option>
-                                                      <option>RO PLANT</option>
-                                                      <option>WATER SOFTNER</option>
-                                                      <option>VACUUM CLEANER</option>
-                                                      <option>WATER DISPENSER</option>
-                                                    </select>
+                                                                <select class="form-control " id="basicSelect"
+                                                                    formControlName="parentcategory" value>
+                                                                    <option>Select Option</option>
+                                                                    <option>WATER PURIFIER</option>
+                                                                    <option>RO PLANT</option>
+                                                                    <option>WATER SOFTNER</option>
+                                                                    <option>VACUUM CLEANER</option>
+                                                                    <option>WATER DISPENSER</option>
+                                                                </select>
                                                             </fieldset>
                                                         </div>
                                                         <div class="col-md-10 ">
                                                             <fieldset class="form-group ">
                                                                 <label for="basicSelect ">Child Category</label>
-                                                                <select class="form-control" id="basicSelect" formControlName="childcategory" value>
-                                                      <option>Select Option</option>
-                                                      <option>Option 1</option>
-                                                      <option>Option 2</option>
-                                                      <option>Option 3</option>
-                                                      <option>Option 4</option>
-                                                      <option>Option 5</option>
-                                                    </select>
+                                                                <select class="form-control" id="basicSelect"
+                                                                    formControlName="childcategory" value>
+                                                                    <option>Select Option</option>
+                                                                    <option>Option 1</option>
+                                                                    <option>Option 2</option>
+                                                                    <option>Option 3</option>
+                                                                    <option>Option 4</option>
+                                                                    <option>Option 5</option>
+                                                                </select>
                                                             </fieldset>
                                                         </div>
 
@@ -308,35 +329,41 @@
 
                                                         <div class="col-md-10">
                                                             <label for="userinput5 ">Unit (kg/pc/lb/ml/g...etc)</label>
-                                                            <input class="form-control border-primary " type="text " id="userinput5 " formControlName="unit" value>
+                                                            <input class="form-control border-primary " type="text "
+                                                                id="userinput5 " formControlName="unit" value>
                                                         </div>
 
                                                         <div class="col-md-10 ">
                                                             <label for="userinput6 ">Product Quantity</label>
-                                                            <input class="form-control border-primary " type="number " id="userinput6" formControlName="stock" value>
+                                                            <input class="form-control border-primary " type="number "
+                                                                id="userinput6" formControlName="stock" value>
                                                         </div>
 
                                                         <div class="col-md-10 ">
                                                             <label>Sale Price</label>
-                                                            <input class="form-control border-primary " id="userinput7" type="number" formControlName="saleprice" value>
+                                                            <input class="form-control border-primary " id="userinput7"
+                                                                type="number" formControlName="saleprice" value>
                                                         </div>
 
                                                         <div class="col-md-10 ">
                                                             <label>Product Tag</label>
-                                                            <input class="form-control border-primary " id="userinput7 " type="text " formControlName="tag" value>
+                                                            <input class="form-control border-primary " id="userinput7 "
+                                                                type="text " formControlName="tag" value>
                                                         </div>
 
                                                     </div>
                                                     <div class="form-actions right ">
                                                         <button type="button " class="btn btn-danger mr-1 ">
-                              <i class="icon-trash "></i> Cancel
-                          </button>
-                                                        <button type="submit " *ngIf="showAddbutton" (click)="postProductsDetails()" class="btn btn-success ">
-                              <i class="icon-note "></i> Save
-                          </button>
-                                                        <button type="submit " *ngIf="showUpdatebutton" (click)="updateProductsDetails()" class="btn btn-success ">
-                            <i class="icon-note "></i> Update
-                        </button>
+                                                            <i class="icon-trash "></i> Cancel
+                                                        </button>
+                                                        <button type="submit " *ngIf="showAddbutton"
+                                                            (click)="postProductsDetails()" class="btn btn-success ">
+                                                            <i class="icon-note "></i> Save
+                                                        </button>
+                                                        <button type="submit " *ngIf="showUpdatebutton"
+                                                            (click)="updateProductsDetails()" class="btn btn-success ">
+                                                            <i class="icon-note "></i> Update
+                                                        </button>
                                                     </div>
 
 

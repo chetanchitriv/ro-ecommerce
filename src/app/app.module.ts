@@ -29,6 +29,7 @@ import { MainDashboardComponent } from './web/main-dashboard/main-dashboard.comp
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { AllbrandsComponent } from './allbrands/allbrands.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { BlogComponent } from './dashboard/blog/blog.component';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { BlogsComponent } from './blogs/blogs.component';
     ProductdetailsComponent,
     AllbrandsComponent,
     BlogsComponent,
+    BlogComponent,
    
   ],
   imports: [

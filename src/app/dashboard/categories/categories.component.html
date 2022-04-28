@@ -5,11 +5,14 @@
                 <div class="card-header">
                     <div class="card-title-wrap bar-warning">
                         <div>
-                            <h4 class="card-title" style=" color:#fff; margin: -9px 0 0 0px;"> <i class="fa fa-list" aria-hidden="true"></i> &nbsp; Categories List</h4>
+                            <h4 class="card-title" style=" color:#fff; margin: -9px 0 0 0px;"> <i class="fa fa-list"
+                                    aria-hidden="true"></i> &nbsp; Categories List</h4>
                         </div>
                         <div class="d-flex" style="margin: -29px 0px -5px 868px;">
                             <!-- <button (click)="showTable()" type="button" class="btn btn-success mx-3">Show Table</button> -->
-                            <button (click)="showTable()" *ngIf="addCategories" type="btn " class="form-control height-50 gradient-timber d-block rounded box-shadow-2 " style="color: #fff; width: 135px; padding: 0px 0px 0px 3px;"> Show Table</button>
+                            <button (click)="showTable()" *ngIf="addCategories" type="btn "
+                                class="form-control height-50 gradient-timber d-block rounded box-shadow-2 "
+                                style="color: #fff; width: 135px; padding: 0px 0px 0px 3px;"> Show Table</button>
                         </div>
 
                     </div>
@@ -29,7 +32,8 @@
                                         <div class="col-4">
                                             <fieldset class="form-group ">
                                                 <label for="basicInput "></label>
-                                                <input type="text " class="form-control pl-2 p-3 " placeholder="Search by product name " id="basicInput ">
+                                                <input type="text " class="form-control pl-2 p-3 "
+                                                    placeholder="Search by product name " id="basicInput ">
                                             </fieldset>
                                         </div>
                                         <!-- <div class="col-3 ">
@@ -53,12 +57,12 @@
                                                 <label for="basicSelect "></label>
                                                 <select class="form-control height-50 width: 343px;
                                                 margin: 0px 0px 0px -16px;" id="basicSelect ">
-                                                  <option>category</option>
-                                                  <option>Option 1</option>
-                                                  <option>Option 2</option>
-                                                  <option>Option 3</option>
-                                                  <option>Option 4</option>
-                                                  <option>Option 5</option>
+                                                    <option>category</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                    <option>Option 4</option>
+                                                    <option>Option 5</option>
                                                 </select>
                                             </fieldset>
                                         </div>
@@ -69,9 +73,12 @@
                                                 <!-- <button type="btn " class="form-control height-50 bg-danger d-block rounded box-shadow-2 " style="color: #fff; " data-bs-toggle="modal " data-bs-target="#exampleModal "><i class="fa fa-plus " >&nbsp; Add Products</i></button> -->
 
 
-                                                <button (click)="showForm()" type="button" class="form-control height-50 bg-purple d-block rounded box-shadow-2 " data-toggle="modal " data-backdrop="false " data-target="#primary " style="color: #fff; ">
-                                                    <i class="fa fa-plus " >&nbsp; Add Categories</i>
-                                                    </button>
+                                                <button (click)="showForm()" type="button"
+                                                    class="form-control height-50 bg-purple d-block rounded box-shadow-2 "
+                                                    data-toggle="modal " data-backdrop="false " data-target="#primary "
+                                                    style="color: #fff; ">
+                                                    <i class="fa fa-plus ">&nbsp; Add Categories</i>
+                                                </button>
                                             </fieldset>
                                         </div>
                                     </div>
@@ -111,7 +118,8 @@
                                                         <th class="border-top-0 ">STATUS</th> -->
                                                         <!-- <th class="border-top-0 ">Stock</th>
                                                     <th class="border-top-0 ">Published</th> -->
-                                                        <th class="border-top-0 "> &nbsp; &nbsp; &nbsp; &nbsp; Action</th>
+                                                        <th class="border-top-0 "> &nbsp; &nbsp; &nbsp; &nbsp; Action
+                                                        </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -131,7 +139,8 @@
                                                             <a (click)="onEdit(data)" class="btn btn-outline-success ">
                                                                 <i class="fa fa-edit"></i>
                                                             </a> &nbsp;
-                                                            <a (click)="deleteCategories(data)" class="btn btn-outline-danger ">
+                                                            <a (click)="deleteCategories(data)"
+                                                                class="btn btn-outline-danger ">
                                                                 <i class="fa fa-trash"></i>
                                                             </a>
 
@@ -163,7 +172,8 @@
 
                     <section id="basic-form-layouts">
 
-                        <div class="card gradient-aqua-marine d-block rounded box-shadow-2" data-bg-color="aqua-marine ">
+                        <div class="card gradient-aqua-marine d-block rounded box-shadow-2"
+                            data-bg-color="aqua-marine ">
                             <div class="card-header">
                                 <div class="card-title-wrap bar-warning ">
                                     <h4 class="card-title text-center" style="color:#fff; ">Add Categories</h4>
@@ -185,7 +195,8 @@
                                             <form class="form" [formGroup]="CategoriesForm">
                                                 <div class="form-body ">
                                                     <h3 class="form-section ">
-                                                        <i class="icon-list "></i> &nbsp; <b>Add Your Categories </b> </h3>
+                                                        <i class="icon-list "></i> &nbsp; <b>Add Your Categories </b>
+                                                    </h3>
                                                     <!-- <div class="row form-group ">
 
                                                             <label class="col-md-5c ml-3">category Image: </label>
@@ -202,13 +213,17 @@
                                                     <div class="col-md-10">
                                                         <fieldset class="form-group">
                                                             <label for="projectinput1 "><b>Add Categories :</b></label>
-                                                            <input type="text " id="projectinput1 " class="form-control " formControlName="Category" name="Category ">
+                                                            <input type="text " id="projectinput1 "
+                                                                class="form-control " formControlName="Category"
+                                                                name="Category ">
                                                         </fieldset>
                                                     </div>
                                                     <div class="col-md-10">
                                                         <fieldset class="form-group">
                                                             <label for="projectinput1 "><b>Sub Categories :</b></label>
-                                                            <input type="text " id="projectinput1 " class="form-control " formControlName="subcategories" name="subcategories ">
+                                                            <input type="text " id="projectinput1 "
+                                                                class="form-control " formControlName="subcategories"
+                                                                name="subcategories ">
                                                         </fieldset>
                                                     </div>
                                                     <!-- <div class="form-group ">
@@ -233,14 +248,17 @@
 
                                                     <div class="form-actions right ">
                                                         <button type="button " class="btn btn-danger mr-1 ">
-                                  <i class="icon-trash "></i> CANCEL
-                              </button>
-                                                        <button *ngIf="showAddbutton" (click)="postCategoriesDetails()" type="button " class="btn btn-success ">
-                                <i class="icon-note "></i> Save
-                            </button>
-                                                        <button *ngIf="showUpdatebutton" type="button " (click)="updateCategoriesDetails()" class="btn btn-success ">
-                                    <i class="icon-note "></i> Update
-                                </button>
+                                                            <i class="icon-trash "></i> CANCEL
+                                                        </button>
+                                                        <button *ngIf="showAddbutton" (click)="postCategoriesDetails()"
+                                                            type="button " class="btn btn-success ">
+                                                            <i class="icon-note "></i> Save
+                                                        </button>
+                                                        <button *ngIf="showUpdatebutton" type="button "
+                                                            (click)="updateCategoriesDetails()"
+                                                            class="btn btn-success ">
+                                                            <i class="icon-note "></i> Update
+                                                        </button>
                                                     </div>
 
                                                     <!-- <div class="form-group row">

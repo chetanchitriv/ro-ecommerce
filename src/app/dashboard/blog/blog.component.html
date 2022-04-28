@@ -1,0 +1,243 @@
+<div class="main-content">
+    <div class="content-wrapper">
+        <div class="container-fluid">
+
+            <div *ngIf="showUserTable && !addBlog">
+
+                <div class="card gradient-aqua-marine d-block rounded box-shadow-2" data-bg-color="aqua-marine">
+                    <div class="card-header">
+                        <div class="card-title-wrap bar-warning">
+                            <div>
+                                <h4 class="card-title" style=" color:#fff;"> Blog List</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section id="extended">
+                    <div class="row ">
+                        <div class="col-sm-12 ">
+                            <div class="card ">
+                                <div class="card-body ">
+                                    <div class="card-block ">
+
+                                        <div class="row ">
+                                            <div class="col-3 ">
+                                                <fieldset class="form-group ">
+                                                    <label for="basicInput "></label>
+                                                    <input type="text " class="form-control pl-2 p-3 "
+                                                        placeholder=" Image" id="basicInput ">
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <fieldset class="form-group ">
+                                                    <!-- <input type="text" class="form-control pl-2 p-3 "
+                                                    placeholder="Title" id="basicInput "> -->
+                                                    <label for="basicSelect "></label>
+                                                    <select class="form-control height-50 " id="basicSelect ">
+                                                        <option>Title</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                        <option>Option 4</option>
+                                                        <option>Option 5</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <fieldset class="form-group ">
+                                                    <label for="basicInput "></label>
+                                                    <input type="text " class="form-control pl-2 p-3 "
+                                                        placeholder="Description" id="basicInput ">
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <fieldset class="form-group ">
+                                                    <label for="basicSelect "></label>
+                                                    <!-- <button type="btn " class="form-control height-50 bg-danger d-block rounded box-shadow-2 " style="color: #fff; " data-bs-toggle="modal " data-bs-target="#exampleModal "><i class="fa fa-plus " >&nbsp; Add Products</i></button> -->
+
+                                                    <button (click)="showForm()" type="button"
+                                                        class="form-control height-50 bg-danger d-block rounded box-shadow-2 "
+                                                        data-toggle="modal " data-backdrop="false "
+                                                        data-target="#primary " style="color: #fff; ">
+                                                        <i class="fa fa-plus ">&nbsp; Add Blog</i>
+                                                    </button>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <!-- ---------------------------------------------------------- -->
+
+
+
+
+
+            <div *ngIf="showBlogTable && !addBlog">
+                <section id="shopping-cart">
+                    <div class="row ">
+                        <div class="col-sm-12 ">
+                            <div class="card ">
+                            <!-- <div class="card-header ">
+                            <div class="card-title-wrap bar-warning ">
+                                <h4 class="card-title ">Invoice Summary</h4>                            
+                            </div> -->
+                                <div class="card-body">
+                                    <div class="card-block ">
+                                        <div class="">
+                                            <table id="recent-orders "
+                                                class=" table table-striped ">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th class="border-top-0">Image</th>
+                                                        <th class="border-top-0 ">Title</th>
+                                                        <th class="border-top-0 ">
+                                                            Description</th>
+
+                                                       
+                                                       <th class="border-top-0 "> &nbsp;
+                                                            &nbsp; &nbsp; &nbsp; Action
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr
+                                                        *ngFor="let data of BlogData; let i=index">
+                                                        <td>{{i+1}}</td>
+                                                        <td>{{data.Category}}</td>
+                                                        <td>{{data.subcategories}}</td>
+                                                        <td>
+                                                            <a (click)="onEdit(data)"
+                                                                class="btn btn-outline-success ">
+                                                                <i class="fa fa-edit"></i>
+                                                            </a> &nbsp;
+                                                            <a (click)="deleteblog(data)"
+                                                                class="btn btn-outline-danger ">
+                                                                <i class="fa fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                               </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+<!-- ------------------------------------------------------- -->
+
+
+
+
+            <!-- ADD BLOG FORM-->
+
+
+            <div *ngIf="addBlog && !showUserTable" class="main-content1">
+                <div class="content-wrapper ">
+                    <div class="container-fluid ">
+                        <!-- Basic form layout section start -->
+                        <section id="basic-form-layouts ">
+
+                            <div class="card gradient-aqua-marine d-block rounded box-shadow-2 "
+                                data-bg-color="aqua-marine ">
+                                <div class="card-header">
+                                    <div class="card-title-wrap bar-warning ">
+                                        <h4 class="card-title" style="color:#fff; ">Add Blog</h4>
+                                        <p class="mb-0" style="color:rgb(224, 223, 223);">Add your blog and necessary
+                                            information here</p>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <!-- <button (click)="showTable() " type="button " class="btn btn-success mx-3 ">Show Table</button> -->
+                                        <!-- <button (click)="showTable() " *ngIf="addBlog " type="btn "
+                                                class="form-control height-50 gradient-timber rounded box-shadow-2 "
+                                                style="color: #fff; margin: -36px -7px -13px -49px; width:  107px;"> Show
+                                                Table</button> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="form " [formGroup]="blogForm" (ngSubmit)="submit()">
+                                <div class="row ">
+                                    <div class="col-md-12">
+                                        <div class="card ">
+
+                                            <div class="card-body ">
+                                                <div class="px-3 ">
+
+                                                    <div class="form-body ">
+                                                        <h4 class="form-section mt-3 ">
+                                                            <i class="fa fa-blog"></i> Blog Details
+                                                        </h4>
+
+                                                        <div class="form-group col-md-10">
+                                                            <label for="projectinput1 ">Image:</label>
+                                                            <br>
+                                                            <!-- <label for="fileUpload">Upload file</label>&nbsp; -->
+                                                            <input type="file" id="projectinput1" style="border:none;"
+                                                                class="form-control" formControlName="image" value>
+                                                            <!-- <input type="file" id="projectinput1 " class="form-control"
+                                                                    name="image" formControlName="image" value> -->
+                                                        </div>
+
+                                                        <div class="form-group col-md-10">
+                                                            <label for="projectinput1 ">Title:</label>
+                                                            <input type="text" id="projectinput1 " class="form-control"
+                                                                name="image" formControlName="title" value>
+                                                        </div>
+
+                                                        <div class="form-group row col-md-10">
+                                                            <label class="col-md-5 label-control"
+                                                                for="projectinput9">Blog Description: </label>
+                                                            <div class="col-md-9 ">
+                                                                <textarea id="projectinput9 " rows="6"
+                                                                    class="form-control" name="comment"
+                                                                    formControlName="description" value></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                    <div class="form-actions right ">
+                                                        <!-- <button type="button " class="btn btn-danger mr-1 ">
+                                                                <i class="icon-trash "></i> Cancel
+                                                            </button>
+                                                            <button type="submit " *ngIf="showAddbutton"
+                                                             class="btn btn-success ">
+                                                                <i class="icon-note "></i> Save
+                                                            </button>
+                                                            <button type="submit " *ngIf="showUpdatebutton"
+                                                                 class="btn btn-success ">
+                                                                <i class="icon-note "></i> Update
+                                                            </button> -->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+
+
+
+                <!-- / ADD BLOG FORM -->
+
+
+                <!-- ------------------------------------------------------------- -->
