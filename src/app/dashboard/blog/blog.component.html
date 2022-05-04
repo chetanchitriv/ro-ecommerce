@@ -25,7 +25,7 @@
                                         <div class="row ">
                                             <div class="col-3 ">
                                                 <fieldset class="form-group ">
-                                                    <label for="basicInput "></label>
+                                                    <label for="basicInput "></label>                                                    
                                                     <input type="text " class="form-control pl-2 p-3 "
                                                         placeholder=" Image" id="basicInput ">
                                                 </fieldset>
@@ -46,7 +46,7 @@
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 ">
-                                                <fieldset class="form-group ">
+                                                <fieldset class="form-group">
                                                     <label for="basicInput "></label>
                                                     <input type="text " class="form-control pl-2 p-3 "
                                                         placeholder="Description" id="basicInput ">
@@ -94,11 +94,12 @@
                                 <div class="card-body">
                                     <div class="card-block ">
                                         <div class="">
+
                                             <table id="recent-orders "
-                                                class=" table table-striped ">
+                                                class=" table table-border ">
                                                 <thead>
                                                     <tr>
-
+                                                    
                                                         <th class="border-top-0">Image</th>
                                                         <th class="border-top-0 ">Title</th>
                                                         <th class="border-top-0 ">
@@ -112,16 +113,17 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr
-                                                        *ngFor="let data of BlogData; let i=index">
-                                                        <td>{{i+1}}</td>
-                                                        <td>{{data.Category}}</td>
-                                                        <td>{{data.subcategories}}</td>
+                                                        *ngFor="let data of allBlogData; let i=index">
+                                                     
+                                                        <td>{{data.image}}</td>
+                                                        <td>{{data.title}}</td>
+                                                        <td>{{data.description}}</td>
                                                         <td>
-                                                            <a (click)="onEdit(data)"
+                                                            <a  (click)="onEdit(data)"
                                                                 class="btn btn-outline-success ">
                                                                 <i class="fa fa-edit"></i>
                                                             </a> &nbsp;
-                                                            <a (click)="deleteblog(data)"
+                                                            <a (click)="deleteBlog(data)"
                                                                 class="btn btn-outline-danger ">
                                                                 <i class="fa fa-trash"></i>
                                                             </a>
@@ -129,6 +131,8 @@
                                                     </tr>
                                                </tbody>
                                             </table>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -144,13 +148,17 @@
 
 
 
-            <!-- ADD BLOG FORM-->
+            <!-- ADD BLOG FORM -->
 
 
             <div *ngIf="addBlog && !showUserTable" class="main-content1">
                 <div class="content-wrapper ">
                     <div class="container-fluid ">
                         <!-- Basic form layout section start -->
+                       
+                       
+                       
+                       
                         <section id="basic-form-layouts ">
 
                             <div class="card gradient-aqua-marine d-block rounded box-shadow-2 "
@@ -162,6 +170,7 @@
                                             information here</p>
                                     </div>
                                     <div class="d-flex ">
+
                                         <!-- <button (click)="showTable() " type="button " class="btn btn-success mx-3 ">Show Table</button> -->
                                         <!-- <button (click)="showTable() " *ngIf="addBlog " type="btn "
                                                 class="form-control height-50 gradient-timber rounded box-shadow-2 "
@@ -170,8 +179,9 @@
                                     </div>
                                 </div>
                             </div>
+                            
 
-                            <form class="form " [formGroup]="blogForm" (ngSubmit)="submit()">
+                            <form class="form " [formGroup]="blogForm">
                                 <div class="row ">
                                     <div class="col-md-12">
                                         <div class="card ">
@@ -188,16 +198,18 @@
                                                             <label for="projectinput1 ">Image:</label>
                                                             <br>
                                                             <!-- <label for="fileUpload">Upload file</label>&nbsp; -->
-                                                            <input type="file" id="projectinput1" style="border:none;"
-                                                                class="form-control" formControlName="image" value>
-                                                            <!-- <input type="file" id="projectinput1 " class="form-control"
-                                                                    name="image" formControlName="image" value> -->
+
+                                                            <img [src]="imageUrl"  style="width:250px;height:200px">
+                                                            <input type="file" #Image accept="image/*" formControlName="image" value > 
+
+                                                            <!-- (change)="handleFileInput($event.target.files)"  -->
+                                                        
                                                         </div>
 
                                                         <div class="form-group col-md-10">
                                                             <label for="projectinput1 ">Title:</label>
                                                             <input type="text" id="projectinput1 " class="form-control"
-                                                                name="image" formControlName="title" value>
+                                                                name="title" formControlName="title" value>
                                                         </div>
 
                                                         <div class="form-group row col-md-10">
@@ -210,9 +222,13 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <button type="submit" class="btn btn-success" (click)="addBlogs()">Add Blog</button>
+                                                    &nbsp;
+
                                                     <div class="form-actions right ">
-                                                        <!-- <button type="button " class="btn btn-danger mr-1 ">
+                                                        
+                                                         <!-- <button type="button " class="btn btn-danger mr-1 ">
                                                                 <i class="icon-trash "></i> Cancel
                                                             </button>
                                                             <button type="submit " *ngIf="showAddbutton"
@@ -228,6 +244,12 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <button (click)="showTable()" class="btn btn-outline-success">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+                                              </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -238,6 +260,10 @@
 
 
                 <!-- / ADD BLOG FORM -->
+
+
+
+
 
 
                 <!-- ------------------------------------------------------------- -->
